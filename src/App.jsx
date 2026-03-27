@@ -60,6 +60,7 @@ export default function App() {
   const [feedback, setFeedback] = useState(null);
   const [selected, setSelected] = useState(null);
   const [allCaps, setAllCaps] = useState(loadCaps);
+  const [settingsOpen, setSettingsOpen] = useState(false);
 
   const toggleCaps = () => {
     setAllCaps((prev) => {
@@ -169,10 +170,44 @@ export default function App() {
       <div style={styles.page}>
         <div style={styles.menuContainer}>
           <div style={styles.titleBlock}>
+            <button
+              style={styles.gearBtn}
+              onClick={() => setSettingsOpen((p) => !p)}
+              aria-label="Settings"
+            >
+              ⚙️
+            </button>
             <span style={styles.titleEmoji}>🏳️</span>
             <h1 style={styles.title}>{t("Lipumäng")}</h1>
             <p style={styles.subtitle}>{t("Õpi riikide lippe eesti keeles!")}</p>
           </div>
+
+          {settingsOpen && (
+            <div style={styles.sectionCard}>
+              <h2 style={styles.sectionTitle}>{t("Seaded")}</h2>
+              <div style={styles.toggleRow}>
+                <span style={styles.toggleLabel}>
+                  <span style={{ fontSize: "1.3rem" }}>🔠</span>
+                  <span>{allCaps ? "SUURTÄHED" : "Tavalised tähed"}</span>
+                </span>
+                <button
+                  style={{
+                    ...styles.toggleTrack,
+                    background: allCaps ? "#5c6bc0" : "#b0bec5",
+                  }}
+                  onClick={toggleCaps}
+                  aria-label="Toggle caps"
+                >
+                  <span
+                    style={{
+                      ...styles.toggleThumb,
+                      transform: allCaps ? "translateX(28px)" : "translateX(2px)",
+                    }}
+                  />
+                </button>
+              </div>
+            </div>
+          )}
 
           <div style={styles.sectionCard}>
             <h2 style={styles.sectionTitle}>{t("Mängurežiim")}</h2>
@@ -238,31 +273,6 @@ export default function App() {
                   <span style={{ fontWeight: 700 }}>{d.label}</span>
                 </button>
               ))}
-            </div>
-          </div>
-
-          <div style={styles.sectionCard}>
-            <h2 style={styles.sectionTitle}>{t("Seaded")}</h2>
-            <div style={styles.toggleRow}>
-              <span style={styles.toggleLabel}>
-                <span style={{ fontSize: "1.3rem" }}>🔠</span>
-                <span>{allCaps ? "SUURTÄHED" : "Tavalised tähed"}</span>
-              </span>
-              <button
-                style={{
-                  ...styles.toggleTrack,
-                  background: allCaps ? "#5c6bc0" : "#b0bec5",
-                }}
-                onClick={toggleCaps}
-                aria-label="Toggle caps"
-              >
-                <span
-                  style={{
-                    ...styles.toggleThumb,
-                    transform: allCaps ? "translateX(28px)" : "translateX(2px)",
-                  }}
-                />
-              </button>
             </div>
           </div>
 
@@ -427,6 +437,24 @@ const styles = {
   titleBlock: {
     textAlign: "center",
     marginBottom: "0.25rem",
+    position: "relative",
+  },
+  gearBtn: {
+    position: "absolute",
+    top: 0,
+    right: 0,
+    background: "rgba(255,255,255,0.7)",
+    border: "2px solid #b0bec5",
+    borderRadius: 12,
+    width: 44,
+    height: 44,
+    fontSize: "1.4rem",
+    cursor: "pointer",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    padding: 0,
+    transition: "all 0.15s",
   },
   titleEmoji: {
     fontSize: "3rem",
