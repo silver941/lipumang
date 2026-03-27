@@ -42,6 +42,15 @@ function randomFrom(arr) {
 }
 
 /* ───────── main app ───────── */
+function loadCaps() {
+  try {
+    const v = localStorage.getItem("lipumang_allcaps");
+    return v === null ? true : v === "true";
+  } catch {
+    return true;
+  }
+}
+
 export default function App() {
   const [screen, setScreen] = useState("menu");
   const [gameMode, setGameMode] = useState(null);
@@ -50,6 +59,18 @@ export default function App() {
   const [question, setQuestion] = useState(null);
   const [feedback, setFeedback] = useState(null);
   const [selected, setSelected] = useState(null);
+  const [allCaps, setAllCaps] = useState(loadCaps);
+
+  const toggleCaps = () => {
+    setAllCaps((prev) => {
+      const next = !prev;
+      try { localStorage.setItem("lipumang_allcaps", String(next)); } catch {}
+      return next;
+    });
+  };
+
+  /** Transform text based on caps setting */
+  const t = useCallback((text) => (allCaps ? text.toUpperCase() : text), [allCaps]);
 
   const countries = useMemo(() => {
     if (difficulty === "easy")
@@ -149,12 +170,12 @@ export default function App() {
         <div style={styles.menuContainer}>
           <div style={styles.titleBlock}>
             <span style={styles.titleEmoji}>🏳️</span>
-            <h1 style={styles.title}>Lipumäng</h1>
-            <p style={styles.subtitle}>Õpi riikide lippe eesti keeles!</p>
+            <h1 style={styles.title}>{t("Lipumäng")}</h1>
+            <p style={styles.subtitle}>{t("Õpi riikide lippe eesti keeles!")}</p>
           </div>
 
           <div style={styles.sectionCard}>
-            <h2 style={styles.sectionTitle}>Mängurežiim</h2>
+            <h2 style={styles.sectionTitle}>{t("Mängurežiim")}</h2>
             <button
               style={{
                 ...styles.menuBtn,
@@ -165,9 +186,9 @@ export default function App() {
             >
               <span style={styles.menuBtnEmoji}>🏴</span>
               <span style={styles.menuBtnText}>
-                <strong>Lipp → Nimi</strong>
+                <strong>{t("Lipp → Nimi")}</strong>
                 <br />
-                <span style={styles.menuBtnSub}>Näen lippu, valin nime</span>
+                <span style={styles.menuBtnSub}>{t("Näen lippu, valin nime")}</span>
               </span>
             </button>
             <button
@@ -180,25 +201,25 @@ export default function App() {
             >
               <span style={styles.menuBtnEmoji}>🔤</span>
               <span style={styles.menuBtnText}>
-                <strong>Nimi → Lipp</strong>
+                <strong>{t("Nimi → Lipp")}</strong>
                 <br />
-                <span style={styles.menuBtnSub}>Näen nime, valin lipu</span>
+                <span style={styles.menuBtnSub}>{t("Näen nime, valin lipu")}</span>
               </span>
             </button>
           </div>
 
           <div style={styles.sectionCard}>
-            <h2 style={styles.sectionTitle}>Raskusaste</h2>
+            <h2 style={styles.sectionTitle}>{t("Raskusaste")}</h2>
             <div style={styles.diffRow}>
               {[
-                { key: "easy", label: "Kerge", emoji: "🌱", color: "#43a047" },
+                { key: "easy", label: t("Kerge"), emoji: "🌱", color: "#43a047" },
                 {
                   key: "medium",
-                  label: "Keskmine",
+                  label: t("Keskmine"),
                   emoji: "🌿",
                   color: "#f9a825",
                 },
-                { key: "hard", label: "Raske", emoji: "🌶️", color: "#e53935" },
+                { key: "hard", label: t("Raske"), emoji: "🌶️", color: "#e53935" },
               ].map((d) => (
                 <button
                   key={d.key}
@@ -220,6 +241,31 @@ export default function App() {
             </div>
           </div>
 
+          <div style={styles.sectionCard}>
+            <h2 style={styles.sectionTitle}>{t("Seaded")}</h2>
+            <div style={styles.toggleRow}>
+              <span style={styles.toggleLabel}>
+                <span style={{ fontSize: "1.3rem" }}>🔠</span>
+                <span>{allCaps ? "SUURTÄHED" : "Tavalised tähed"}</span>
+              </span>
+              <button
+                style={{
+                  ...styles.toggleTrack,
+                  background: allCaps ? "#5c6bc0" : "#b0bec5",
+                }}
+                onClick={toggleCaps}
+                aria-label="Toggle caps"
+              >
+                <span
+                  style={{
+                    ...styles.toggleThumb,
+                    transform: allCaps ? "translateX(28px)" : "translateX(2px)",
+                  }}
+                />
+              </button>
+            </div>
+          </div>
+
           <button
             style={{
               ...styles.startBtn,
@@ -228,7 +274,7 @@ export default function App() {
             }}
             onClick={() => gameMode && startGame(gameMode, difficulty)}
           >
-            Alusta mängu! 🚀
+            {t("Alusta mängu!")} 🚀
           </button>
         </div>
       </div>
@@ -246,7 +292,7 @@ export default function App() {
         {/* Top bar */}
         <div style={styles.topBar}>
           <button style={styles.backBtn} onClick={goMenu}>
-            ← Menüü
+            ← {t("Menüü")}
           </button>
           <div style={styles.scoreBox}>
             <span style={styles.scoreNum}>{score.correct}</span>
@@ -264,12 +310,12 @@ export default function App() {
                 alt="flag"
                 style={styles.flagBig}
               />
-              <p style={styles.promptLabel}>Mis riigi lipp see on?</p>
+              <p style={styles.promptLabel}>{t("Mis riigi lipp see on?")}</p>
             </div>
           ) : (
             <div style={styles.nameShowcase}>
-              <p style={styles.namePrompt}>{question.correct.name_et}</p>
-              <p style={styles.promptLabel}>Vali õige lipp!</p>
+              <p style={styles.namePrompt}>{t(question.correct.name_et)}</p>
+              <p style={styles.promptLabel}>{t("Vali õige lipp!")}</p>
             </div>
           )}
         </div>
@@ -305,7 +351,7 @@ export default function App() {
                   }}
                   onClick={() => handleAnswer(opt)}
                 >
-                  {opt.name_et}
+                  {t(opt.name_et)}
                 </button>
               );
             } else {
@@ -340,14 +386,14 @@ export default function App() {
             }}
           >
             <span style={styles.feedbackEmoji}>{feedback.emoji}</span>
-            <p style={styles.feedbackMsg}>{feedback.message}</p>
+            <p style={styles.feedbackMsg}>{t(feedback.message)}</p>
             {!feedback.isCorrect && (
               <p style={styles.feedbackCorrect}>
-                Õige vastus: {feedback.correctAnswer.name_et}
+                {t("Õige vastus")}: {t(feedback.correctAnswer.name_et)}
               </p>
             )}
             <button style={styles.nextBtn} onClick={nextQuestion}>
-              Järgmine →
+              {t("Järgmine")} →
             </button>
           </div>
         )}
@@ -620,6 +666,44 @@ const styles = {
     borderColor: "#43a047",
     background: "rgba(67,160,71,0.15)",
     boxShadow: "0 0 0 3px rgba(67,160,71,0.3)",
+  },
+
+  /* Toggle */
+  toggleRow: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    padding: "0.5rem 0.25rem",
+  },
+  toggleLabel: {
+    display: "flex",
+    alignItems: "center",
+    gap: "0.5rem",
+    fontSize: "1.05rem",
+    fontWeight: 700,
+    color: "#37474f",
+  },
+  toggleTrack: {
+    position: "relative",
+    width: 56,
+    height: 30,
+    borderRadius: 15,
+    border: "none",
+    cursor: "pointer",
+    padding: 0,
+    transition: "background 0.2s",
+    flexShrink: 0,
+  },
+  toggleThumb: {
+    display: "block",
+    width: 26,
+    height: 26,
+    borderRadius: 13,
+    background: "#fff",
+    boxShadow: "0 1px 4px rgba(0,0,0,0.2)",
+    transition: "transform 0.2s",
+    position: "absolute",
+    top: 2,
   },
   optWrong: {
     borderColor: "#e53935",
