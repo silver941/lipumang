@@ -19,6 +19,17 @@
       button { font-family: inherit; -webkit-tap-highlight-color: transparent; }
       button:active { transform: scale(0.96); }
       img { user-select: none; -webkit-user-drag: none; }
+      @keyframes popIn {
+        0% { transform: scale(0.3); opacity: 0; }
+        70% { transform: scale(1.08); }
+        100% { transform: scale(1); opacity: 1; }
+      }
+      @keyframes fadeInOut {
+        0% { opacity: 0; }
+        15% { opacity: 1; }
+        75% { opacity: 1; }
+        100% { opacity: 0; }
+      }
     </style>
   </head>
   <body>

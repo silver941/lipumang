@@ -1,52 +1,1646 @@
 [
-  { "iso2": "ee", "name_et": "Eesti", "difficulty": "easy", "similarTo": [] },
-  { "iso2": "fi", "name_et": "Soome", "difficulty": "easy", "similarTo": [] },
-  { "iso2": "se", "name_et": "Rootsi", "difficulty": "easy", "similarTo": ["no", "dk", "is"] },
-  { "iso2": "no", "name_et": "Norra", "difficulty": "easy", "similarTo": ["se", "dk", "is"] },
-  { "iso2": "dk", "name_et": "Taani", "difficulty": "easy", "similarTo": ["se", "no", "is"] },
-  { "iso2": "is", "name_et": "Island", "difficulty": "easy", "similarTo": ["no", "se", "dk"] },
-  { "iso2": "lv", "name_et": "Läti", "difficulty": "easy", "similarTo": ["at"] },
-  { "iso2": "lt", "name_et": "Leedu", "difficulty": "easy", "similarTo": [] },
-  { "iso2": "de", "name_et": "Saksamaa", "difficulty": "easy", "similarTo": ["be"] },
-  { "iso2": "fr", "name_et": "Prantsusmaa", "difficulty": "easy", "similarTo": ["it", "ie"] },
-  { "iso2": "gb", "name_et": "Suurbritannia", "difficulty": "easy", "similarTo": [] },
-  { "iso2": "es", "name_et": "Hispaania", "difficulty": "easy", "similarTo": [] },
-  { "iso2": "it", "name_et": "Itaalia", "difficulty": "easy", "similarTo": ["fr", "ie"] },
-  { "iso2": "pt", "name_et": "Portugal", "difficulty": "easy", "similarTo": [] },
-  { "iso2": "nl", "name_et": "Holland", "difficulty": "easy", "similarTo": ["lu", "ru"] },
-  { "iso2": "be", "name_et": "Belgia", "difficulty": "easy", "similarTo": ["de"] },
-  { "iso2": "at", "name_et": "Austria", "difficulty": "easy", "similarTo": ["lv"] },
-  { "iso2": "ch", "name_et": "Šveits", "difficulty": "easy", "similarTo": [] },
-  { "iso2": "pl", "name_et": "Poola", "difficulty": "easy", "similarTo": ["id", "mc"] },
-  { "iso2": "cz", "name_et": "Tšehhi", "difficulty": "easy", "similarTo": [] },
-  { "iso2": "gr", "name_et": "Kreeka", "difficulty": "easy", "similarTo": [] },
-  { "iso2": "ie", "name_et": "Iirimaa", "difficulty": "easy", "similarTo": ["it", "fr"] },
-  { "iso2": "us", "name_et": "Ameerika Ühendriigid", "difficulty": "easy", "similarTo": [] },
-  { "iso2": "ca", "name_et": "Kanada", "difficulty": "easy", "similarTo": [] },
-  { "iso2": "au", "name_et": "Austraalia", "difficulty": "easy", "similarTo": ["nz"] },
-  { "iso2": "jp", "name_et": "Jaapan", "difficulty": "easy", "similarTo": [] },
-  { "iso2": "cn", "name_et": "Hiina", "difficulty": "easy", "similarTo": [] },
-  { "iso2": "br", "name_et": "Brasiilia", "difficulty": "easy", "similarTo": [] },
-  { "iso2": "ru", "name_et": "Venemaa", "difficulty": "medium", "similarTo": ["nl", "lu"] },
-  { "iso2": "ua", "name_et": "Ukraina", "difficulty": "medium", "similarTo": [] },
-  { "iso2": "tr", "name_et": "Türgi", "difficulty": "medium", "similarTo": ["tn"] },
-  { "iso2": "in", "name_et": "India", "difficulty": "medium", "similarTo": [] },
-  { "iso2": "kr", "name_et": "Lõuna-Korea", "difficulty": "medium", "similarTo": [] },
-  { "iso2": "mx", "name_et": "Mehhiko", "difficulty": "medium", "similarTo": [] },
-  { "iso2": "ar", "name_et": "Argentina", "difficulty": "medium", "similarTo": [] },
-  { "iso2": "eg", "name_et": "Egiptus", "difficulty": "medium", "similarTo": [] },
-  { "iso2": "za", "name_et": "Lõuna-Aafrika Vabariik", "difficulty": "medium", "similarTo": [] },
-  { "iso2": "hu", "name_et": "Ungari", "difficulty": "medium", "similarTo": [] },
-  { "iso2": "sk", "name_et": "Slovakkia", "difficulty": "medium", "similarTo": ["si"] },
-  { "iso2": "si", "name_et": "Sloveenia", "difficulty": "medium", "similarTo": ["sk", "ru"] },
-  { "iso2": "hr", "name_et": "Horvaatia", "difficulty": "medium", "similarTo": [] },
-  { "iso2": "ro", "name_et": "Rumeenia", "difficulty": "hard", "similarTo": ["td"] },
-  { "iso2": "td", "name_et": "Tšaad", "difficulty": "hard", "similarTo": ["ro"] },
-  { "iso2": "id", "name_et": "Indoneesia", "difficulty": "hard", "similarTo": ["mc", "pl"] },
-  { "iso2": "mc", "name_et": "Monaco", "difficulty": "hard", "similarTo": ["id", "pl"] },
-  { "iso2": "lu", "name_et": "Luksemburg", "difficulty": "hard", "similarTo": ["nl", "ru"] },
-  { "iso2": "nz", "name_et": "Uus-Meremaa", "difficulty": "hard", "similarTo": ["au"] },
-  { "iso2": "bg", "name_et": "Bulgaaria", "difficulty": "hard", "similarTo": ["hu"] },
-  { "iso2": "tn", "name_et": "Tuneesia", "difficulty": "hard", "similarTo": ["tr"] },
-  { "iso2": "ng", "name_et": "Nigeeria", "difficulty": "hard", "similarTo": ["ie"] }
+  {
+    "iso2": "af",
+    "name_et": "Afganistan",
+    "difficulty": "expert",
+    "region": "Asia",
+    "similarTo": []
+  },
+  {
+    "iso2": "al",
+    "name_et": "Albaania",
+    "difficulty": "medium",
+    "region": "Europe",
+    "similarTo": []
+  },
+  {
+    "iso2": "dz",
+    "name_et": "Alžeeria",
+    "difficulty": "medium",
+    "region": "Africa",
+    "similarTo": [
+      "pk"
+    ]
+  },
+  {
+    "iso2": "ad",
+    "name_et": "Andorra",
+    "difficulty": "expert",
+    "region": "Europe",
+    "similarTo": [
+      "md",
+      "ro",
+      "td"
+    ]
+  },
+  {
+    "iso2": "ao",
+    "name_et": "Angola",
+    "difficulty": "expert",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "ag",
+    "name_et": "Antigua ja Barbuda",
+    "difficulty": "expert",
+    "region": "Americas",
+    "similarTo": []
+  },
+  {
+    "iso2": "ar",
+    "name_et": "Argentina",
+    "difficulty": "easy",
+    "region": "Americas",
+    "similarTo": [
+      "sv",
+      "hn",
+      "ni"
+    ]
+  },
+  {
+    "iso2": "am",
+    "name_et": "Armeenia",
+    "difficulty": "medium",
+    "region": "Asia",
+    "similarTo": []
+  },
+  {
+    "iso2": "au",
+    "name_et": "Austraalia",
+    "difficulty": "easy",
+    "region": "Oceania",
+    "similarTo": [
+      "nz"
+    ]
+  },
+  {
+    "iso2": "at",
+    "name_et": "Austria",
+    "difficulty": "easy",
+    "region": "Europe",
+    "similarTo": [
+      "lv",
+      "lb"
+    ]
+  },
+  {
+    "iso2": "az",
+    "name_et": "Aserbaidžaan",
+    "difficulty": "hard",
+    "region": "Asia",
+    "similarTo": []
+  },
+  {
+    "iso2": "bs",
+    "name_et": "Bahama",
+    "difficulty": "expert",
+    "region": "Americas",
+    "similarTo": []
+  },
+  {
+    "iso2": "bh",
+    "name_et": "Bahrein",
+    "difficulty": "expert",
+    "region": "Asia",
+    "similarTo": [
+      "qa"
+    ]
+  },
+  {
+    "iso2": "bd",
+    "name_et": "Bangladesh",
+    "difficulty": "medium",
+    "region": "Asia",
+    "similarTo": [
+      "jp"
+    ]
+  },
+  {
+    "iso2": "bb",
+    "name_et": "Barbados",
+    "difficulty": "expert",
+    "region": "Americas",
+    "similarTo": []
+  },
+  {
+    "iso2": "by",
+    "name_et": "Valgevene",
+    "difficulty": "medium",
+    "region": "Europe",
+    "similarTo": []
+  },
+  {
+    "iso2": "be",
+    "name_et": "Belgia",
+    "difficulty": "easy",
+    "region": "Europe",
+    "similarTo": [
+      "de"
+    ]
+  },
+  {
+    "iso2": "bz",
+    "name_et": "Belize",
+    "difficulty": "expert",
+    "region": "Americas",
+    "similarTo": []
+  },
+  {
+    "iso2": "bj",
+    "name_et": "Benin",
+    "difficulty": "hard",
+    "region": "Africa",
+    "similarTo": [
+      "gn",
+      "ml",
+      "sn"
+    ]
+  },
+  {
+    "iso2": "bt",
+    "name_et": "Bhutan",
+    "difficulty": "expert",
+    "region": "Asia",
+    "similarTo": []
+  },
+  {
+    "iso2": "bo",
+    "name_et": "Boliivia",
+    "difficulty": "hard",
+    "region": "Americas",
+    "similarTo": [
+      "gh",
+      "lt",
+      "et"
+    ]
+  },
+  {
+    "iso2": "ba",
+    "name_et": "Bosnia ja Hertsegoviina",
+    "difficulty": "medium",
+    "region": "Europe",
+    "similarTo": []
+  },
+  {
+    "iso2": "bw",
+    "name_et": "Botswana",
+    "difficulty": "hard",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "br",
+    "name_et": "Brasiilia",
+    "difficulty": "easy",
+    "region": "Americas",
+    "similarTo": []
+  },
+  {
+    "iso2": "bn",
+    "name_et": "Brunei",
+    "difficulty": "expert",
+    "region": "Asia",
+    "similarTo": []
+  },
+  {
+    "iso2": "bg",
+    "name_et": "Bulgaaria",
+    "difficulty": "easy",
+    "region": "Europe",
+    "similarTo": [
+      "hu"
+    ]
+  },
+  {
+    "iso2": "bf",
+    "name_et": "Burkina Faso",
+    "difficulty": "hard",
+    "region": "Africa",
+    "similarTo": [
+      "gn",
+      "ml"
+    ]
+  },
+  {
+    "iso2": "bi",
+    "name_et": "Burundi",
+    "difficulty": "hard",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "cv",
+    "name_et": "Cabo Verde",
+    "difficulty": "expert",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "kh",
+    "name_et": "Kambodža",
+    "difficulty": "medium",
+    "region": "Asia",
+    "similarTo": []
+  },
+  {
+    "iso2": "cm",
+    "name_et": "Kamerun",
+    "difficulty": "hard",
+    "region": "Africa",
+    "similarTo": [
+      "sn",
+      "gn",
+      "ml"
+    ]
+  },
+  {
+    "iso2": "ca",
+    "name_et": "Kanada",
+    "difficulty": "easy",
+    "region": "Americas",
+    "similarTo": []
+  },
+  {
+    "iso2": "cf",
+    "name_et": "Kesk-Aafrika Vabariik",
+    "difficulty": "expert",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "td",
+    "name_et": "Tšaad",
+    "difficulty": "hard",
+    "region": "Africa",
+    "similarTo": [
+      "ro",
+      "ad",
+      "md"
+    ]
+  },
+  {
+    "iso2": "cl",
+    "name_et": "Tšiili",
+    "difficulty": "medium",
+    "region": "Americas",
+    "similarTo": [
+      "us",
+      "lr",
+      "my"
+    ]
+  },
+  {
+    "iso2": "cn",
+    "name_et": "Hiina",
+    "difficulty": "easy",
+    "region": "Asia",
+    "similarTo": [
+      "vn"
+    ]
+  },
+  {
+    "iso2": "co",
+    "name_et": "Colombia",
+    "difficulty": "easy",
+    "region": "Americas",
+    "similarTo": [
+      "ec",
+      "ve"
+    ]
+  },
+  {
+    "iso2": "km",
+    "name_et": "Komoorid",
+    "difficulty": "expert",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "cg",
+    "name_et": "Kongo Vabariik",
+    "difficulty": "expert",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "cd",
+    "name_et": "Kongo DV",
+    "difficulty": "expert",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "cr",
+    "name_et": "Costa Rica",
+    "difficulty": "hard",
+    "region": "Americas",
+    "similarTo": [
+      "th"
+    ]
+  },
+  {
+    "iso2": "ci",
+    "name_et": "Elevandiluurannik",
+    "difficulty": "hard",
+    "region": "Africa",
+    "similarTo": [
+      "ie"
+    ]
+  },
+  {
+    "iso2": "hr",
+    "name_et": "Horvaatia",
+    "difficulty": "easy",
+    "region": "Europe",
+    "similarTo": []
+  },
+  {
+    "iso2": "cu",
+    "name_et": "Kuuba",
+    "difficulty": "easy",
+    "region": "Americas",
+    "similarTo": []
+  },
+  {
+    "iso2": "cy",
+    "name_et": "Küpros",
+    "difficulty": "hard",
+    "region": "Europe",
+    "similarTo": []
+  },
+  {
+    "iso2": "cz",
+    "name_et": "Tšehhi",
+    "difficulty": "easy",
+    "region": "Europe",
+    "similarTo": [
+      "ph"
+    ]
+  },
+  {
+    "iso2": "dk",
+    "name_et": "Taani",
+    "difficulty": "easy",
+    "region": "Europe",
+    "similarTo": [
+      "se",
+      "no",
+      "is",
+      "fi"
+    ]
+  },
+  {
+    "iso2": "dj",
+    "name_et": "Djibouti",
+    "difficulty": "expert",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "dm",
+    "name_et": "Dominica",
+    "difficulty": "expert",
+    "region": "Americas",
+    "similarTo": []
+  },
+  {
+    "iso2": "do",
+    "name_et": "Dominikaani Vabariik",
+    "difficulty": "hard",
+    "region": "Americas",
+    "similarTo": []
+  },
+  {
+    "iso2": "ec",
+    "name_et": "Ecuador",
+    "difficulty": "medium",
+    "region": "Americas",
+    "similarTo": [
+      "co",
+      "ve"
+    ]
+  },
+  {
+    "iso2": "eg",
+    "name_et": "Egiptus",
+    "difficulty": "easy",
+    "region": "Africa",
+    "similarTo": [
+      "iq",
+      "sy",
+      "ye"
+    ]
+  },
+  {
+    "iso2": "sv",
+    "name_et": "El Salvador",
+    "difficulty": "hard",
+    "region": "Americas",
+    "similarTo": [
+      "ar",
+      "hn",
+      "ni"
+    ]
+  },
+  {
+    "iso2": "gq",
+    "name_et": "Ekvatoriaal-Guinea",
+    "difficulty": "expert",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "er",
+    "name_et": "Eritrea",
+    "difficulty": "expert",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "ee",
+    "name_et": "Eesti",
+    "difficulty": "easy",
+    "region": "Europe",
+    "similarTo": []
+  },
+  {
+    "iso2": "sz",
+    "name_et": "Eswatini",
+    "difficulty": "expert",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "et",
+    "name_et": "Etioopia",
+    "difficulty": "hard",
+    "region": "Africa",
+    "similarTo": [
+      "bo",
+      "gh",
+      "lt"
+    ]
+  },
+  {
+    "iso2": "fj",
+    "name_et": "Fidži",
+    "difficulty": "expert",
+    "region": "Oceania",
+    "similarTo": [
+      "au",
+      "nz"
+    ]
+  },
+  {
+    "iso2": "fi",
+    "name_et": "Soome",
+    "difficulty": "easy",
+    "region": "Europe",
+    "similarTo": [
+      "dk",
+      "se",
+      "no",
+      "is"
+    ]
+  },
+  {
+    "iso2": "fr",
+    "name_et": "Prantsusmaa",
+    "difficulty": "easy",
+    "region": "Europe",
+    "similarTo": [
+      "it",
+      "ie"
+    ]
+  },
+  {
+    "iso2": "ga",
+    "name_et": "Gabon",
+    "difficulty": "hard",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "gm",
+    "name_et": "Gambia",
+    "difficulty": "expert",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "ge",
+    "name_et": "Gruusia",
+    "difficulty": "medium",
+    "region": "Asia",
+    "similarTo": []
+  },
+  {
+    "iso2": "de",
+    "name_et": "Saksamaa",
+    "difficulty": "easy",
+    "region": "Europe",
+    "similarTo": [
+      "be"
+    ]
+  },
+  {
+    "iso2": "gh",
+    "name_et": "Ghana",
+    "difficulty": "medium",
+    "region": "Africa",
+    "similarTo": [
+      "bo",
+      "et",
+      "lt"
+    ]
+  },
+  {
+    "iso2": "gr",
+    "name_et": "Kreeka",
+    "difficulty": "easy",
+    "region": "Europe",
+    "similarTo": [
+      "uy"
+    ]
+  },
+  {
+    "iso2": "gd",
+    "name_et": "Grenada",
+    "difficulty": "expert",
+    "region": "Americas",
+    "similarTo": []
+  },
+  {
+    "iso2": "gt",
+    "name_et": "Guatemala",
+    "difficulty": "hard",
+    "region": "Americas",
+    "similarTo": [
+      "ar",
+      "sv",
+      "hn",
+      "ni"
+    ]
+  },
+  {
+    "iso2": "gn",
+    "name_et": "Guinea",
+    "difficulty": "expert",
+    "region": "Africa",
+    "similarTo": [
+      "ml",
+      "sn",
+      "cm"
+    ]
+  },
+  {
+    "iso2": "gw",
+    "name_et": "Guinea-Bissau",
+    "difficulty": "expert",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "gy",
+    "name_et": "Guyana",
+    "difficulty": "expert",
+    "region": "Americas",
+    "similarTo": []
+  },
+  {
+    "iso2": "ht",
+    "name_et": "Haiti",
+    "difficulty": "expert",
+    "region": "Americas",
+    "similarTo": [
+      "li"
+    ]
+  },
+  {
+    "iso2": "hn",
+    "name_et": "Honduras",
+    "difficulty": "hard",
+    "region": "Americas",
+    "similarTo": [
+      "ar",
+      "sv",
+      "ni"
+    ]
+  },
+  {
+    "iso2": "hu",
+    "name_et": "Ungari",
+    "difficulty": "easy",
+    "region": "Europe",
+    "similarTo": [
+      "bg"
+    ]
+  },
+  {
+    "iso2": "is",
+    "name_et": "Island",
+    "difficulty": "easy",
+    "region": "Europe",
+    "similarTo": [
+      "no",
+      "se",
+      "dk",
+      "fi"
+    ]
+  },
+  {
+    "iso2": "in",
+    "name_et": "India",
+    "difficulty": "easy",
+    "region": "Asia",
+    "similarTo": [
+      "ne"
+    ]
+  },
+  {
+    "iso2": "id",
+    "name_et": "Indoneesia",
+    "difficulty": "medium",
+    "region": "Asia",
+    "similarTo": [
+      "mc",
+      "pl"
+    ]
+  },
+  {
+    "iso2": "ir",
+    "name_et": "Iraan",
+    "difficulty": "medium",
+    "region": "Asia",
+    "similarTo": []
+  },
+  {
+    "iso2": "iq",
+    "name_et": "Iraak",
+    "difficulty": "hard",
+    "region": "Asia",
+    "similarTo": [
+      "eg",
+      "sy",
+      "ye"
+    ]
+  },
+  {
+    "iso2": "ie",
+    "name_et": "Iirimaa",
+    "difficulty": "easy",
+    "region": "Europe",
+    "similarTo": [
+      "it",
+      "ci"
+    ]
+  },
+  {
+    "iso2": "il",
+    "name_et": "Iisrael",
+    "difficulty": "easy",
+    "region": "Asia",
+    "similarTo": []
+  },
+  {
+    "iso2": "it",
+    "name_et": "Itaalia",
+    "difficulty": "easy",
+    "region": "Europe",
+    "similarTo": [
+      "fr",
+      "ie"
+    ]
+  },
+  {
+    "iso2": "jm",
+    "name_et": "Jamaica",
+    "difficulty": "medium",
+    "region": "Americas",
+    "similarTo": []
+  },
+  {
+    "iso2": "jp",
+    "name_et": "Jaapan",
+    "difficulty": "easy",
+    "region": "Asia",
+    "similarTo": [
+      "bd"
+    ]
+  },
+  {
+    "iso2": "jo",
+    "name_et": "Jordaania",
+    "difficulty": "hard",
+    "region": "Asia",
+    "similarTo": [
+      "ps",
+      "sd",
+      "kw"
+    ]
+  },
+  {
+    "iso2": "kz",
+    "name_et": "Kasahstan",
+    "difficulty": "hard",
+    "region": "Asia",
+    "similarTo": []
+  },
+  {
+    "iso2": "ke",
+    "name_et": "Keenia",
+    "difficulty": "medium",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "ki",
+    "name_et": "Kiribati",
+    "difficulty": "expert",
+    "region": "Oceania",
+    "similarTo": []
+  },
+  {
+    "iso2": "kp",
+    "name_et": "Põhja-Korea",
+    "difficulty": "hard",
+    "region": "Asia",
+    "similarTo": []
+  },
+  {
+    "iso2": "kr",
+    "name_et": "Lõuna-Korea",
+    "difficulty": "easy",
+    "region": "Asia",
+    "similarTo": []
+  },
+  {
+    "iso2": "kw",
+    "name_et": "Kuveit",
+    "difficulty": "hard",
+    "region": "Asia",
+    "similarTo": [
+      "jo",
+      "ps",
+      "sd"
+    ]
+  },
+  {
+    "iso2": "kg",
+    "name_et": "Kõrgõzstan",
+    "difficulty": "expert",
+    "region": "Asia",
+    "similarTo": []
+  },
+  {
+    "iso2": "la",
+    "name_et": "Laos",
+    "difficulty": "hard",
+    "region": "Asia",
+    "similarTo": [
+      "th",
+      "cr"
+    ]
+  },
+  {
+    "iso2": "lv",
+    "name_et": "Läti",
+    "difficulty": "easy",
+    "region": "Europe",
+    "similarTo": [
+      "at",
+      "lb"
+    ]
+  },
+  {
+    "iso2": "lb",
+    "name_et": "Liibanon",
+    "difficulty": "hard",
+    "region": "Asia",
+    "similarTo": [
+      "at",
+      "lv"
+    ]
+  },
+  {
+    "iso2": "ls",
+    "name_et": "Lesotho",
+    "difficulty": "expert",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "lr",
+    "name_et": "Libeeria",
+    "difficulty": "hard",
+    "region": "Africa",
+    "similarTo": [
+      "us",
+      "my",
+      "cl"
+    ]
+  },
+  {
+    "iso2": "ly",
+    "name_et": "Liibüa",
+    "difficulty": "hard",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "li",
+    "name_et": "Liechtenstein",
+    "difficulty": "expert",
+    "region": "Europe",
+    "similarTo": [
+      "ht"
+    ]
+  },
+  {
+    "iso2": "lt",
+    "name_et": "Leedu",
+    "difficulty": "easy",
+    "region": "Europe",
+    "similarTo": [
+      "bo",
+      "et",
+      "gh"
+    ]
+  },
+  {
+    "iso2": "lu",
+    "name_et": "Luksemburg",
+    "difficulty": "hard",
+    "region": "Europe",
+    "similarTo": [
+      "nl",
+      "ru"
+    ]
+  },
+  {
+    "iso2": "mg",
+    "name_et": "Madagaskar",
+    "difficulty": "hard",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "mw",
+    "name_et": "Malawi",
+    "difficulty": "expert",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "my",
+    "name_et": "Malaisia",
+    "difficulty": "medium",
+    "region": "Asia",
+    "similarTo": [
+      "us",
+      "lr"
+    ]
+  },
+  {
+    "iso2": "mv",
+    "name_et": "Maldiivid",
+    "difficulty": "hard",
+    "region": "Asia",
+    "similarTo": []
+  },
+  {
+    "iso2": "ml",
+    "name_et": "Mali",
+    "difficulty": "expert",
+    "region": "Africa",
+    "similarTo": [
+      "gn",
+      "sn",
+      "cm"
+    ]
+  },
+  {
+    "iso2": "mt",
+    "name_et": "Malta",
+    "difficulty": "hard",
+    "region": "Europe",
+    "similarTo": []
+  },
+  {
+    "iso2": "mh",
+    "name_et": "Marshalli Saared",
+    "difficulty": "expert",
+    "region": "Oceania",
+    "similarTo": []
+  },
+  {
+    "iso2": "mr",
+    "name_et": "Mauritaania",
+    "difficulty": "expert",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "mu",
+    "name_et": "Mauritius",
+    "difficulty": "expert",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "mx",
+    "name_et": "Mehhiko",
+    "difficulty": "easy",
+    "region": "Americas",
+    "similarTo": [
+      "it"
+    ]
+  },
+  {
+    "iso2": "fm",
+    "name_et": "Mikroneesia",
+    "difficulty": "expert",
+    "region": "Oceania",
+    "similarTo": []
+  },
+  {
+    "iso2": "md",
+    "name_et": "Moldova",
+    "difficulty": "hard",
+    "region": "Europe",
+    "similarTo": [
+      "ro",
+      "td",
+      "ad"
+    ]
+  },
+  {
+    "iso2": "mc",
+    "name_et": "Monaco",
+    "difficulty": "hard",
+    "region": "Europe",
+    "similarTo": [
+      "id",
+      "pl"
+    ]
+  },
+  {
+    "iso2": "mn",
+    "name_et": "Mongoolia",
+    "difficulty": "hard",
+    "region": "Asia",
+    "similarTo": []
+  },
+  {
+    "iso2": "me",
+    "name_et": "Montenegro",
+    "difficulty": "medium",
+    "region": "Europe",
+    "similarTo": []
+  },
+  {
+    "iso2": "ma",
+    "name_et": "Maroko",
+    "difficulty": "medium",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "mz",
+    "name_et": "Mosambiik",
+    "difficulty": "hard",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "mm",
+    "name_et": "Myanmar",
+    "difficulty": "hard",
+    "region": "Asia",
+    "similarTo": []
+  },
+  {
+    "iso2": "na",
+    "name_et": "Namiibia",
+    "difficulty": "expert",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "nr",
+    "name_et": "Nauru",
+    "difficulty": "expert",
+    "region": "Oceania",
+    "similarTo": []
+  },
+  {
+    "iso2": "np",
+    "name_et": "Nepal",
+    "difficulty": "medium",
+    "region": "Asia",
+    "similarTo": []
+  },
+  {
+    "iso2": "nl",
+    "name_et": "Holland",
+    "difficulty": "easy",
+    "region": "Europe",
+    "similarTo": [
+      "lu",
+      "ru"
+    ]
+  },
+  {
+    "iso2": "nz",
+    "name_et": "Uus-Meremaa",
+    "difficulty": "easy",
+    "region": "Oceania",
+    "similarTo": [
+      "au"
+    ]
+  },
+  {
+    "iso2": "ni",
+    "name_et": "Nicaragua",
+    "difficulty": "hard",
+    "region": "Americas",
+    "similarTo": [
+      "ar",
+      "sv",
+      "hn"
+    ]
+  },
+  {
+    "iso2": "ne",
+    "name_et": "Niger",
+    "difficulty": "expert",
+    "region": "Africa",
+    "similarTo": [
+      "in"
+    ]
+  },
+  {
+    "iso2": "ng",
+    "name_et": "Nigeeria",
+    "difficulty": "medium",
+    "region": "Africa",
+    "similarTo": [
+      "ie"
+    ]
+  },
+  {
+    "iso2": "mk",
+    "name_et": "Põhja-Makedoonia",
+    "difficulty": "medium",
+    "region": "Europe",
+    "similarTo": []
+  },
+  {
+    "iso2": "no",
+    "name_et": "Norra",
+    "difficulty": "easy",
+    "region": "Europe",
+    "similarTo": [
+      "se",
+      "dk",
+      "is",
+      "fi"
+    ]
+  },
+  {
+    "iso2": "om",
+    "name_et": "Omaan",
+    "difficulty": "expert",
+    "region": "Asia",
+    "similarTo": []
+  },
+  {
+    "iso2": "pk",
+    "name_et": "Pakistan",
+    "difficulty": "medium",
+    "region": "Asia",
+    "similarTo": [
+      "dz"
+    ]
+  },
+  {
+    "iso2": "pw",
+    "name_et": "Palau",
+    "difficulty": "expert",
+    "region": "Oceania",
+    "similarTo": [
+      "bd",
+      "jp"
+    ]
+  },
+  {
+    "iso2": "ps",
+    "name_et": "Palestiina",
+    "difficulty": "hard",
+    "region": "Asia",
+    "similarTo": [
+      "jo",
+      "sd",
+      "kw"
+    ]
+  },
+  {
+    "iso2": "pa",
+    "name_et": "Panama",
+    "difficulty": "hard",
+    "region": "Americas",
+    "similarTo": []
+  },
+  {
+    "iso2": "pg",
+    "name_et": "Paapua Uus-Guinea",
+    "difficulty": "expert",
+    "region": "Oceania",
+    "similarTo": []
+  },
+  {
+    "iso2": "py",
+    "name_et": "Paraguay",
+    "difficulty": "hard",
+    "region": "Americas",
+    "similarTo": [
+      "nl",
+      "lu"
+    ]
+  },
+  {
+    "iso2": "pe",
+    "name_et": "Peruu",
+    "difficulty": "easy",
+    "region": "Americas",
+    "similarTo": [
+      "ca"
+    ]
+  },
+  {
+    "iso2": "ph",
+    "name_et": "Filipiinid",
+    "difficulty": "medium",
+    "region": "Asia",
+    "similarTo": [
+      "cz"
+    ]
+  },
+  {
+    "iso2": "pl",
+    "name_et": "Poola",
+    "difficulty": "easy",
+    "region": "Europe",
+    "similarTo": [
+      "id",
+      "mc"
+    ]
+  },
+  {
+    "iso2": "pt",
+    "name_et": "Portugal",
+    "difficulty": "easy",
+    "region": "Europe",
+    "similarTo": []
+  },
+  {
+    "iso2": "qa",
+    "name_et": "Katar",
+    "difficulty": "expert",
+    "region": "Asia",
+    "similarTo": [
+      "bh"
+    ]
+  },
+  {
+    "iso2": "ro",
+    "name_et": "Rumeenia",
+    "difficulty": "easy",
+    "region": "Europe",
+    "similarTo": [
+      "td",
+      "ad",
+      "md"
+    ]
+  },
+  {
+    "iso2": "ru",
+    "name_et": "Venemaa",
+    "difficulty": "easy",
+    "region": "Europe",
+    "similarTo": [
+      "nl",
+      "lu"
+    ]
+  },
+  {
+    "iso2": "rw",
+    "name_et": "Rwanda",
+    "difficulty": "expert",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "kn",
+    "name_et": "Saint Kitts ja Nevis",
+    "difficulty": "expert",
+    "region": "Americas",
+    "similarTo": []
+  },
+  {
+    "iso2": "lc",
+    "name_et": "Saint Lucia",
+    "difficulty": "expert",
+    "region": "Americas",
+    "similarTo": []
+  },
+  {
+    "iso2": "vc",
+    "name_et": "Saint Vincent ja Grenadiinid",
+    "difficulty": "expert",
+    "region": "Americas",
+    "similarTo": []
+  },
+  {
+    "iso2": "ws",
+    "name_et": "Samoa",
+    "difficulty": "expert",
+    "region": "Oceania",
+    "similarTo": []
+  },
+  {
+    "iso2": "sm",
+    "name_et": "San Marino",
+    "difficulty": "expert",
+    "region": "Europe",
+    "similarTo": []
+  },
+  {
+    "iso2": "st",
+    "name_et": "São Tomé ja Príncipe",
+    "difficulty": "expert",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "sa",
+    "name_et": "Saudi Araabia",
+    "difficulty": "easy",
+    "region": "Asia",
+    "similarTo": []
+  },
+  {
+    "iso2": "sn",
+    "name_et": "Senegal",
+    "difficulty": "hard",
+    "region": "Africa",
+    "similarTo": [
+      "gn",
+      "ml",
+      "cm"
+    ]
+  },
+  {
+    "iso2": "rs",
+    "name_et": "Serbia",
+    "difficulty": "medium",
+    "region": "Europe",
+    "similarTo": []
+  },
+  {
+    "iso2": "sc",
+    "name_et": "Seišellid",
+    "difficulty": "expert",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "sl",
+    "name_et": "Sierra Leone",
+    "difficulty": "expert",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "sg",
+    "name_et": "Singapur",
+    "difficulty": "medium",
+    "region": "Asia",
+    "similarTo": [
+      "id",
+      "mc",
+      "pl"
+    ]
+  },
+  {
+    "iso2": "sk",
+    "name_et": "Slovakkia",
+    "difficulty": "easy",
+    "region": "Europe",
+    "similarTo": [
+      "si",
+      "ru"
+    ]
+  },
+  {
+    "iso2": "si",
+    "name_et": "Sloveenia",
+    "difficulty": "medium",
+    "region": "Europe",
+    "similarTo": [
+      "sk",
+      "ru"
+    ]
+  },
+  {
+    "iso2": "sb",
+    "name_et": "Saalomoni Saared",
+    "difficulty": "expert",
+    "region": "Oceania",
+    "similarTo": []
+  },
+  {
+    "iso2": "so",
+    "name_et": "Somaalia",
+    "difficulty": "hard",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "za",
+    "name_et": "Lõuna-Aafrika Vabariik",
+    "difficulty": "easy",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "ss",
+    "name_et": "Lõuna-Sudaan",
+    "difficulty": "expert",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "es",
+    "name_et": "Hispaania",
+    "difficulty": "easy",
+    "region": "Europe",
+    "similarTo": []
+  },
+  {
+    "iso2": "lk",
+    "name_et": "Sri Lanka",
+    "difficulty": "medium",
+    "region": "Asia",
+    "similarTo": []
+  },
+  {
+    "iso2": "sd",
+    "name_et": "Sudaan",
+    "difficulty": "hard",
+    "region": "Africa",
+    "similarTo": [
+      "jo",
+      "ps",
+      "kw"
+    ]
+  },
+  {
+    "iso2": "sr",
+    "name_et": "Suriname",
+    "difficulty": "expert",
+    "region": "Americas",
+    "similarTo": []
+  },
+  {
+    "iso2": "se",
+    "name_et": "Rootsi",
+    "difficulty": "easy",
+    "region": "Europe",
+    "similarTo": [
+      "no",
+      "dk",
+      "is",
+      "fi"
+    ]
+  },
+  {
+    "iso2": "ch",
+    "name_et": "Šveits",
+    "difficulty": "easy",
+    "region": "Europe",
+    "similarTo": []
+  },
+  {
+    "iso2": "sy",
+    "name_et": "Süüria",
+    "difficulty": "hard",
+    "region": "Asia",
+    "similarTo": [
+      "eg",
+      "iq",
+      "ye"
+    ]
+  },
+  {
+    "iso2": "tw",
+    "name_et": "Taiwan",
+    "difficulty": "hard",
+    "region": "Asia",
+    "similarTo": []
+  },
+  {
+    "iso2": "tj",
+    "name_et": "Tadžikistan",
+    "difficulty": "expert",
+    "region": "Asia",
+    "similarTo": []
+  },
+  {
+    "iso2": "tz",
+    "name_et": "Tansaania",
+    "difficulty": "hard",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "th",
+    "name_et": "Tai",
+    "difficulty": "easy",
+    "region": "Asia",
+    "similarTo": [
+      "cr",
+      "la"
+    ]
+  },
+  {
+    "iso2": "tl",
+    "name_et": "Ida-Timor",
+    "difficulty": "expert",
+    "region": "Asia",
+    "similarTo": []
+  },
+  {
+    "iso2": "tg",
+    "name_et": "Togo",
+    "difficulty": "expert",
+    "region": "Africa",
+    "similarTo": [
+      "lr"
+    ]
+  },
+  {
+    "iso2": "to",
+    "name_et": "Tonga",
+    "difficulty": "hard",
+    "region": "Oceania",
+    "similarTo": [
+      "ch"
+    ]
+  },
+  {
+    "iso2": "tt",
+    "name_et": "Trinidad ja Tobago",
+    "difficulty": "hard",
+    "region": "Americas",
+    "similarTo": []
+  },
+  {
+    "iso2": "tn",
+    "name_et": "Tuneesia",
+    "difficulty": "medium",
+    "region": "Africa",
+    "similarTo": [
+      "tr"
+    ]
+  },
+  {
+    "iso2": "tr",
+    "name_et": "Türgi",
+    "difficulty": "easy",
+    "region": "Asia",
+    "similarTo": [
+      "tn"
+    ]
+  },
+  {
+    "iso2": "tm",
+    "name_et": "Türkmenistan",
+    "difficulty": "expert",
+    "region": "Asia",
+    "similarTo": []
+  },
+  {
+    "iso2": "tv",
+    "name_et": "Tuvalu",
+    "difficulty": "expert",
+    "region": "Oceania",
+    "similarTo": []
+  },
+  {
+    "iso2": "ug",
+    "name_et": "Uganda",
+    "difficulty": "hard",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "ua",
+    "name_et": "Ukraina",
+    "difficulty": "easy",
+    "region": "Europe",
+    "similarTo": []
+  },
+  {
+    "iso2": "ae",
+    "name_et": "Araabia Ühendemiraadid",
+    "difficulty": "easy",
+    "region": "Asia",
+    "similarTo": []
+  },
+  {
+    "iso2": "gb",
+    "name_et": "Suurbritannia",
+    "difficulty": "easy",
+    "region": "Europe",
+    "similarTo": []
+  },
+  {
+    "iso2": "us",
+    "name_et": "Ameerika Ühendriigid",
+    "difficulty": "easy",
+    "region": "Americas",
+    "similarTo": [
+      "lr",
+      "my"
+    ]
+  },
+  {
+    "iso2": "uy",
+    "name_et": "Uruguay",
+    "difficulty": "hard",
+    "region": "Americas",
+    "similarTo": [
+      "gr"
+    ]
+  },
+  {
+    "iso2": "uz",
+    "name_et": "Usbekistan",
+    "difficulty": "expert",
+    "region": "Asia",
+    "similarTo": []
+  },
+  {
+    "iso2": "vu",
+    "name_et": "Vanuatu",
+    "difficulty": "expert",
+    "region": "Oceania",
+    "similarTo": []
+  },
+  {
+    "iso2": "ve",
+    "name_et": "Venezuela",
+    "difficulty": "medium",
+    "region": "Americas",
+    "similarTo": [
+      "co",
+      "ec"
+    ]
+  },
+  {
+    "iso2": "vn",
+    "name_et": "Vietnam",
+    "difficulty": "medium",
+    "region": "Asia",
+    "similarTo": [
+      "cn"
+    ]
+  },
+  {
+    "iso2": "ye",
+    "name_et": "Jeemen",
+    "difficulty": "hard",
+    "region": "Asia",
+    "similarTo": [
+      "eg",
+      "iq",
+      "sy"
+    ]
+  },
+  {
+    "iso2": "zm",
+    "name_et": "Sambia",
+    "difficulty": "expert",
+    "region": "Africa",
+    "similarTo": []
+  },
+  {
+    "iso2": "zw",
+    "name_et": "Zimbabwe",
+    "difficulty": "expert",
+    "region": "Africa",
+    "similarTo": []
+  }
 ]
