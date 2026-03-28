@@ -408,7 +408,7 @@ export default function App() {
                 </div>
                 <div style={S.modalInfoRow}>
                   <span style={S.modalLabel}>👥 {t("Rahvaarv")}</span>
-                  <span style={S.modalValue}>{selectedCountry.population || "–"}</span>
+                  <span style={S.modalValue}>{allCaps ? (selectedCountry.population || "–").toUpperCase() : (selectedCountry.population || "–")}</span>
                 </div>
 
                 {selectedCountry.facts && selectedCountry.facts.length > 0 && (
@@ -417,7 +417,7 @@ export default function App() {
                     {selectedCountry.facts.map((fact, i) => (
                       <div key={i} style={S.modalFact}>
                         <span style={S.modalFactNum}>{i + 1}</span>
-                        <p style={S.modalFactText}>{fact}</p>
+                        <p style={S.modalFactText}>{t(fact)}</p>
                       </div>
                     ))}
                   </div>
@@ -483,7 +483,7 @@ export default function App() {
               <div style={S.toggleRow}>
                 <span style={S.toggleLabel}>
                   <span style={{ fontSize: "1.3rem" }}>🔠</span>
-                  <span>{allCaps ? "SUURTÄHED" : "Tavalised tähed"}</span>
+                  <span>{allCaps ? "SUURED TÄHED" : "Tavalised tähed"}</span>
                 </span>
                 <button
                   style={{ ...S.toggleTrack, background: allCaps ? "#5c6bc0" : "#b0bec5" }}
@@ -679,7 +679,7 @@ export default function App() {
           <div style={S.streakOverlay}>
             <div style={S.streakCard}>
               <span style={{ fontSize: "3.5rem" }}>🔥</span>
-              <p style={S.streakCount}>{streakCelebration.count}x {t("STREIK")}!</p>
+              <p style={S.streakCount}>{streakCelebration.count}x {t("järjest õiged")}!</p>
               <p style={S.streakMsg}>{t(streakCelebration.msg)}</p>
             </div>
           </div>
