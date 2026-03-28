@@ -933,7 +933,7 @@ const S = {
   feedbackEmoji: {fontSize:"3rem"},
   feedbackMsg: {fontSize:"1.4rem",fontWeight:900,color:"#fff",margin:0,textAlign:"center"},
   feedbackCorrectText: {fontSize:"1.05rem",fontWeight:700,color:"rgba(255,255,255,0.9)",margin:0},
-  nextBtn: {marginTop:"0.4rem",padding:"0.8rem 2.2rem",fontSize:"1.15rem",fontWeight:800,color:"#333",background:"rgba(255,255,255,0.95)",border:"none",borderRadius:14,cursor:"pointer",boxShadow:"0 2px 12px rgba(0,0,0,0.15)"},
+  nextBtn: {padding:"0.8rem 2.2rem",fontSize:"1.15rem",fontWeight:800,color:"#333",background:"rgba(255,255,255,0.95)",border:"none",borderRadius:14,cursor:"pointer",boxShadow:"0 2px 12px rgba(0,0,0,0.15)"},
 
   /* Modal */
   modalBackdrop: {position:"fixed",top:0,left:0,right:0,bottom:0,background:"rgba(0,0,0,0.5)",display:"flex",alignItems:"center",justifyContent:"center",zIndex:300,padding:"1rem",overflowY:"auto"},
@@ -983,5 +983,5 @@ const S = {
   confirmResetBtn: {flex:1,padding:"0.8rem",fontSize:"1.05rem",fontWeight:800,color:"#fff",background:"#e53935",border:"none",borderRadius:12,cursor:"pointer"},
 
   /* Facts button in feedback */
-  factsBtn: {padding:"0.8rem 2.2rem",fontSize:"1.15rem",fontWeight:800,color:"#333",background:"rgba(255,255,255,0.75)",border:"2px solid rgba(255,255,255,0.9)",borderRadius:14,cursor:"pointer",boxShadow:"0 2px 12px rgba(0,0,0,0.1)"},
+  factsBtn: {padding:"0.8rem 2.2rem",fontSize:"1.15rem",fontWeight:800,color:"#333",background:"rgba(255,255,255,0.95)",border:"none",borderRadius:14,cursor:"pointer",boxShadow:"0 2px 12px rgba(0,0,0,0.15)"},
 };
