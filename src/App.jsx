@@ -161,6 +161,7 @@ export default function App() {
   const [achState, setAchState] = useState({ unlocked: [], diffPlayed: [] });
   const [achToast, setAchToast] = useState(null);
   const [selectedAch, setSelectedAch] = useState(null);
+  const [showResetConfirm, setShowResetConfirm] = useState(false);
 
   /* ── boot ── */
   useEffect(() => {
@@ -233,6 +234,18 @@ export default function App() {
   };
   const goToProfiles = () => { setShowProfileSwitcher(false); setScreen("profiles"); };
 
+  const resetProfile = () => {
+    if (!activeProfile) return;
+    const pid = activeProfile.id;
+    setCollection([]);
+    saveCollection(pid, []);
+    setAchState({ unlocked: [], diffPlayed: [] });
+    saveAchievements(pid, { unlocked: [], diffPlayed: [] });
+    setScore({ correct: 0, total: 0 });
+    setStreak(0);
+    setShowResetConfirm(false);
+  };
+
   const countries = useMemo(() => countriesForDiff(difficulty), [difficulty]);
 
   const generateQuestion = useCallback(() => {
@@ -304,8 +317,8 @@ export default function App() {
     });
   };
 
-  const nextQuestion = () => { setFeedback(null); setSelected(null); setQuestion(generateQuestion()); };
-  const goMenu = () => { setScreen("menu"); setQuestion(null); setFeedback(null); setSelected(null); setStreakCelebration(null); setSelectedCountry(null); setSelectedAch(null); };
+  const nextQuestion = () => { setFeedback(null); setSelected(null); setSelectedCountry(null); setQuestion(generateQuestion()); };
+  const goMenu = () => { setScreen("menu"); setQuestion(null); setFeedback(null); setSelected(null); setStreakCelebration(null); setSelectedCountry(null); setSelectedAch(null); setShowResetConfirm(false); };
 
   /* ═══════════════════ ACHIEVEMENT TOAST (always rendered) ═══════════════════ */
   const toastEl = achToast ? (
@@ -636,6 +649,25 @@ export default function App() {
                   <span style={{...S.toggleThumb, transform: allCaps ? "translateX(28px)" : "translateX(2px)"}} />
                 </button>
               </div>
+              <button style={S.resetBtn} onClick={() => setShowResetConfirm(true)}>
+                🗑️ {t("Lähtesta edusammud")}
+              </button>
+            </div>
+          )}
+
+          {showResetConfirm && (
+            <div style={S.modalBackdrop} onClick={() => setShowResetConfirm(false)}>
+              <div style={{...S.modalCard, maxWidth: 360, padding: "1.5rem"}} onClick={e => e.stopPropagation()}>
+                <span style={{fontSize:"2.5rem"}}>⚠️</span>
+                <h2 style={{...S.modalTitle, fontSize:"1.3rem"}}>{t("Kas oled kindel?")}</h2>
+                <p style={{fontSize:"0.95rem",fontWeight:600,color:"#546e7a",textAlign:"center",margin:0,lineHeight:1.4}}>
+                  {t("Kõik sinu edusammud kustutatakse! Kollektsioon, saavutused ja kogu mänguprogress lähtestatakse.")}
+                </p>
+                <div style={{display:"flex",gap:"0.6rem",width:"100%",marginTop:"0.5rem"}}>
+                  <button style={S.cancelBtn} onClick={() => setShowResetConfirm(false)}>{t("Tühista")}</button>
+                  <button style={S.confirmResetBtn} onClick={resetProfile}>{t("Lähtesta")}</button>
+                </div>
+              </div>
             </div>
           )}
 
@@ -739,7 +771,44 @@ export default function App() {
             <span style={S.feedbackEmoji}>{feedback.emoji}</span>
             <p style={S.feedbackMsg}>{t(feedback.message)}</p>
             {!feedback.isCorrect && <p style={S.feedbackCorrectText}>{t("Õige vastus")}: {t(feedback.correctAnswer.name_et)}</p>}
-            <button style={S.nextBtn} onClick={nextQuestion}>{t("Järgmine")} →</button>
+            <div style={{display:"flex",gap:"0.5rem",alignItems:"center",marginTop:"0.3rem"}}>
+              {feedback.isCorrect && (
+                <button style={S.factsBtn} onClick={() => setSelectedCountry(feedback.correctAnswer)}>
+                  🔍 {t("Vaata lähemalt")}
+                </button>
+              )}
+              <button style={S.nextBtn} onClick={nextQuestion}>{t("Järgmine")} →</button>
+            </div>
+          </div>
+        )}
+
+        {/* Facts modal in game */}
+        {selectedCountry && (
+          <div style={{...S.modalBackdrop,zIndex:150}} onClick={() => setSelectedCountry(null)}>
+            <div style={S.modalCard} onClick={e => e.stopPropagation()}>
+              <button style={S.modalClose} onClick={() => setSelectedCountry(null)}>✕</button>
+              <img src={getFlagUrl(selectedCountry)} alt={selectedCountry.name_et} style={S.modalFlag} />
+              <h2 style={S.modalTitle}>{t(selectedCountry.name_et)}</h2>
+              <div style={S.modalInfoRow}>
+                <span style={S.modalLabel}>🏛️ {t("Pealinn")}</span>
+                <span style={S.modalValue}>{t(selectedCountry.capital||"–")}</span>
+              </div>
+              <div style={S.modalInfoRow}>
+                <span style={S.modalLabel}>👥 {t("Rahvaarv")}</span>
+                <span style={S.modalValue}>{allCaps?(selectedCountry.population||"–").toUpperCase():(selectedCountry.population||"–")}</span>
+              </div>
+              {selectedCountry.facts?.length > 0 && (
+                <div style={S.modalFactsBox}>
+                  <p style={S.modalFactsTitle}>💡 {t("Huvitavad faktid")}</p>
+                  {selectedCountry.facts.map((f,i) => (
+                    <div key={i} style={S.modalFact}>
+                      <span style={S.modalFactNum}>{i+1}</span>
+                      <p style={S.modalFactText}>{t(f)}</p>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
         )}
 
@@ -868,4 +937,12 @@ const S = {
   achFlagCell: {display:"flex",flexDirection:"column",alignItems:"center",gap:"0.15rem",background:"none",border:"none",padding:"0.15rem 0"},
   achFlagImg: {width:"100%",aspectRatio:"3/2",objectFit:"cover",borderRadius:6,border:"2px solid #e0e0e0"},
   achFlagLocked: {width:"100%",aspectRatio:"3/2",borderRadius:6,background:"#eceff1",border:"2px solid #cfd8dc",display:"flex",alignItems:"center",justifyContent:"center"},
+
+  /* Reset */
+  resetBtn: {padding:"0.7rem 1rem",fontSize:"0.95rem",fontWeight:700,color:"#c62828",background:"rgba(229,57,53,0.08)",border:"2px solid #ef9a9a",borderRadius:12,cursor:"pointer",textAlign:"center"},
+  cancelBtn: {flex:1,padding:"0.8rem",fontSize:"1.05rem",fontWeight:800,color:"#546e7a",background:"#eceff1",border:"none",borderRadius:12,cursor:"pointer"},
+  confirmResetBtn: {flex:1,padding:"0.8rem",fontSize:"1.05rem",fontWeight:800,color:"#fff",background:"#e53935",border:"none",borderRadius:12,cursor:"pointer"},
+
+  /* Facts button in feedback */
+  factsBtn: {padding:"0.6rem 1rem",fontSize:"0.9rem",fontWeight:700,color:"rgba(255,255,255,0.95)",background:"rgba(255,255,255,0.2)",border:"2px solid rgba(255,255,255,0.5)",borderRadius:12,cursor:"pointer"},
 };
