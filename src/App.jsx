@@ -162,6 +162,33 @@ export default function App() {
   const [achToast, setAchToast] = useState(null);
   const [selectedAch, setSelectedAch] = useState(null);
   const [showResetConfirm, setShowResetConfirm] = useState(false);
+  const [speaking, setSpeaking] = useState(false);
+
+  const speakName = useCallback((name) => {
+    if (!window.speechSynthesis) return;
+    window.speechSynthesis.cancel();
+    const utter = new SpeechSynthesisUtterance(name);
+    // Try et-EE, then et, then default
+    const voices = window.speechSynthesis.getVoices();
+    const etEE = voices.find(v => v.lang === "et-EE");
+    const et = voices.find(v => v.lang === "et");
+    if (etEE) utter.lang = "et-EE";
+    else if (et) utter.lang = "et";
+    else utter.lang = "et-EE"; // set anyway, browser will use default if unavailable
+    utter.rate = 0.9;
+    utter.onstart = () => setSpeaking(true);
+    utter.onend = () => setSpeaking(false);
+    utter.onerror = () => setSpeaking(false);
+    window.speechSynthesis.speak(utter);
+  }, []);
+
+  // Stop speech when facts modal closes
+  useEffect(() => {
+    if (!selectedCountry && window.speechSynthesis) {
+      window.speechSynthesis.cancel();
+      setSpeaking(false);
+    }
+  }, [selectedCountry]);
 
   /* ── boot ── */
   useEffect(() => {
@@ -407,7 +434,10 @@ export default function App() {
               <div style={S.modalCard} onClick={e=>e.stopPropagation()}>
                 <button style={S.modalClose} onClick={()=>setSelectedCountry(null)}>✕</button>
                 <img src={getFlagUrl(selectedCountry)} alt={selectedCountry.name_et} style={S.modalFlag} />
-                <h2 style={S.modalTitle}>{t(selectedCountry.name_et)}</h2>
+                <div style={S.modalTitleRow}>
+                  <h2 style={S.modalTitle}>{t(selectedCountry.name_et)}</h2>
+                  <button style={{...S.ttsBtn,...(speaking?S.ttsBtnActive:{})}} onClick={()=>speakName(selectedCountry.name_et)} aria-label="Pronounce">🔊</button>
+                </div>
                 <div style={S.modalInfoRow}>
                   <span style={S.modalLabel}>🏛️ {t("Pealinn")}</span>
                   <span style={S.modalValue}>{t(selectedCountry.capital||"–")}</span>
@@ -576,7 +606,10 @@ export default function App() {
               <div style={S.modalCard} onClick={e => e.stopPropagation()}>
                 <button style={S.modalClose} onClick={() => { setSelectedCountry(null); }}>✕</button>
                 <img src={getFlagUrl(selectedCountry)} alt={selectedCountry.name_et} style={S.modalFlag} />
-                <h2 style={S.modalTitle}>{t(selectedCountry.name_et)}</h2>
+                <div style={S.modalTitleRow}>
+                  <h2 style={S.modalTitle}>{t(selectedCountry.name_et)}</h2>
+                  <button style={{...S.ttsBtn,...(speaking?S.ttsBtnActive:{})}} onClick={()=>speakName(selectedCountry.name_et)} aria-label="Pronounce">🔊</button>
+                </div>
                 <div style={S.modalInfoRow}>
                   <span style={S.modalLabel}>🏛️ {t("Pealinn")}</span>
                   <span style={S.modalValue}>{t(selectedCountry.capital||"–")}</span>
@@ -788,7 +821,10 @@ export default function App() {
             <div style={S.modalCard} onClick={e => e.stopPropagation()}>
               <button style={S.modalClose} onClick={() => setSelectedCountry(null)}>✕</button>
               <img src={getFlagUrl(selectedCountry)} alt={selectedCountry.name_et} style={S.modalFlag} />
-              <h2 style={S.modalTitle}>{t(selectedCountry.name_et)}</h2>
+              <div style={S.modalTitleRow}>
+                <h2 style={S.modalTitle}>{t(selectedCountry.name_et)}</h2>
+                <button style={{...S.ttsBtn,...(speaking?S.ttsBtnActive:{})}} onClick={()=>speakName(selectedCountry.name_et)} aria-label="Pronounce">🔊</button>
+              </div>
               <div style={S.modalInfoRow}>
                 <span style={S.modalLabel}>🏛️ {t("Pealinn")}</span>
                 <span style={S.modalValue}>{t(selectedCountry.capital||"–")}</span>
@@ -905,6 +941,9 @@ const S = {
   modalClose: {position:"absolute",top:12,right:12,width:36,height:36,borderRadius:18,border:"none",background:"rgba(0,0,0,0.06)",fontSize:"1.1rem",fontWeight:700,color:"#546e7a",cursor:"pointer",display:"flex",alignItems:"center",justifyContent:"center",padding:0},
   modalFlag: {width:"min(70vw, 240px)",height:"auto",borderRadius:12,boxShadow:"0 4px 20px rgba(0,0,0,0.12)",border:"3px solid #e0e0e0",objectFit:"contain"},
   modalTitle: {fontSize:"1.6rem",fontWeight:900,color:"#1a237e",margin:0,textAlign:"center",lineHeight:1.2},
+  modalTitleRow: {display:"flex",alignItems:"center",justifyContent:"center",gap:"0.5rem",width:"100%"},
+  ttsBtn: {flexShrink:0,width:36,height:36,borderRadius:18,border:"2px solid #b0bec5",background:"rgba(255,255,255,0.9)",fontSize:"1.1rem",cursor:"pointer",display:"flex",alignItems:"center",justifyContent:"center",padding:0,transition:"all 0.15s"},
+  ttsBtnActive: {background:"#e3f2fd",borderColor:"#42a5f5",transform:"scale(1.1)"},
   modalInfoRow: {width:"100%",display:"flex",alignItems:"center",justifyContent:"space-between",padding:"0.55rem 0.8rem",background:"#f5f5f5",borderRadius:12,gap:"0.5rem"},
   modalLabel: {fontSize:"0.95rem",fontWeight:800,color:"#546e7a",whiteSpace:"nowrap"},
   modalValue: {fontSize:"1rem",fontWeight:700,color:"#263238",textAlign:"right"},
