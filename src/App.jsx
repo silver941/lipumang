@@ -519,7 +519,7 @@ export default function App() {
                   <div style={{textAlign:"center",marginBottom:"0.3rem"}}>
                     <span style={{fontSize:"2.2rem"}}>{selectedAch.icon}</span>
                     <h2 style={{...S.modalTitle,fontSize:"1.3rem",marginTop:"0.3rem"}}>{achState.unlocked.includes(selectedAch.id) ? t(selectedAch.name) : t(selectedAch.hint)}</h2>
-                    {selectedAch.modalDesc && achState.unlocked.includes(selectedAch.id) && <p style={{fontSize:"0.85rem",fontWeight:600,color:"#546e7a",margin:"0.3rem 0 0",lineHeight:1.3}}>{t(selectedAch.modalDesc)}</p>}
+                    {selectedAch.modalDesc && <p style={{fontSize:"0.85rem",fontWeight:600,color:"#546e7a",margin:"0.3rem 0 0",lineHeight:1.3}}>{t(selectedAch.modalDesc)}</p>}
                     <p style={{fontSize:"0.8rem",fontWeight:700,color:"#78909c",margin:"0.3rem 0 0"}}>{prog.current}/{prog.total}</p>
                     {/* Progress bar in modal */}
                     {prog.total > 0 && (
