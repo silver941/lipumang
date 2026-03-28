@@ -1,0 +1,3119 @@
+[
+  {
+    "iso2": "af",
+    "name_et": "Afganistan",
+    "difficulty": "expert",
+    "region": "Asia",
+    "subregion": "South Asia",
+    "similarTo": [],
+    "capital": "Kabul",
+    "population": "Umbes 42 miljonit.",
+    "facts": [
+      "See on väga mägine maa, kus talviti on palju lund.",
+      "Sealt on pärit maailma kõige esimesed õlimaalid (isegi vanemad kui Euroopas!)."
+    ]
+  },
+  {
+    "iso2": "al",
+    "name_et": "Albaania",
+    "difficulty": "medium",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "similarTo": [],
+    "capital": "Tirana",
+    "population": "Umbes 2,8 miljonit.",
+    "facts": [
+      "Albaanial on imeilus rannik, mida kutsutakse \"Albaania Rivieraks\".",
+      "Seal on tuhandeid väikesi betoonist punkreid, mis on ehitatud maa sisse."
+    ]
+  },
+  {
+    "iso2": "dz",
+    "name_et": "Alžeeria",
+    "difficulty": "medium",
+    "region": "Africa",
+    "subregion": "North Africa",
+    "similarTo": [
+      "pk"
+    ],
+    "capital": "Alžiir",
+    "population": "Umbes 45 miljonit.",
+    "facts": [
+      "See on pindalalt kõige suurem riik Aafrikas.",
+      "Alžeerias asub Sahara kõrbe all hiiglaslik maa-alune veekogu – see on nagu peidetud ookean!"
+    ]
+  },
+  {
+    "iso2": "ad",
+    "name_et": "Andorra",
+    "difficulty": "expert",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "similarTo": [
+      "md",
+      "ro",
+      "td"
+    ],
+    "capital": "Andorra la Vella",
+    "population": "Umbes 80 000.",
+    "facts": [
+      "See asub kõrgel Püreneede mäestikus Prantsusmaa ja Hispaania vahel.",
+      "Seal pole ühtegi lennujaama, sest mägede vahel pole lennukitele ruumi."
+    ]
+  },
+  {
+    "iso2": "ao",
+    "name_et": "Angola",
+    "difficulty": "expert",
+    "region": "Africa",
+    "subregion": "Central Africa",
+    "similarTo": [],
+    "capital": "Luanda",
+    "population": "Umbes 36 miljonit.",
+    "facts": [
+      "See on riik, kus on nii džungleid, kõrbeid kui ka ilusaid randu.",
+      "Angola on üks Aafrika rikkamaid riike, sest seal on palju naftat ja teemante."
+    ]
+  },
+  {
+    "iso2": "ag",
+    "name_et": "Antigua ja Barbuda",
+    "difficulty": "expert",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "similarTo": [],
+    "capital": "Saint John's",
+    "population": "Umbes 100 000.",
+    "facts": [
+      "Selles riigis on 365 randa – üks iga aasta päeva jaoks!",
+      "Barbuda saarel elavad suured linnud, keda kutsutakse fregattlindudeks."
+    ]
+  },
+  {
+    "iso2": "ar",
+    "name_et": "Argentina",
+    "difficulty": "easy",
+    "region": "Americas",
+    "subregion": "South America",
+    "similarTo": [
+      "sv",
+      "hn",
+      "ni"
+    ],
+    "capital": "Buenos Aires",
+    "population": "Umbes 46 miljonit.",
+    "facts": [
+      "Seal asuvad Lõuna-Ameerika kõige kõrgemad mäed (Andid).",
+      "Sealt on pärit maailmakuulus jalgpallur Lionel Messi ja tuline tants tango."
+    ]
+  },
+  {
+    "iso2": "am",
+    "name_et": "Armeenia",
+    "difficulty": "medium",
+    "region": "Asia",
+    "subregion": "Central Asia",
+    "similarTo": [],
+    "capital": "Jerevan",
+    "population": "Umbes 2,8 miljonit.",
+    "facts": [
+      "See on väga vana riik, kus on palju iidseid kirikuid.",
+      "Armeenia sümbol on Ararati mägi, kuhu legendi järgi maandus Noa laev."
+    ]
+  },
+  {
+    "iso2": "au",
+    "name_et": "Austraalia",
+    "difficulty": "easy",
+    "region": "Oceania",
+    "subregion": "Australia and Oceania",
+    "similarTo": [
+      "nz"
+    ],
+    "capital": "Canberra",
+    "population": "Umbes 26 miljonit.",
+    "facts": [
+      "See on korraga nii riik kui ka terve kontinent!",
+      "Seal elab rohkem kängurusid ja koaalasid kui inimesi."
+    ]
+  },
+  {
+    "iso2": "at",
+    "name_et": "Austria",
+    "difficulty": "easy",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "similarTo": [
+      "lv",
+      "lb"
+    ],
+    "capital": "Viin",
+    "population": "Umbes 9 miljonit.",
+    "facts": [
+      "See on mägine riik Kesk-Euroopas, mida ümbritsevad Alpid.",
+      "Austrias sündis kuulus helilooja Mozart – tema muusikat kuulatakse kogu maailmas tänaseni!"
+    ]
+  },
+  {
+    "iso2": "az",
+    "name_et": "Aserbaidžaan",
+    "difficulty": "hard",
+    "region": "Asia",
+    "subregion": "Central Asia",
+    "similarTo": [],
+    "capital": "Bakuu",
+    "population": "Umbes 10 miljonit.",
+    "facts": [
+      "Seal asuvad \"mudavulkaanid\", mis ei purska tuld, vaid muda.",
+      "Seal on koht nimega Yanar Dag, kus maapind põleb päriselt ja on põlenud juba 65 aastat!"
+    ]
+  },
+  {
+    "iso2": "bs",
+    "name_et": "Bahama",
+    "difficulty": "expert",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "similarTo": [],
+    "capital": "Nassau",
+    "population": "Umbes 400 000.",
+    "facts": [
+      "See koosneb enam kui 700 imelisest saarest.",
+      "Ühel Bahama saarel elavad metsikud sead, kes armastavad meres koos inimestega ujuda!"
+    ]
+  },
+  {
+    "iso2": "bh",
+    "name_et": "Bahrein",
+    "difficulty": "expert",
+    "region": "Asia",
+    "subregion": "Middle East",
+    "similarTo": [
+      "qa"
+    ],
+    "capital": "Manama",
+    "population": "Umbes 1,5 miljonit.",
+    "facts": [
+      "See on saareriik keset merd, mis on sillaga ühendatud naaberriigiga.",
+      "Seal keset kuuma kõrbe kasvab \"Elupuu\", mis on üle 400 aasta vana ja keegi ei tea, kust ta vett saab."
+    ]
+  },
+  {
+    "iso2": "bd",
+    "name_et": "Bangladesh",
+    "difficulty": "medium",
+    "region": "Asia",
+    "subregion": "South Asia",
+    "similarTo": [
+      "jp"
+    ],
+    "capital": "Dhaka",
+    "population": "Umbes 170 miljonit.",
+    "facts": [
+      "See on väga madal maa, kus on palju suuri jõgesid.",
+      "Seal elab kuulus kuninglik bengali tiiger, kes on väga osav ujuja."
+    ]
+  },
+  {
+    "iso2": "bb",
+    "name_et": "Barbados",
+    "difficulty": "expert",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "similarTo": [],
+    "capital": "Bridgetown",
+    "population": "Umbes 280 000.",
+    "facts": [
+      "See on pisike ja päikeseline saareriik.",
+      "Barbadost kutsutakse \"lendavate kalade maaks\", sest seal elavad kalad, kes hüppavad veest välja."
+    ]
+  },
+  {
+    "iso2": "by",
+    "name_et": "Valgevene",
+    "difficulty": "medium",
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "similarTo": [],
+    "capital": "Minsk",
+    "population": "Umbes 9,2 miljonit.",
+    "facts": [
+      "Seal on säilinud väga vanad ja suured metsad.",
+      "Valgevene metsades elavad euroopa piisonid ehk pürjad, kes on väga suured!"
+    ]
+  },
+  {
+    "iso2": "be",
+    "name_et": "Belgia",
+    "difficulty": "easy",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "similarTo": [
+      "de"
+    ],
+    "capital": "Brüssel",
+    "population": "Umbes 11,5 miljonit.",
+    "facts": [
+      "Belgia on väike riik, kus räägitakse kolme erinevat keelt - prantsuse-, saksa- ja hollandi keelt.",
+      "Belgia on maailma šokolaadi ja vahvlite pealinn – sealt tulevad kõige maitsvamad kommid!"
+    ]
+  },
+  {
+    "iso2": "bz",
+    "name_et": "Belize",
+    "difficulty": "expert",
+    "region": "Americas",
+    "subregion": "Central America",
+    "similarTo": [],
+    "capital": "Belmopan",
+    "population": "Umbes 410 000.",
+    "facts": [
+      "See on ainus riik Kesk-Ameerikas, kus räägitakse ametlikult inglise keelt.",
+      "Seal asub \"Suur Sinine Auk\" – hiiglaslik ümmargune süvik keset merd."
+    ]
+  },
+  {
+    "iso2": "bj",
+    "name_et": "Benin",
+    "difficulty": "hard",
+    "region": "Africa",
+    "subregion": "West Africa",
+    "similarTo": [
+      "gn",
+      "ml",
+      "sn"
+    ],
+    "capital": "Porto-Novo",
+    "population": "Umbes 14 miljonit.",
+    "facts": [
+      "See on pikk ja kitsas riik Lääne-Aafrikas.",
+      "Sealt on pärit uskumatud legendid naissõdalastest, keda kutsuti \"amatsoonideks\"."
+    ]
+  },
+  {
+    "iso2": "bt",
+    "name_et": "Bhutan",
+    "difficulty": "expert",
+    "region": "Asia",
+    "subregion": "South Asia",
+    "similarTo": [],
+    "capital": "Thimphu",
+    "population": "Umbes 780 000.",
+    "facts": [
+      "See asub kõrgel Himaalaja mägedes.",
+      "Selles riigis pole ühtegi valgusfoori! Liiklust reguleerivad viisakad onud."
+    ]
+  },
+  {
+    "iso2": "bo",
+    "name_et": "Boliivia",
+    "difficulty": "hard",
+    "region": "Americas",
+    "subregion": "South America",
+    "similarTo": [
+      "gh",
+      "lt",
+      "et"
+    ],
+    "capital": "Sucre",
+    "population": "Umbes 12 miljonit.",
+    "facts": [
+      "Seal asub maailma suurim \"soolapeegel\" – hiiglaslik kuivanud soolajärv.",
+      "Boliivias on hotell, mis on ehitatud üleni soolast – isegi voodid ja toolid on soolast!"
+    ]
+  },
+  {
+    "iso2": "ba",
+    "name_et": "Bosnia ja Hertsegoviina",
+    "difficulty": "medium",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "similarTo": [],
+    "capital": "Sarajevo",
+    "population": "Umbes 3,2 miljonit.",
+    "facts": [
+      "Riik on kaardil peaaegu südamekujuline.",
+      "Bosnia metsades elavad veel päris karud ja hundid, ja seal on jõgi, mis on nii selge, et näed igat kala!"
+    ]
+  },
+  {
+    "iso2": "bw",
+    "name_et": "Botswana",
+    "difficulty": "hard",
+    "region": "Africa",
+    "subregion": "Southern Africa",
+    "similarTo": [],
+    "capital": "Gaborone",
+    "population": "Umbes 2,6 miljonit.",
+    "facts": [
+      "Seal on väga palju looduskaitsealasid.",
+      "Botswanas elab rohkem elevante kui üheski teises Aafrika riigis!"
+    ]
+  },
+  {
+    "iso2": "br",
+    "name_et": "Brasiilia",
+    "difficulty": "easy",
+    "region": "Americas",
+    "subregion": "South America",
+    "similarTo": [],
+    "capital": "Brasilia",
+    "population": "Umbes 215 miljonit.",
+    "facts": [
+      "Seal asub maailma suurim vihmamets – Amazonas.",
+      "Brasiilias on karnevali ajal kogu riik üks suur pidu – isegi koolid ja kontorid lähevad kinni!"
+    ]
+  },
+  {
+    "iso2": "bn",
+    "name_et": "Brunei",
+    "difficulty": "expert",
+    "region": "Asia",
+    "subregion": "Southeast Asia",
+    "similarTo": [],
+    "capital": "Bandar Seri Begawan",
+    "population": "Umbes 450 000.",
+    "facts": [
+      "See on pisike ja väga rikas riik suure saare rannikul.",
+      "Brunei kuningal on maailma suurim loss, kus on rohkem kui 1700 tuba!"
+    ]
+  },
+  {
+    "iso2": "bg",
+    "name_et": "Bulgaaria",
+    "difficulty": "easy",
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "similarTo": [
+      "hu"
+    ],
+    "capital": "Sofia",
+    "population": "Umbes 6,5 miljonit.",
+    "facts": [
+      "Seal kasvatatakse maailma parimaid roose lõhnaõlide jaoks.",
+      "Bulgaarias tähendab pea noogutamine \"ei\" ja raputamine \"jah\"!"
+    ]
+  },
+  {
+    "iso2": "bf",
+    "name_et": "Burkina Faso",
+    "difficulty": "hard",
+    "region": "Africa",
+    "subregion": "West Africa",
+    "similarTo": [
+      "gn",
+      "ml"
+    ],
+    "capital": "Ouagadougou",
+    "population": "Umbes 23 miljonit.",
+    "facts": [
+      "See on riik Lääne-Aafrikas, mille nimi tähendab \"Ausa rahva maa\".",
+      "Seal asub kuulus muusikute ja filmitegijate linn, kus on palju värvilisi maju."
+    ]
+  },
+  {
+    "iso2": "bi",
+    "name_et": "Burundi",
+    "difficulty": "hard",
+    "region": "Africa",
+    "subregion": "East Africa",
+    "similarTo": [],
+    "capital": "Gitega",
+    "population": "Umbes 13 miljonit.",
+    "facts": [
+      "See on väike riik Kesk-Aafrikas, mille südames asub suur järv Tanganjika",
+      "Burundi on üks maailma vanimaid kuningriike Aafrikas – seal on olnud kuningad juba väga-väga kaua!"
+    ]
+  },
+  {
+    "iso2": "cv",
+    "name_et": "Cabo Verde",
+    "difficulty": "expert",
+    "region": "Africa",
+    "subregion": "West Africa",
+    "similarTo": [],
+    "capital": "Praia",
+    "population": "Umbes 600 000.",
+    "facts": [
+      "See on 10 saarest koosnev riik keset Atlandi ookeani.",
+      "Seal elavad merikilpkonnad, kes tulevad igal aastal randa mune peitma."
+    ]
+  },
+  {
+    "iso2": "kh",
+    "name_et": "Kambodža",
+    "difficulty": "medium",
+    "region": "Asia",
+    "subregion": "Southeast Asia",
+    "similarTo": [],
+    "capital": "Phnom Penh",
+    "population": "Umbes 17 miljonit.",
+    "facts": [
+      "Seal asub maailma suurim religioosne ehitis – Angkor Wat.",
+      "Kambodža lipul on kujutatud see sama kuulus tempel – see on ainus lipp maailmas, kus on peal ehitis!"
+    ]
+  },
+  {
+    "iso2": "cm",
+    "name_et": "Kamerun",
+    "difficulty": "hard",
+    "region": "Africa",
+    "subregion": "Central Africa",
+    "similarTo": [
+      "sn",
+      "gn",
+      "ml"
+    ],
+    "capital": "Yaoundé",
+    "population": "Umbes 28 miljonit.",
+    "facts": [
+      "Seal on nii liivarandu, mägesid kui ka vihmametsi.",
+      "Kameruni kutsutakse \"Aafrika miniatuuriks\", sest seal on kõik loodusvormid olemas."
+    ]
+  },
+  {
+    "iso2": "ca",
+    "name_et": "Kanada",
+    "difficulty": "easy",
+    "region": "Americas",
+    "subregion": "North America",
+    "similarTo": [],
+    "capital": "Ottawa",
+    "population": "Umbes 40 miljonit.",
+    "facts": [
+      "See on suuruselt teine riik maailmas (pärast Venemaad).",
+      "Kanadas on maailma kõige maitsvam vahtrasiirup, mida pannkookidele panna."
+    ]
+  },
+  {
+    "iso2": "cf",
+    "name_et": "Kesk-Aafrika Vabariik",
+    "difficulty": "expert",
+    "region": "Africa",
+    "subregion": "Central Africa",
+    "similarTo": [],
+    "capital": "Bangui",
+    "population": "Umbes 5,7 miljonit.",
+    "facts": [
+      "See asub täpselt Aafrika mandri keskel.",
+      "See on üks parimaid kohti maailmas tähtede vaatamiseks, sest seal on öösiti väga pime."
+    ]
+  },
+  {
+    "iso2": "td",
+    "name_et": "Tšaad",
+    "difficulty": "hard",
+    "region": "Africa",
+    "subregion": "Central Africa",
+    "similarTo": [
+      "ro",
+      "ad",
+      "md"
+    ],
+    "capital": "N'Djamena",
+    "population": "Umbes 18 miljonit.",
+    "facts": [
+      "See on suur riik, mis asub pooleldi kõrbes ja pooleldi savannis.",
+      "Seal asuvad Tibesti mäed, mis näevad välja nagu hiiglaslikud liivalossid."
+    ]
+  },
+  {
+    "iso2": "cl",
+    "name_et": "Tšiili",
+    "difficulty": "medium",
+    "region": "Americas",
+    "subregion": "South America",
+    "similarTo": [
+      "us",
+      "lr",
+      "my"
+    ],
+    "capital": "Santiago",
+    "population": "Umbes 20 miljonit.",
+    "facts": [
+      "Tšiili on maailma kõige pikem ja kitsam riik – nagu pikk spagett!",
+      "Seal asub Atacama kõrb, kus ei ole mõnes kohas kunagi vihma sadanud."
+    ]
+  },
+  {
+    "iso2": "cn",
+    "name_et": "Hiina",
+    "difficulty": "easy",
+    "region": "Asia",
+    "subregion": "East Asia",
+    "similarTo": [
+      "vn"
+    ],
+    "capital": "Peking",
+    "population": "Umbes 1,4 miljardit (uskumatult palju!).",
+    "facts": [
+      "Hiinas asub maailma pikim müür – Hiina müür.",
+      "Peaaegu kõik maailma pandad kuuluvad tegelikult Hiinale."
+    ]
+  },
+  {
+    "iso2": "co",
+    "name_et": "Colombia",
+    "difficulty": "easy",
+    "region": "Americas",
+    "subregion": "South America",
+    "similarTo": [
+      "ec",
+      "ve"
+    ],
+    "capital": "Bogotá",
+    "population": "Umbes 52 miljonit.",
+    "facts": [
+      "Seal on \"viie värvi jõgi\" – see helendab punaselt, kollaselt ja roheliselt.",
+      "Kolumbiast tulevad maailma kõige ilusamad smaragdid (rohelised vääriskivid)."
+    ]
+  },
+  {
+    "iso2": "km",
+    "name_et": "Komoorid",
+    "difficulty": "expert",
+    "region": "Africa",
+    "subregion": "Indian Ocean",
+    "similarTo": [],
+    "capital": "Moroni",
+    "population": "Umbes 850 000.",
+    "facts": [
+      "See on saareriik, mida kutsutakse \"Parfüümisaarteks\", sest seal lõhnab lillede järele.",
+      "Seal elab väga haruldane kala (tseelakant), keda peeti kaua aega välja surnuks."
+    ]
+  },
+  {
+    "iso2": "cg",
+    "name_et": "Kongo Vabariik",
+    "difficulty": "expert",
+    "region": "Africa",
+    "subregion": "Central Africa",
+    "similarTo": [],
+    "capital": "Brazzaville",
+    "population": "Umbes 6 miljonit.",
+    "facts": [
+      "See asub Kongo jõe ääres, otse suure naabri Kongo DV kõrval.",
+      "Kongo jõgi on maailma sügavaim jõgi – mõnes kohas on see sügavam kui 220 meetrit!"
+    ]
+  },
+  {
+    "iso2": "cd",
+    "name_et": "Kongo DV",
+    "difficulty": "expert",
+    "region": "Africa",
+    "subregion": "Central Africa",
+    "similarTo": [],
+    "capital": "Kinshasa",
+    "population": "Umbes 100 miljonit.",
+    "facts": [
+      "See on suur ja tiheda džungliga riik keset Aafrikat.",
+      "Seal elavad bonobod ja gorillad, kes on inimeste kõige lähedasemad sugulased."
+    ]
+  },
+  {
+    "iso2": "cr",
+    "name_et": "Costa Rica",
+    "difficulty": "hard",
+    "region": "Americas",
+    "subregion": "Central America",
+    "similarTo": [
+      "th"
+    ],
+    "capital": "San José",
+    "population": "Umbes 5 miljonit.",
+    "facts": [
+      "Seal on väga palju vihmametsi, mis on täis põnevaid loomi.",
+      "Seal ei ole üldse sõjaväge – see on üks maailma rahulikumaid riike."
+    ]
+  },
+  {
+    "iso2": "ci",
+    "name_et": "Elevandiluurannik",
+    "difficulty": "hard",
+    "region": "Africa",
+    "subregion": "West Africa",
+    "similarTo": [
+      "ie"
+    ],
+    "capital": "Yamoussoukro",
+    "population": "Umbes 28 miljonit.",
+    "facts": [
+      "Seal on maailma kõige suurem kirik (see on isegi suurem kui Vatikanis!).",
+      "See riik kasvatab rohkem kakaod kui ükski teine riik maailmas."
+    ]
+  },
+  {
+    "iso2": "hr",
+    "name_et": "Horvaatia",
+    "difficulty": "easy",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "similarTo": [],
+    "capital": "Zagreb",
+    "population": "Umbes 3,9 miljonit.",
+    "facts": [
+      "Horvaatial on imeilus rannik, kus on üle 1000 saare.",
+      "Sealt on pärit lips – jah, see mis isadel kaelas ripub – selle leiutasid Horvaatia sõdurid!"
+    ]
+  },
+  {
+    "iso2": "cu",
+    "name_et": "Kuuba",
+    "difficulty": "easy",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "similarTo": [],
+    "capital": "Havanna",
+    "population": "Umbes 11 miljonit.",
+    "facts": [
+      "Kuuba on Kariibi mere suurim saareriik.",
+      "Seal sõidavad tänavatel ikka veel autod, mis näevad välja nagu 70 aastat vanad mänguautod."
+    ]
+  },
+  {
+    "iso2": "cy",
+    "name_et": "Küpros",
+    "difficulty": "hard",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "similarTo": [],
+    "capital": "Nicosia",
+    "population": "Umbes 1,2 miljonit.",
+    "facts": [
+      "See on päikeseline saar keset Vahemerd.",
+      "Legendi järgi sündis Küprose rannikul merevahust ilujumalanna Aphrodite."
+    ]
+  },
+  {
+    "iso2": "cz",
+    "name_et": "Tšehhi",
+    "difficulty": "easy",
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "similarTo": [
+      "ph"
+    ],
+    "capital": "Praha",
+    "population": "Umbes 10,9 miljonit.",
+    "facts": [
+      "Praha on üks Euroopa ilusamaid vanalinnaga linnu.",
+      "Tšehhis leiutati suhkrukuubikud ja kontaktläätsed!"
+    ]
+  },
+  {
+    "iso2": "dk",
+    "name_et": "Taani",
+    "difficulty": "easy",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "similarTo": [
+      "se",
+      "no",
+      "is",
+      "fi"
+    ],
+    "capital": "Kopenhaagen",
+    "population": "Umbes 6 miljonit.",
+    "facts": [
+      "Taani on üsna lame ja seal on väga hea rattaga sõita.",
+      "Taanis leiutati maailma kuulsaimad klotsid – LEGO-d!"
+    ]
+  },
+  {
+    "iso2": "dj",
+    "name_et": "Djibouti",
+    "difficulty": "expert",
+    "region": "Africa",
+    "subregion": "East Africa",
+    "similarTo": [],
+    "capital": "Djibouti",
+    "population": "Umbes 1,1 miljonit.",
+    "facts": [
+      "Seal asub Aafrika kõige madalam koht (Assali järv), mis on väga soolane.",
+      "Djibouti on koht, kus kolm suurt maakoore plaati kokku saavad – maa praguneb seal vaikselt."
+    ]
+  },
+  {
+    "iso2": "dm",
+    "name_et": "Dominica",
+    "difficulty": "expert",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "similarTo": [],
+    "capital": "Roseau",
+    "population": "Umbes 73 000.",
+    "facts": [
+      "Seda kutsutakse \"Kariibi mere looduse saareks\", sest seal on 365 jõge.",
+      "Seal asub \"Keev järv\", kus vesi on nii kuum, et see päriselt muliseb ja aurab."
+    ]
+  },
+  {
+    "iso2": "do",
+    "name_et": "Dominikaani Vabariik",
+    "difficulty": "hard",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "similarTo": [],
+    "capital": "Santo Domingo",
+    "population": "Umbes 11 miljonit.",
+    "facts": [
+      "Seal asub Kariibi mere kõige kõrgem mägi.",
+      "See on ainus koht maailmas, kus leidub sinist vääriskivi nimega Larimar."
+    ]
+  },
+  {
+    "iso2": "ec",
+    "name_et": "Ecuador",
+    "difficulty": "medium",
+    "region": "Americas",
+    "subregion": "South America",
+    "similarTo": [
+      "co",
+      "ve"
+    ],
+    "capital": "Quito",
+    "population": "Umbes 18 miljonit.",
+    "facts": [
+      "Riik asub täpselt maakera keskkohas (ekvaatoril).",
+      "Ecuadorile kuuluvad Galápagose saared, kus elavad hiiglaslikud kilpkonnad."
+    ]
+  },
+  {
+    "iso2": "eg",
+    "name_et": "Egiptus",
+    "difficulty": "easy",
+    "region": "Africa",
+    "subregion": "North Africa",
+    "similarTo": [
+      "iq",
+      "sy",
+      "ye"
+    ],
+    "capital": "Kairo",
+    "population": "Umbes 110 miljonit (nagu hästi suur sipelgapesa!).",
+    "facts": [
+      "Läbi riigi voolab Niilus – üks maailma pikimaid jõgesid.",
+      "Vana-Egiptuses armastasid inimesed kasse nii väga, et nende pärast lausa leidsid!"
+    ]
+  },
+  {
+    "iso2": "sv",
+    "name_et": "El Salvador",
+    "difficulty": "hard",
+    "region": "Americas",
+    "subregion": "Central America",
+    "similarTo": [
+      "ar",
+      "hn",
+      "ni"
+    ],
+    "capital": "San Salvador",
+    "population": "Umbes 6,3 miljonit.",
+    "facts": [
+      "See on Kesk-Ameerika kõige väiksem riik.",
+      "Seda kutsutakse \"vulkaanide maaks\", sest seal on neid väga palju."
+    ]
+  },
+  {
+    "iso2": "gq",
+    "name_et": "Ekvatoriaal-Guinea",
+    "difficulty": "expert",
+    "region": "Africa",
+    "subregion": "Central Africa",
+    "similarTo": [],
+    "capital": "Malabo",
+    "population": "Umbes 1,7 miljonit.",
+    "facts": [
+      "See on ainus riik Aafrikas, kus räägitakse ametlikult hispaania keelt.",
+      "Riigi pealinn ei asu mandril, vaid hoopis ühel kaugel saarel."
+    ]
+  },
+  {
+    "iso2": "er",
+    "name_et": "Eritrea",
+    "difficulty": "expert",
+    "region": "Africa",
+    "subregion": "East Africa",
+    "similarTo": [],
+    "capital": "Asmara",
+    "population": "Umbes 3,7 miljonit.",
+    "facts": [
+      "See asub Punase mere ääres ja on väga mägine.",
+      "Selle pealinna Asmarat kutsutakse \"Väikeseks Roomaks\", sest majad näevad välja nagu Itaalias."
+    ]
+  },
+  {
+    "iso2": "ee",
+    "name_et": "Eesti",
+    "difficulty": "easy",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "similarTo": [],
+    "capital": "Tallinn",
+    "population": "Umbes 1,3 miljonit.",
+    "facts": [
+      "Meil on üle 2000 saare!",
+      "Eesti on üks maailma digiriike – siin saab peaaegu kõike arvutis teha, isegi valida ja ettevõtet luua!"
+    ]
+  },
+  {
+    "iso2": "sz",
+    "name_et": "Eswatini",
+    "difficulty": "expert",
+    "region": "Africa",
+    "subregion": "Southern Africa",
+    "similarTo": [],
+    "capital": "Mbabane",
+    "population": "Umbes 1,2 miljonit.",
+    "facts": [
+      "See on pisike ja mägine kuningriik Aafrikas.",
+      "Seal on kuningas, kes kannab tähtsate sündmuste ajal sulgedest krooni."
+    ]
+  },
+  {
+    "iso2": "et",
+    "name_et": "Etioopia",
+    "difficulty": "hard",
+    "region": "Africa",
+    "subregion": "East Africa",
+    "similarTo": [
+      "bo",
+      "gh",
+      "lt"
+    ],
+    "capital": "Addis Abeba",
+    "population": "Umbes 125 miljonit.",
+    "facts": [
+      "See on väga mägine riik, mida kutsutakse \"Aafrika katuseks\".",
+      "Arvatakse, et just Etioopiast leiti maailma esimene kohvitaim."
+    ]
+  },
+  {
+    "iso2": "fj",
+    "name_et": "Fidži",
+    "difficulty": "expert",
+    "region": "Oceania",
+    "subregion": "Melanesia",
+    "similarTo": [
+      "au",
+      "nz"
+    ],
+    "capital": "Suva",
+    "population": "Umbes 900 000 (nagu kaks korda Tallinna täis rahvast).",
+    "facts": [
+      "Fidži koosneb enam kui 300 saarest, kus on helesinine vesi.",
+      "Inimesed on seal maailma ühed sõbralikumad ja tervitavad kõiki hüüdega \"Bula!\"."
+    ]
+  },
+  {
+    "iso2": "fi",
+    "name_et": "Soome",
+    "difficulty": "easy",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "similarTo": [
+      "dk",
+      "se",
+      "no",
+      "is"
+    ],
+    "capital": "Helsingi",
+    "population": "Umbes 5,5 miljonit.",
+    "facts": [
+      "Seal on rohkem kui 180 000 järve – see on järvede maa!",
+      "Soome on ametlikult jõuluvana kodu!"
+    ]
+  },
+  {
+    "iso2": "fr",
+    "name_et": "Prantsusmaa",
+    "difficulty": "easy",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "similarTo": [
+      "it",
+      "ie"
+    ],
+    "capital": "Pariis",
+    "population": "Umbes 68 miljonit.",
+    "facts": [
+      "See on pindalalt suurim riik Euroopa Liidus.",
+      "Prantsusmaal on keelatud toitu ära visata – pood peab selle vaestele andma."
+    ]
+  },
+  {
+    "iso2": "ga",
+    "name_et": "Gabon",
+    "difficulty": "hard",
+    "region": "Africa",
+    "subregion": "Central Africa",
+    "similarTo": [],
+    "capital": "Libreville",
+    "population": "Umbes 2,4 miljonit.",
+    "facts": [
+      "Peaaegu kogu riik on kaetud puutumatu vihmametsaga.",
+      "Gabonis võid kohata rannas elevante ja jõehobusid, kes armastavad meres ujuda!"
+    ]
+  },
+  {
+    "iso2": "gm",
+    "name_et": "Gambia",
+    "difficulty": "expert",
+    "region": "Africa",
+    "subregion": "West Africa",
+    "similarTo": [],
+    "capital": "Banjul",
+    "population": "Umbes 2,7 miljonit.",
+    "facts": [
+      "See on väga kitsas riik, mis asub ümber Gambia jõe (nagu pikk uss teise riigi sees).",
+      "Gambiat kutsutakse \"Aafrika naeratavaks rannikuks\", sest inimesed on seal väga rõõmsad."
+    ]
+  },
+  {
+    "iso2": "ge",
+    "name_et": "Gruusia",
+    "difficulty": "medium",
+    "region": "Asia",
+    "subregion": "Central Asia",
+    "similarTo": [],
+    "capital": "Thbilisi",
+    "population": "Umbes 3,7 miljonit.",
+    "facts": [
+      "Seal asuvad Kaukasuse mäed, mis on lumised ja väga kõrged.",
+      "Gruusiast on pärit maitsev juustupirukas hatšapuri!"
+    ]
+  },
+  {
+    "iso2": "de",
+    "name_et": "Saksamaa",
+    "difficulty": "easy",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "similarTo": [
+      "be"
+    ],
+    "capital": "Berliin",
+    "population": "Umbes 84 miljonit (palju rahvast!).",
+    "facts": [
+      "Saksamaa on Euroopa keskel ja tal on palju naabreid.",
+      "Saksamaal leiutati kummikarud ja esimene trükitud raamat."
+    ]
+  },
+  {
+    "iso2": "gh",
+    "name_et": "Ghana",
+    "difficulty": "medium",
+    "region": "Africa",
+    "subregion": "West Africa",
+    "similarTo": [
+      "bo",
+      "et",
+      "lt"
+    ],
+    "capital": "Accra",
+    "population": "Umbes 33 miljonit.",
+    "facts": [
+      "Ghana asub täpselt maailma keskkoha (ekvaatori) lähedal.",
+      "Ghana on üks maailma suurimaid kakaotootjaid – sealt saab alguse sinu šokolaad!"
+    ]
+  },
+  {
+    "iso2": "gr",
+    "name_et": "Kreeka",
+    "difficulty": "easy",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "similarTo": [
+      "uy"
+    ],
+    "capital": "Ateena",
+    "population": "Umbes 10 miljonit.",
+    "facts": [
+      "Kreekal on üle 2000 saare, millest paljudel ei elagi kedagi.",
+      "Kreeka alfabeedist on pärit peaaegu kõik teised tähestikud, mida sa tead!"
+    ]
+  },
+  {
+    "iso2": "gd",
+    "name_et": "Grenada",
+    "difficulty": "expert",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "similarTo": [],
+    "capital": "St. George's",
+    "population": "Umbes 125 000.",
+    "facts": [
+      "Seda kutsutakse \"vürtsisaareks\", sest seal kasvab palju muskaatpähkleid.",
+      "Seal on veealune kuju-park, kus saavad sukelduda nii inimesed kui kalad."
+    ]
+  },
+  {
+    "iso2": "gt",
+    "name_et": "Guatemala",
+    "difficulty": "hard",
+    "region": "Americas",
+    "subregion": "Central America",
+    "similarTo": [
+      "ar",
+      "sv",
+      "hn",
+      "ni"
+    ],
+    "capital": "Guatemala",
+    "population": "Umbes 18 miljonit.",
+    "facts": [
+      "Seal on palju džungleid ja vanu maiade linnu.",
+      "Sealt on pärit sinu teksapükste sinine värv (indigo taim)."
+    ]
+  },
+  {
+    "iso2": "gn",
+    "name_et": "Guinea",
+    "difficulty": "expert",
+    "region": "Africa",
+    "subregion": "West Africa",
+    "similarTo": [
+      "ml",
+      "sn",
+      "cm"
+    ],
+    "capital": "Conakry",
+    "population": "Umbes 13,5 miljonit.",
+    "facts": [
+      "See on Lääne-Aafrika rannikuriik, mis on täis vihmametsi.",
+      "Guinea on maailma suurim boksiidi (alumiiniumi tooraine) leiukoht – suur osa maailma alumiiniumist tuleb sealt!"
+    ]
+  },
+  {
+    "iso2": "gw",
+    "name_et": "Guinea-Bissau",
+    "difficulty": "expert",
+    "region": "Africa",
+    "subregion": "West Africa",
+    "similarTo": [],
+    "capital": "Bissau",
+    "population": "Umbes 2,1 miljonit.",
+    "facts": [
+      "Seal on palju saari ja tihedaid mangroovisalusid (puud, mis kasvavad vees).",
+      "Seal elavad haruldased jõehobud, kes oskavad ja armastavad soolases merevees ujuda."
+    ]
+  },
+  {
+    "iso2": "gy",
+    "name_et": "Guyana",
+    "difficulty": "expert",
+    "region": "Americas",
+    "subregion": "South America",
+    "similarTo": [],
+    "capital": "Georgetown",
+    "population": "Umbes 810 000.",
+    "facts": [
+      "Seal asub Kaieteuri juga, mis on viis korda kõrgem kui Niagara juga!",
+      "See on ainus Lõuna-Ameerika riik, kus räägitakse ametlikult inglise keelt."
+    ]
+  },
+  {
+    "iso2": "ht",
+    "name_et": "Haiti",
+    "difficulty": "expert",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "similarTo": [
+      "li"
+    ],
+    "capital": "Port-au-Prince",
+    "population": "Umbes 11,5 miljonit.",
+    "facts": [
+      "See jagab saart koos Dominikaani Vabariigiga.",
+      "Haiti oli esimene riik maailmas, kus orjad end ise vabaks võitlesid."
+    ]
+  },
+  {
+    "iso2": "hn",
+    "name_et": "Honduras",
+    "difficulty": "hard",
+    "region": "Americas",
+    "subregion": "Central America",
+    "similarTo": [
+      "ar",
+      "sv",
+      "ni"
+    ],
+    "capital": "Tegucigalpa",
+    "population": "Umbes 10 miljonit.",
+    "facts": [
+      "Seal on maailma suuruselt teine korallrahu.",
+      "Ühes Hondurase külas räägitakse, et sealt sajab kord aastas taevast kalu!"
+    ]
+  },
+  {
+    "iso2": "hu",
+    "name_et": "Ungari",
+    "difficulty": "easy",
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "similarTo": [
+      "bg"
+    ],
+    "capital": "Budapest",
+    "population": "Umbes 9,7 miljonit.",
+    "facts": [
+      "Ungari on tuntud oma kuumaveeallikate ja suurte järvede poolest.",
+      "Ungarlased leiutasid Rubiku kuubi – selle värvilise mõistatuskuubi, mida kogu maailm armastab!"
+    ]
+  },
+  {
+    "iso2": "is",
+    "name_et": "Island",
+    "difficulty": "easy",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "similarTo": [
+      "no",
+      "se",
+      "dk",
+      "fi"
+    ],
+    "capital": "Reykjavik",
+    "population": "Umbes 380 000 (päris vähe inimesi).",
+    "facts": [
+      "Seal on väga palju vulkaane ja kuumaveeallikaid.",
+      "Islandil ei ole mitte ühtegi sääske!"
+    ]
+  },
+  {
+    "iso2": "in",
+    "name_et": "India",
+    "difficulty": "easy",
+    "region": "Asia",
+    "subregion": "South Asia",
+    "similarTo": [
+      "ne"
+    ],
+    "capital": "New Delhi",
+    "population": "Umbes 1,4 miljardit.",
+    "facts": [
+      "India on suur poolsaar, mida ümbritseb soe ookean.",
+      "Indias on lehmad pühad loomad ja nad võivad julgelt keset teed jalutada."
+    ]
+  },
+  {
+    "iso2": "id",
+    "name_et": "Indoneesia",
+    "difficulty": "medium",
+    "region": "Asia",
+    "subregion": "Southeast Asia",
+    "similarTo": [
+      "mc",
+      "pl"
+    ],
+    "capital": "Jakarta",
+    "population": "Umbes 278 miljonit (tohutu rahvamass!).",
+    "facts": [
+      "See riik koosneb enam kui 17 000 saarest!",
+      "Seal elavad komodo varaanid – maailma suurimad sisalikud, kes näevad välja nagu lohed."
+    ]
+  },
+  {
+    "iso2": "ir",
+    "name_et": "Iraan",
+    "difficulty": "medium",
+    "region": "Asia",
+    "subregion": "Middle East",
+    "similarTo": [],
+    "capital": "Teheran",
+    "population": "Umbes 88 miljonit.",
+    "facts": [
+      "Seal on väga vanad kõrbed ja ka lumised mäed.",
+      "Sealt on pärit maailma kõige ilusamad ja kuulsamad pärsia vaibad."
+    ]
+  },
+  {
+    "iso2": "iq",
+    "name_et": "Iraak",
+    "difficulty": "hard",
+    "region": "Asia",
+    "subregion": "Middle East",
+    "similarTo": [
+      "eg",
+      "sy",
+      "ye"
+    ],
+    "capital": "Bagdad",
+    "population": "Umbes 45 miljonit.",
+    "facts": [
+      "Seal voolavad kaks kuulsat jõge: Tigris ja Eufrat.",
+      "Iraaki peetakse kohaks, kus inimesed õppisid esimest korda kirjutama."
+    ]
+  },
+  {
+    "iso2": "ie",
+    "name_et": "Iirimaa",
+    "difficulty": "easy",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "similarTo": [
+      "it",
+      "ci"
+    ],
+    "capital": "Dublin",
+    "population": "Umbes 5,1 miljonit.",
+    "facts": [
+      "Iirimaad kutsutakse \"Roheliseks saareks\", sest seal sajab palju vihma ja kõik on roheline.",
+      "Sealt on pärit kuulsad pajulased ehk leprechaun'id ja legend kullast vikerkaaretipus!"
+    ]
+  },
+  {
+    "iso2": "il",
+    "name_et": "Iisrael",
+    "difficulty": "easy",
+    "region": "Asia",
+    "subregion": "Middle East",
+    "similarTo": [],
+    "capital": "Jeruusalemm",
+    "population": "Umbes 9,5 miljonit.",
+    "facts": [
+      "Seal asub Surnumeri, kus vesi on nii soolane, et sa lihtsalt hõljud selle peal.",
+      "Iisraelis on maailma kõige rohkem muuseume ühe inimese kohta."
+    ]
+  },
+  {
+    "iso2": "it",
+    "name_et": "Itaalia",
+    "difficulty": "easy",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "similarTo": [
+      "fr",
+      "ie"
+    ],
+    "capital": "Rooma",
+    "population": "Umbes 59 miljonit.",
+    "facts": [
+      "Itaalia meenutab kaardil vaadates kõrge kontsaga saabast.",
+      "Sealt on pärit pitsa, pasta ja maailma parim jäätis (gelato)."
+    ]
+  },
+  {
+    "iso2": "jm",
+    "name_et": "Jamaica",
+    "difficulty": "medium",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "similarTo": [],
+    "capital": "Kingston",
+    "population": "Umbes 3 miljonit.",
+    "facts": [
+      "See on päikeseline saar keset sinist merd.",
+      "Jamaica on kuulus väga kiirete jooksjate ja mõnusa reggae-muusika poolest."
+    ]
+  },
+  {
+    "iso2": "jp",
+    "name_et": "Jaapan",
+    "difficulty": "easy",
+    "region": "Asia",
+    "subregion": "East Asia",
+    "similarTo": [
+      "bd"
+    ],
+    "capital": "Tokyo",
+    "population": "Umbes 125 miljonit.",
+    "facts": [
+      "See riik koosneb peaaegu 7000 saarest.",
+      "Jaapanis on nii palju kasse, et seal on isegi spetsiaalsed \"kassisaared\"."
+    ]
+  },
+  {
+    "iso2": "jo",
+    "name_et": "Jordaania",
+    "difficulty": "hard",
+    "region": "Asia",
+    "subregion": "Middle East",
+    "similarTo": [
+      "ps",
+      "sd",
+      "kw"
+    ],
+    "capital": "Amman",
+    "population": "Umbes 11 miljonit.",
+    "facts": [
+      "Seal asub salapärane roosa linn Petra, mis on raiutud kalju sisse.",
+      "Jordaanias asub Petra – salapärane roosa linn, mis on tervenisti kaljusse raiutud nagu hiiglaslik skulptuur!"
+    ]
+  },
+  {
+    "iso2": "kz",
+    "name_et": "Kasahstan",
+    "difficulty": "hard",
+    "region": "Asia",
+    "subregion": "Central Asia",
+    "similarTo": [],
+    "capital": "Astana",
+    "population": "Umbes 19 miljonit.",
+    "facts": [
+      "See on maailma suurim riik, millel pole piiri merega.",
+      "Seal asub koht, kust saadetakse rakette kosmosesse (Baikonur)."
+    ]
+  },
+  {
+    "iso2": "ke",
+    "name_et": "Keenia",
+    "difficulty": "medium",
+    "region": "Africa",
+    "subregion": "East Africa",
+    "similarTo": [],
+    "capital": "Nairobi",
+    "population": "Umbes 55 miljonit.",
+    "facts": [
+      "Seal on suured rahvuspargid, kus loomad elavad vabalt.",
+      "Keeniast pärit inimesed on maailma ühed kiireimad pikamaajooksjad."
+    ]
+  },
+  {
+    "iso2": "ki",
+    "name_et": "Kiribati",
+    "difficulty": "expert",
+    "region": "Oceania",
+    "subregion": "Micronesia",
+    "similarTo": [],
+    "capital": "Tarawa",
+    "population": "Umbes 130 000.",
+    "facts": [
+      "See riik asub korraga kõigil neljal poolkeral (põhi, lõuna, ida, lääs).",
+      "Kiribati on esimene koht maailmas, kus tervitatakse uut aastat!"
+    ]
+  },
+  {
+    "iso2": "kp",
+    "name_et": "Põhja-Korea",
+    "difficulty": "hard",
+    "region": "Asia",
+    "subregion": "East Asia",
+    "similarTo": [],
+    "capital": "Pyongyang",
+    "population": "Umbes 26 miljonit.",
+    "facts": [
+      "See asub poolsaarel ja on ümbritsetud merest ja suurtest naabritest.",
+      "Seal asub maailma suurim staadion, kuhu mahuks korraga 150 000 inimest!"
+    ]
+  },
+  {
+    "iso2": "kr",
+    "name_et": "Lõuna-Korea",
+    "difficulty": "easy",
+    "region": "Asia",
+    "subregion": "East Asia",
+    "similarTo": [],
+    "capital": "Soul",
+    "population": "Umbes 52 miljonit.",
+    "facts": [
+      "Riik asub poolsaarel ja on väga mägine.",
+      "Seal on robotid nii tavalised, et nad võivad koolis lapsi õpetada või toitu tuua."
+    ]
+  },
+  {
+    "iso2": "kw",
+    "name_et": "Kuveit",
+    "difficulty": "hard",
+    "region": "Asia",
+    "subregion": "Middle East",
+    "similarTo": [
+      "jo",
+      "ps",
+      "sd"
+    ],
+    "capital": "Kuwait",
+    "population": "Umbes 4,3 miljonit.",
+    "facts": [
+      "See on väga rikas riik, kus on palju naftat ja moodsaid maju.",
+      "Kuveidis on nii palav, et seal on isegi kliimaseadmetega jahutatud väliturgusid ja randu!"
+    ]
+  },
+  {
+    "iso2": "kg",
+    "name_et": "Kõrgõzstan",
+    "difficulty": "expert",
+    "region": "Asia",
+    "subregion": "Central Asia",
+    "similarTo": [],
+    "capital": "Biškek",
+    "population": "Umbes 6,7 miljonit.",
+    "facts": [
+      "See on väga-väga mägine maa – peaaegu kogu riik on mägedes!",
+      "Seal on riigi sümboliks lumelopardid ja inimesed armastavad elada jurtades."
+    ]
+  },
+  {
+    "iso2": "la",
+    "name_et": "Laos",
+    "difficulty": "hard",
+    "region": "Asia",
+    "subregion": "Southeast Asia",
+    "similarTo": [
+      "th",
+      "cr"
+    ],
+    "capital": "Vientiane",
+    "population": "Umbes 7,5 miljonit.",
+    "facts": [
+      "See on Kagu-Aasias ainus riik, millel pole merepiiri.",
+      "Laost kutsutakse \"miljoni elevandi maaks\", sest neid elas seal kunagi väga palju."
+    ]
+  },
+  {
+    "iso2": "lv",
+    "name_et": "Läti",
+    "difficulty": "easy",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "similarTo": [
+      "at",
+      "lb"
+    ],
+    "capital": "Riia",
+    "population": "Umbes 1,9 miljonit.",
+    "facts": [
+      "Läti on üks maailma rohelisemaid riike, pool maast on metsa all.",
+      "Lätis asub Euroopa kõige laiem kosk – Ventas Rumba on laiem kui kuulus Niagara!"
+    ]
+  },
+  {
+    "iso2": "lb",
+    "name_et": "Liibanon",
+    "difficulty": "hard",
+    "region": "Asia",
+    "subregion": "Middle East",
+    "similarTo": [
+      "at",
+      "lv"
+    ],
+    "capital": "Beirut",
+    "population": "Umbes 5,3 miljonit.",
+    "facts": [
+      "See asub Vahemere ääres ja seal on kaunid seedripuud.",
+      "Liibanon on üks maailma vanimaid kohti, kus on tehtud klaasi."
+    ]
+  },
+  {
+    "iso2": "ls",
+    "name_et": "Lesotho",
+    "difficulty": "expert",
+    "region": "Africa",
+    "subregion": "Southern Africa",
+    "similarTo": [],
+    "capital": "Maseru",
+    "population": "Umbes 2,3 miljonit.",
+    "facts": [
+      "See riik asub üleni Lõuna-Aafrika Vabariigi sees ja on väga kõrgel mägedes.",
+      "Seda kutsutakse \"Kuningriigiks taevas\", sest seal on isegi talvel vahel lund ja saab suusatada!"
+    ]
+  },
+  {
+    "iso2": "lr",
+    "name_et": "Libeeria",
+    "difficulty": "hard",
+    "region": "Africa",
+    "subregion": "West Africa",
+    "similarTo": [
+      "us",
+      "my",
+      "cl"
+    ],
+    "capital": "Monrovia",
+    "population": "Umbes 5,5 miljonit.",
+    "facts": [
+      "See on Aafrika vanim vabariik.",
+      "See on üks väheseid riike maailmas, kus ei kasutata meetermõõdustikku (nad ei mõõda meetritega)."
+    ]
+  },
+  {
+    "iso2": "ly",
+    "name_et": "Liibüa",
+    "difficulty": "hard",
+    "region": "Africa",
+    "subregion": "North Africa",
+    "similarTo": [],
+    "capital": "Tripoli",
+    "population": "Umbes 7 miljonit.",
+    "facts": [
+      "Peaaegu kogu riik on kaetud kuuma Sahara kõrbega.",
+      "Seal on leitud kaljujooniseid, mis näitavad, et kunagi ammu oli sealne kõrb roheline ja täis loomi."
+    ]
+  },
+  {
+    "iso2": "li",
+    "name_et": "Liechtenstein",
+    "difficulty": "expert",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "similarTo": [
+      "ht"
+    ],
+    "capital": "Vaduz",
+    "population": "Umbes 39 000.",
+    "facts": [
+      "See asub mägede vahel Šveitsi ja Austria vahel.",
+      "See on üks väheseid riike maailmas, kus on rohkem ettevõtteid kui inimesi!"
+    ]
+  },
+  {
+    "iso2": "lt",
+    "name_et": "Leedu",
+    "difficulty": "easy",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "similarTo": [
+      "bo",
+      "et",
+      "gh"
+    ],
+    "capital": "Vilnius",
+    "population": "Umbes 2,8 miljonit.",
+    "facts": [
+      "Leedu asub täpselt Euroopa keskel.",
+      "Leedu on ainus riik maailmas, millel on oma ametlik lõhn (\"Leedu lõhn\")."
+    ]
+  },
+  {
+    "iso2": "lu",
+    "name_et": "Luksemburg",
+    "difficulty": "hard",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "similarTo": [
+      "nl",
+      "ru"
+    ],
+    "capital": "Luxembourg",
+    "population": "Umbes 660 000.",
+    "facts": [
+      "See on väike ja väga rikas riik Belgia, Prantsusmaa ja Saksamaa vahel.",
+      "Selles riigis on ühistransport (bussid ja rongid) kõigile täiesti tasuta!"
+    ]
+  },
+  {
+    "iso2": "mg",
+    "name_et": "Madagaskar",
+    "difficulty": "hard",
+    "region": "Africa",
+    "subregion": "Indian Ocean",
+    "similarTo": [],
+    "capital": "Antananarivo",
+    "population": "Umbes 30 miljonit.",
+    "facts": [
+      "See on hiiglaslik saar Aafrika ranniku lähedal.",
+      "Seal elavad leemurid, keda ei leidu vabas looduses kuskil mujal maailmas!"
+    ]
+  },
+  {
+    "iso2": "mw",
+    "name_et": "Malawi",
+    "difficulty": "expert",
+    "region": "Africa",
+    "subregion": "Southern Africa",
+    "similarTo": [],
+    "capital": "Lilongwe",
+    "population": "Umbes 21 miljonit.",
+    "facts": [
+      "Seal asub hiiglaslik järv, kus elab rohkem kalaliike kui kuskil mujal.",
+      "Malawit kutsutakse \"Aafrika soojaks südameks\", sest inimesed on seal ülisõbralikud."
+    ]
+  },
+  {
+    "iso2": "my",
+    "name_et": "Malaisia",
+    "difficulty": "medium",
+    "region": "Asia",
+    "subregion": "Southeast Asia",
+    "similarTo": [
+      "us",
+      "lr"
+    ],
+    "capital": "Kuala Lumpur",
+    "population": "Umbes 34 miljonit.",
+    "facts": [
+      "Seal on tohutult vanad vihmametsad ja hiiglaslikud koopad.",
+      "Malaisia metsadest leiab maailma suurima lille – Rafflesia lõhnab nagu mädanenud liha, aga on imeilus!"
+    ]
+  },
+  {
+    "iso2": "mv",
+    "name_et": "Maldiivid",
+    "difficulty": "hard",
+    "region": "Asia",
+    "subregion": "South Asia",
+    "similarTo": [],
+    "capital": "Malé",
+    "population": "Umbes 520 000.",
+    "facts": [
+      "See on maailma kõige madalam riik – kõrgeim koht on vaid põlvepikkune!",
+      "Seal on hotelle, kus on veealused toad, et saaksid koos kaladega magada."
+    ]
+  },
+  {
+    "iso2": "ml",
+    "name_et": "Mali",
+    "difficulty": "expert",
+    "region": "Africa",
+    "subregion": "West Africa",
+    "similarTo": [
+      "gn",
+      "sn",
+      "cm"
+    ],
+    "capital": "Bamako",
+    "population": "Umbes 23 miljonit.",
+    "facts": [
+      "Suur osa riigist asub Sahara kõrbes.",
+      "Vanasti oli Mali kuningas nii rikas, et ta jagas rännates inimestele puhast kulda."
+    ]
+  },
+  {
+    "iso2": "mt",
+    "name_et": "Malta",
+    "difficulty": "hard",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "similarTo": [],
+    "capital": "Valletta",
+    "population": "Umbes 530 000 (nagu Tallinn ja Tartu kokku).",
+    "facts": [
+      "See on saareriik keset Vahemerd.",
+      "Maltal on nii palju vanu kirikuid, et seal võiks igal päeval aastas erinevas kirikus käia."
+    ]
+  },
+  {
+    "iso2": "mh",
+    "name_et": "Marshalli Saared",
+    "difficulty": "expert",
+    "region": "Oceania",
+    "subregion": "Micronesia",
+    "similarTo": [],
+    "capital": "Majuro",
+    "population": "Umbes 42 000.",
+    "facts": [
+      "Need on madalad korallisaared, mis näevad välja nagu kitsad triibud meres.",
+      "Seal on maailma suurim haide kaitseala – haid on seal väga hoitud."
+    ]
+  },
+  {
+    "iso2": "mr",
+    "name_et": "Mauritaania",
+    "difficulty": "expert",
+    "region": "Africa",
+    "subregion": "North Africa",
+    "similarTo": [],
+    "capital": "Nouakchott",
+    "population": "Umbes 4,8 miljonit.",
+    "facts": [
+      "See on suur ja liivane riik, kus Sahara kõrb kohtub ookeaniga.",
+      "Seal sõidab maailma üks pikemaid ronge – see on 2,5 kilomeetrit pikk!"
+    ]
+  },
+  {
+    "iso2": "mu",
+    "name_et": "Mauritius",
+    "difficulty": "expert",
+    "region": "Africa",
+    "subregion": "Indian Ocean",
+    "similarTo": [],
+    "capital": "Port Louis",
+    "population": "Umbes 1,3 miljonit.",
+    "facts": [
+      "See on väike paradiisisaar keset ookeani.",
+      "Kunagi elas seal suur lind dodo, kes ei osanud lennata ja keda nüüd enam maailmas pole."
+    ]
+  },
+  {
+    "iso2": "mx",
+    "name_et": "Mehhiko",
+    "difficulty": "easy",
+    "region": "Americas",
+    "subregion": "North America",
+    "similarTo": [
+      "it"
+    ],
+    "capital": "Mexico",
+    "population": "Umbes 128 miljonit.",
+    "facts": [
+      "Mehhikos on nii džungleid kui ka suuri vulkaane.",
+      "Sealt on pärit šokolaad ja maailma kõige väiksem koer – chihuahua!"
+    ]
+  },
+  {
+    "iso2": "fm",
+    "name_et": "Mikroneesia",
+    "difficulty": "expert",
+    "region": "Oceania",
+    "subregion": "Micronesia",
+    "similarTo": [],
+    "capital": "Palikir",
+    "population": "Umbes 115 000.",
+    "facts": [
+      "See koosneb enam kui 600 pisikesest saarest keset suurt ookeani.",
+      "Ühel nende saarel (Yap) kasutati vanasti rahaks hiiglaslikke kivist rattaid!"
+    ]
+  },
+  {
+    "iso2": "md",
+    "name_et": "Moldova",
+    "difficulty": "hard",
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "similarTo": [
+      "ro",
+      "td",
+      "ad"
+    ],
+    "capital": "Chișinău",
+    "population": "Umbes 2,5 miljonit.",
+    "facts": [
+      "See on väike riik Rumeenia ja Ukraina vahel.",
+      "Moldovas asub maailma suurim maa-alune veinikelder, mis on nagu terve linn."
+    ]
+  },
+  {
+    "iso2": "mc",
+    "name_et": "Monaco",
+    "difficulty": "hard",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "similarTo": [
+      "id",
+      "pl"
+    ],
+    "capital": "Monaco",
+    "population": "Umbes 39 000 (nagu Pärnu linn).",
+    "facts": [
+      "See on suuruselt teine kõige väiksem riik ja asub mere ääres.",
+      "Monaco on nii pisike, et sellele saaks tiiru peale jalutada vähem kui tunniga."
+    ]
+  },
+  {
+    "iso2": "mn",
+    "name_et": "Mongoolia",
+    "difficulty": "hard",
+    "region": "Asia",
+    "subregion": "East Asia",
+    "similarTo": [],
+    "capital": "Ulaanbaatar",
+    "population": "Umbes 3,4 miljonit.",
+    "facts": [
+      "See on hiiglaslik riik, kus on väga palju tühja ruumi ja steppe.",
+      "Paljud inimesed elavad seal ikka veel jurtades (ümmargused telk-majad) ja ratsutavad hobustega."
+    ]
+  },
+  {
+    "iso2": "me",
+    "name_et": "Montenegro",
+    "difficulty": "medium",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "similarTo": [],
+    "capital": "Podgorica",
+    "population": "Umbes 600 000.",
+    "facts": [
+      "Seal asub Euroopa kõige sügavam kanjon (jõeorg).",
+      "Riigi nimi tähendab eesti keeles \"Mustamägi\"."
+    ]
+  },
+  {
+    "iso2": "ma",
+    "name_et": "Maroko",
+    "difficulty": "medium",
+    "region": "Africa",
+    "subregion": "North Africa",
+    "similarTo": [],
+    "capital": "Rabat",
+    "population": "Umbes 37 miljonit.",
+    "facts": [
+      "See asub Aafrika nurgas, kohe Euroopa külje all.",
+      "Seal on \"sinine linn\" Chefchaouen, kus peaaegu kõik majad on värvitud siniseks."
+    ]
+  },
+  {
+    "iso2": "mz",
+    "name_et": "Mosambiik",
+    "difficulty": "hard",
+    "region": "Africa",
+    "subregion": "Southern Africa",
+    "similarTo": [],
+    "capital": "Maputo",
+    "population": "Umbes 34 miljonit.",
+    "facts": [
+      "Sellel riigil on väga pikk ja ilus liivarand India ookeani ääres.",
+      "See on ainus riik maailmas, mille lipu peal on kujutatud relva – see sümboliseerib nende võitlust vabaduse eest."
+    ]
+  },
+  {
+    "iso2": "mm",
+    "name_et": "Myanmar",
+    "difficulty": "hard",
+    "region": "Asia",
+    "subregion": "Southeast Asia",
+    "similarTo": [],
+    "capital": "Naypyidaw",
+    "population": "Umbes 54 miljonit.",
+    "facts": [
+      "Seal on tuhandeid kuldseid templeid, mis säravad päikese käes.",
+      "Myanmaris kannavad mehed tihti seelikulaadseid riideid, mida kutsutakse \"longyi\"."
+    ]
+  },
+  {
+    "iso2": "na",
+    "name_et": "Namiibia",
+    "difficulty": "expert",
+    "region": "Africa",
+    "subregion": "Southern Africa",
+    "similarTo": [],
+    "capital": "Windhoek",
+    "population": "Umbes 2,6 miljonit.",
+    "facts": [
+      "Seal asuvad maailma kõige kõrgemad liivaluited (nagu hiiglaslikud liivakastid).",
+      "Namibia rannikut kutsutakse \"Luukerede rannikuks\", sest seal on palju laevavrakke."
+    ]
+  },
+  {
+    "iso2": "nr",
+    "name_et": "Nauru",
+    "difficulty": "expert",
+    "region": "Oceania",
+    "subregion": "Micronesia",
+    "similarTo": [],
+    "capital": "Ametlikku pealinna pole",
+    "population": "Umbes 12 000.",
+    "facts": [
+      "See on maailma kõige väiksem saareriik ja sellele saab jalgsi tiiru peale teha.",
+      "Nauru on ainus riik maailmas, millel polegi ühte kindlat pealinna-linna."
+    ]
+  },
+  {
+    "iso2": "np",
+    "name_et": "Nepal",
+    "difficulty": "medium",
+    "region": "Asia",
+    "subregion": "South Asia",
+    "similarTo": [],
+    "capital": "Katmandu",
+    "population": "Umbes 30 miljonit.",
+    "facts": [
+      "Seal asub maailma kõrgeim mägi – Mount Everest.",
+      "Nepal on ainus riik, mille lipp ei ole ristkülik! See koosneb kahest kolmnurgast üksteise peal."
+    ]
+  },
+  {
+    "iso2": "nl",
+    "name_et": "Holland",
+    "difficulty": "easy",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "similarTo": [
+      "lu",
+      "ru"
+    ],
+    "capital": "Amsterdam",
+    "population": "Umbes 18 miljonit.",
+    "facts": [
+      "Suur osa Hollandist asub merepinnast madalamal.",
+      "Holland on kuulus oma tuulikute, puukingade ja miljonite tulpide poolest."
+    ]
+  },
+  {
+    "iso2": "nz",
+    "name_et": "Uus-Meremaa",
+    "difficulty": "easy",
+    "region": "Oceania",
+    "subregion": "Australia and Oceania",
+    "similarTo": [
+      "au"
+    ],
+    "capital": "Wellington",
+    "population": "Umbes 5 miljonit.",
+    "facts": [
+      "See koosneb kahest suurest ja paljudest väikestest saartest.",
+      "Seal elab haruldane lind nimega kiivi, kes ei oska lennata."
+    ]
+  },
+  {
+    "iso2": "ni",
+    "name_et": "Nicaragua",
+    "difficulty": "hard",
+    "region": "Americas",
+    "subregion": "Central America",
+    "similarTo": [
+      "ar",
+      "sv",
+      "hn"
+    ],
+    "capital": "Managua",
+    "population": "Umbes 7 miljonit.",
+    "facts": [
+      "Seal asuvad Kesk-Ameerika kaks kõige suuremat järve.",
+      "Nicaragua järv on ainus mageveejärv maailmas, kus elavad haid!"
+    ]
+  },
+  {
+    "iso2": "ne",
+    "name_et": "Niger",
+    "difficulty": "expert",
+    "region": "Africa",
+    "subregion": "West Africa",
+    "similarTo": [
+      "in"
+    ],
+    "capital": "Niamey",
+    "population": "Umbes 27 miljonit.",
+    "facts": [
+      "See on \"kõrbevärav\", kus elavad kaelkirjakud ja antiloobid.",
+      "Nigerit kutsutakse \"maailma kõige nooremaks riigiks\", sest seal on pool rahvastest lapsed."
+    ]
+  },
+  {
+    "iso2": "ng",
+    "name_et": "Nigeeria",
+    "difficulty": "medium",
+    "region": "Africa",
+    "subregion": "West Africa",
+    "similarTo": [
+      "ie"
+    ],
+    "capital": "Abuja",
+    "population": "Umbes 220 miljonit (Aafrika kõige rahvarohkem riik!).",
+    "facts": [
+      "Seal on palju troopilisi metsi ja suuri linnu.",
+      "Nigeerias tehakse rohkem filme kui peaaegu kuskil mujal maailmas (seda kutsutakse Nollywoodiks)."
+    ]
+  },
+  {
+    "iso2": "mk",
+    "name_et": "Põhja-Makedoonia",
+    "difficulty": "medium",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "similarTo": [],
+    "capital": "Skopje",
+    "population": "Umbes 2 miljonit.",
+    "facts": [
+      "See on riik, kus on palju ilusaid järvi ja mägesid.",
+      "Pealinnas Skopjes on uskumatult palju hiiglaslikke kujusid ja monumente."
+    ]
+  },
+  {
+    "iso2": "no",
+    "name_et": "Norra",
+    "difficulty": "easy",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "similarTo": [
+      "se",
+      "dk",
+      "is",
+      "fi"
+    ],
+    "capital": "Oslo",
+    "population": "Umbes 5,5 miljonit.",
+    "facts": [
+      "Norra on kuulus oma fjordide (kitsad merelahed mägede vahel) poolest.",
+      "Talviti saab seal näha taevas tantsivaid virmalisi."
+    ]
+  },
+  {
+    "iso2": "om",
+    "name_et": "Omaan",
+    "difficulty": "expert",
+    "region": "Asia",
+    "subregion": "Middle East",
+    "similarTo": [],
+    "capital": "Masqat",
+    "population": "Umbes 4,5 miljonit.",
+    "facts": [
+      "Seal on kaunid kõrbed ja väga pikad rannad.",
+      "Omaan on kuulus oma viiruki ehk puuvaigu poolest, mis lõhnab imeliselt."
+    ]
+  },
+  {
+    "iso2": "pk",
+    "name_et": "Pakistan",
+    "difficulty": "medium",
+    "region": "Asia",
+    "subregion": "South Asia",
+    "similarTo": [
+      "dz"
+    ],
+    "capital": "Islamabad",
+    "population": "Umbes 240 miljonit (väga suur riik!).",
+    "facts": [
+      "Seal asub maailma teine kõige kõrgem mägi – K2.",
+      "Pakistanis on maailma suurim kiirabi-võrgustik, mis aitab inimesi tasuta."
+    ]
+  },
+  {
+    "iso2": "pw",
+    "name_et": "Palau",
+    "difficulty": "expert",
+    "region": "Oceania",
+    "subregion": "Micronesia",
+    "similarTo": [
+      "bd",
+      "jp"
+    ],
+    "capital": "Ngerulmud",
+    "population": "Umbes 18 000 (nagu Viljandi linn).",
+    "facts": [
+      "See on saareriik, kus on uskumatult selge vesi ja palju koralle.",
+      "Seal on järv, mis on täis miljoneid pehmeid millimallikaid, kes ei nõela üldse!"
+    ]
+  },
+  {
+    "iso2": "ps",
+    "name_et": "Palestiina",
+    "difficulty": "hard",
+    "region": "Asia",
+    "subregion": "Middle East",
+    "similarTo": [
+      "jo",
+      "sd",
+      "kw"
+    ],
+    "capital": "Ramallah (halduskeskus)",
+    "population": "Umbes 5,4 miljonit.",
+    "facts": [
+      "Palestiina aladel asub Jeruusalemm, mis on püha linn kolmele suurele usundile.",
+      "Surnumeri Palestiina piiril on maailma madalaim koht maal – seal ei saa ka uppuda, sest vesi on nii soolane!"
+    ]
+  },
+  {
+    "iso2": "pa",
+    "name_et": "Panama",
+    "difficulty": "hard",
+    "region": "Americas",
+    "subregion": "Central America",
+    "similarTo": [],
+    "capital": "Panama",
+    "population": "Umbes 4,4 miljonit.",
+    "facts": [
+      "Seal asub kuulus kanal, mis lubab laevadel sõita otse läbi Ameerika mandri.",
+      "Panama on ainus koht maailmas, kus saad näha päikest tõusmas Vaiksest ookeanist ja loojumas Atlandi ookeani!"
+    ]
+  },
+  {
+    "iso2": "pg",
+    "name_et": "Paapua Uus-Guinea",
+    "difficulty": "expert",
+    "region": "Oceania",
+    "subregion": "Melanesia",
+    "similarTo": [],
+    "capital": "Port Moresby",
+    "population": "Umbes 10 miljonit.",
+    "facts": [
+      "Seal on väga tihedad džunglid ja kõrged mäed.",
+      "Selles riigis räägitakse üle 800 erineva keele – see on maailmarekord!"
+    ]
+  },
+  {
+    "iso2": "py",
+    "name_et": "Paraguay",
+    "difficulty": "hard",
+    "region": "Americas",
+    "subregion": "South America",
+    "similarTo": [
+      "nl",
+      "lu"
+    ],
+    "capital": "Asunción",
+    "population": "Umbes 6,8 miljonit.",
+    "facts": [
+      "See riik asub Lõuna-Ameerika südames ja tal pole merepiiri.",
+      "Seal on kaks ametlikku keelt ja peaaegu kõik inimesed räägivad mõlemat."
+    ]
+  },
+  {
+    "iso2": "pe",
+    "name_et": "Peruu",
+    "difficulty": "easy",
+    "region": "Americas",
+    "subregion": "South America",
+    "similarTo": [
+      "ca"
+    ],
+    "capital": "Lima",
+    "population": "Umbes 34 miljonit.",
+    "facts": [
+      "Peruu mägedes asub salapärane vana linn Machu Picchu.",
+      "Peruust on pärit kartul! Nad kasvatavad seal rohkem kui 3000 sorti kartuleid."
+    ]
+  },
+  {
+    "iso2": "ph",
+    "name_et": "Filipiinid",
+    "difficulty": "medium",
+    "region": "Asia",
+    "subregion": "Southeast Asia",
+    "similarTo": [
+      "cz"
+    ],
+    "capital": "Manila",
+    "population": "Umbes 115 miljonit.",
+    "facts": [
+      "See riik koosneb enam kui 7600 saarest.",
+      "Seal on \"Šokolaadimäed\" – üle 1200 künka, mis muutuvad suvel pruuniks nagu kommid."
+    ]
+  },
+  {
+    "iso2": "pl",
+    "name_et": "Poola",
+    "difficulty": "easy",
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "similarTo": [
+      "id",
+      "mc"
+    ],
+    "capital": "Varssavi",
+    "population": "Umbes 38 miljonit.",
+    "facts": [
+      "Poola on suur riik, millel on pikk piir merega.",
+      "Poola on maailma suurim õunte eksportija – sealt tulevad väga magusad ubinad."
+    ]
+  },
+  {
+    "iso2": "pt",
+    "name_et": "Portugal",
+    "difficulty": "easy",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "similarTo": [],
+    "capital": "Lissabon",
+    "population": "Umbes 10,3 miljonit.",
+    "facts": [
+      "Portugal asub Euroopa kõige läänepoolsemas nurgas, mere ääres.",
+      "Portugallased avastasid esimestena mereteed Aafrika ümber ja Indiasse – nad olid väga julged meremehed!"
+    ]
+  },
+  {
+    "iso2": "qa",
+    "name_et": "Katar",
+    "difficulty": "expert",
+    "region": "Asia",
+    "subregion": "Middle East",
+    "similarTo": [
+      "bh"
+    ],
+    "capital": "Doha",
+    "population": "Umbes 2,7 miljonit.",
+    "facts": [
+      "See on väike riik poolsaarel keset Pärsia lahte.",
+      "Kataris on nii kuum, et seal jahutatakse isegi tänavaid ja välisturge õhukonditsioneriga!"
+    ]
+  },
+  {
+    "iso2": "ro",
+    "name_et": "Rumeenia",
+    "difficulty": "easy",
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "similarTo": [
+      "td",
+      "ad",
+      "md"
+    ],
+    "capital": "Bukarest",
+    "population": "Umbes 19 miljonit.",
+    "facts": [
+      "Seal asuvad Karpaadi mäed, kus elab palju pruunkarusid.",
+      "Rumeenias asub loss, kus räägitakse elavat kuulus krahv Dracula."
+    ]
+  },
+  {
+    "iso2": "ru",
+    "name_et": "Venemaa",
+    "difficulty": "easy",
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "similarTo": [
+      "nl",
+      "lu"
+    ],
+    "capital": "Moskva",
+    "population": "Umbes 144 miljonit.",
+    "facts": [
+      "See on suuruselt maailma kõige suurem riik!",
+      "Venemaal on 11 erinevat ajavööndit – kui ühes otsas lapsed ärkavad, siis teises otsas lähevad magama."
+    ]
+  },
+  {
+    "iso2": "rw",
+    "name_et": "Rwanda",
+    "difficulty": "expert",
+    "region": "Africa",
+    "subregion": "East Africa",
+    "similarTo": [],
+    "capital": "Kigali",
+    "population": "Umbes 14 miljonit.",
+    "facts": [
+      "Seda kutsutakse \"tuhande künka maaks\", sest seal on nii palju mägesid.",
+      "Rwanda on üks maailma puhtamaid riike, sest kilekotid on seal rangelt keelatud."
+    ]
+  },
+  {
+    "iso2": "kn",
+    "name_et": "Saint Kitts ja Nevis",
+    "difficulty": "expert",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "similarTo": [],
+    "capital": "Basseterre",
+    "population": "Umbes 48 000.",
+    "facts": [
+      "See on kõige väiksem riik kogu Ameerika mandri lähedal.",
+      "Seal sõidab vana suhkruroorongike ümber kogu saare – sellest on saanud turistide lemmik!"
+    ]
+  },
+  {
+    "iso2": "lc",
+    "name_et": "Saint Lucia",
+    "difficulty": "expert",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "similarTo": [],
+    "capital": "Castries",
+    "population": "Umbes 180 000.",
+    "facts": [
+      "Seal on kaks kuulsat mäge, mida kutsutakse Pitoniteks.",
+      "Saint Lucia on ainus riik maailmas, mis on saanud nime naise järgi."
+    ]
+  },
+  {
+    "iso2": "vc",
+    "name_et": "Saint Vincent ja Grenadiinid",
+    "difficulty": "expert",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "similarTo": [],
+    "capital": "Kingstown",
+    "population": "Umbes 104 000.",
+    "facts": [
+      "See on saarestik, kus filmiti kuulsat \"Kariibi mere piraatide\" filmi.",
+      "Seal on tegutsev vulkaan nimega La Soufrière, mis vahel tuhka välja pahvib."
+    ]
+  },
+  {
+    "iso2": "ws",
+    "name_et": "Samoa",
+    "difficulty": "expert",
+    "region": "Oceania",
+    "subregion": "Polynesia",
+    "similarTo": [],
+    "capital": "Apia",
+    "population": "Umbes 200 000.",
+    "facts": [
+      "See on väike ja ilus saareriik Polüneesias.",
+      "Samoalased on kuulsad oma kaunite kehamaalingute ehk tätoveeringute poolest."
+    ]
+  },
+  {
+    "iso2": "sm",
+    "name_et": "San Marino",
+    "difficulty": "expert",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "similarTo": [],
+    "capital": "San Marino",
+    "population": "Umbes 34 000.",
+    "facts": [
+      "See asub üleni Itaalia sees, kõrge mäe otsas.",
+      "See on maailma vanim vabariik – see on püsinud peaaegu muutumatuna väga kaua."
+    ]
+  },
+  {
+    "iso2": "st",
+    "name_et": "São Tomé ja Príncipe",
+    "difficulty": "expert",
+    "region": "Africa",
+    "subregion": "Central Africa",
+    "similarTo": [],
+    "capital": "São Tomé",
+    "population": "Umbes 230 000.",
+    "facts": [
+      "Need on kaks vulkaanilist saart täpselt ekvaatori peal.",
+      "Seal kasvab maailma parim kakao, millest tehakse ülimaitsvat šokolaadi."
+    ]
+  },
+  {
+    "iso2": "sa",
+    "name_et": "Saudi Araabia",
+    "difficulty": "easy",
+    "region": "Asia",
+    "subregion": "Middle East",
+    "similarTo": [],
+    "capital": "Riad",
+    "population": "Umbes 36 miljonit.",
+    "facts": [
+      "Suurem osa riigist on kaetud liivakõrbega.",
+      "Seal on kaamelid väga au sees ja nendega korraldatakse isegi iludusvõistlusi."
+    ]
+  },
+  {
+    "iso2": "sn",
+    "name_et": "Senegal",
+    "difficulty": "hard",
+    "region": "Africa",
+    "subregion": "West Africa",
+    "similarTo": [
+      "gn",
+      "ml",
+      "cm"
+    ],
+    "capital": "Dakar",
+    "population": "Umbes 17 miljonit.",
+    "facts": [
+      "See on Aafrika mandri kõige läänepoolsem riik.",
+      "Seal on roosa järv (Retba järv), mille vesi on päriselt maasikapiima värvi!"
+    ]
+  },
+  {
+    "iso2": "rs",
+    "name_et": "Serbia",
+    "difficulty": "medium",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "similarTo": [],
+    "capital": "Belgrad",
+    "population": "Umbes 6,6 miljonit.",
+    "facts": [
+      "Läbi riigi voolab suur ja võimas Doonau jõgi.",
+      "Serbia teadlane Nikola Tesla leiutas vahelduvvoolu – ilma temata ei põleks sinu toas tuled!"
+    ]
+  },
+  {
+    "iso2": "sc",
+    "name_et": "Seišellid",
+    "difficulty": "expert",
+    "region": "Africa",
+    "subregion": "Indian Ocean",
+    "similarTo": [],
+    "capital": "Victoria",
+    "population": "Umbes 100 000 (nagu neli korda Pärnu täis rahvast).",
+    "facts": [
+      "See on pindalalt kõige väiksem riik Aafrikas.",
+      "Seal kasvavad maailma kõige suuremad kookospähklid, mis kaaluvad nagu suur koer!"
+    ]
+  },
+  {
+    "iso2": "sl",
+    "name_et": "Sierra Leone",
+    "difficulty": "expert",
+    "region": "Africa",
+    "subregion": "West Africa",
+    "similarTo": [],
+    "capital": "Freetown",
+    "population": "Umbes 8,8 miljonit.",
+    "facts": [
+      "See on troopiline maa, kus on imelised valged liivarannad.",
+      "Sealt leitakse maailma kõige ilusamaid ja suuremaid teemante."
+    ]
+  },
+  {
+    "iso2": "sg",
+    "name_et": "Singapur",
+    "difficulty": "medium",
+    "region": "Asia",
+    "subregion": "Southeast Asia",
+    "similarTo": [
+      "id",
+      "mc",
+      "pl"
+    ],
+    "capital": "Singapur",
+    "population": "Umbes 6 miljonit.",
+    "facts": [
+      "See on tilluke saareriik, mis on tegelikult üks suur ja väga puhas linn.",
+      "Singapuris on maailma suurim sise-kosega lennujaam ja seal on nätsu närimine keelatud!"
+    ]
+  },
+  {
+    "iso2": "sk",
+    "name_et": "Slovakkia",
+    "difficulty": "easy",
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "similarTo": [
+      "si",
+      "ru"
+    ],
+    "capital": "Bratislava",
+    "population": "Umbes 5,5 miljonit.",
+    "facts": [
+      "See on väga mägine maa, kus on üle 6000 koopa!",
+      "Slovakkia on maailmas esikohal autode valmistamises ühe inimese kohta."
+    ]
+  },
+  {
+    "iso2": "si",
+    "name_et": "Sloveenia",
+    "difficulty": "medium",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "similarTo": [
+      "sk",
+      "ru"
+    ],
+    "capital": "Ljubljana",
+    "population": "Umbes 2,1 miljonit.",
+    "facts": [
+      "Pool riigist on kaetud metsadega.",
+      "Sloveenia nimes on peidus ingliskeelne sõna \"love\" (armastus)."
+    ]
+  },
+  {
+    "iso2": "sb",
+    "name_et": "Saalomoni Saared",
+    "difficulty": "expert",
+    "region": "Oceania",
+    "subregion": "Melanesia",
+    "similarTo": [],
+    "capital": "Honiara",
+    "population": "Umbes 740 000.",
+    "facts": [
+      "Need on sadu saari Vaikses ookeanis.",
+      "Seal on leitud hiiglaslikke rotte, kes on peaaegu kassi suurused!"
+    ]
+  },
+  {
+    "iso2": "so",
+    "name_et": "Somaalia",
+    "difficulty": "hard",
+    "region": "Africa",
+    "subregion": "East Africa",
+    "similarTo": [],
+    "capital": "Mogadishu",
+    "population": "Umbes 18 miljonit.",
+    "facts": [
+      "Somaalial on Aafrika mandri kõige pikem rannajoon.",
+      "Seal kasvatatakse puid, millest saab lõhnaõli ja viirukit."
+    ]
+  },
+  {
+    "iso2": "za",
+    "name_et": "Lõuna-Aafrika Vabariik",
+    "difficulty": "easy",
+    "region": "Africa",
+    "subregion": "Southern Africa",
+    "similarTo": [],
+    "capital": "Pretoria (üks kolmest)",
+    "population": "Umbes 60 miljonit.",
+    "facts": [
+      "See asub Aafrika kõige lõunapoolsemas tipus.",
+      "Seal elavad looduses korraga nii lõvid kui ka pingviinid!"
+    ]
+  },
+  {
+    "iso2": "ss",
+    "name_et": "Lõuna-Sudaan",
+    "difficulty": "expert",
+    "region": "Africa",
+    "subregion": "East Africa",
+    "similarTo": [],
+    "capital": "Juba",
+    "population": "Umbes 11 miljonit.",
+    "facts": [
+      "See on maailma kõige noorem riik (sai iseseisvaks alles 2011. aastal).",
+      "Lõuna-Sudaan on maailma kõige noorem riik – ta on noorem kui sinu vanemad!"
+    ]
+  },
+  {
+    "iso2": "es",
+    "name_et": "Hispaania",
+    "difficulty": "easy",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "similarTo": [],
+    "capital": "Madrid",
+    "population": "Umbes 48 miljonit.",
+    "facts": [
+      "Seal asub ainus kõrb kogu Euroopas (Tabernas).",
+      "Hispaanias toimub igal aastal suur tomatisõda, kus inimesed loobivad üksteist tomatitega."
+    ]
+  },
+  {
+    "iso2": "lk",
+    "name_et": "Sri Lanka",
+    "difficulty": "medium",
+    "region": "Asia",
+    "subregion": "South Asia",
+    "similarTo": [],
+    "capital": "Sri Jayawardenepura Kotte",
+    "population": "Umbes 22 miljonit.",
+    "facts": [
+      "See on saar, mis näeb kaardil välja nagu pisar India põse peal.",
+      "Sri Lankas asub tempel, kus hoitakse Buddha hammast ja sellele tehakse igal päeval pidusööki!"
+    ]
+  },
+  {
+    "iso2": "sd",
+    "name_et": "Sudaan",
+    "difficulty": "hard",
+    "region": "Africa",
+    "subregion": "North Africa",
+    "similarTo": [
+      "jo",
+      "ps",
+      "kw"
+    ],
+    "capital": "Hartum",
+    "population": "Umbes 48 miljonit.",
+    "facts": [
+      "Seal ühinevad kaks suurt jõge: Sinine Niilus ja Valge Niilus.",
+      "Sudaanis on tegelikult rohkem püramiide kui Egiptuses, aga need on väiksemad."
+    ]
+  },
+  {
+    "iso2": "sr",
+    "name_et": "Suriname",
+    "difficulty": "expert",
+    "region": "Americas",
+    "subregion": "South America",
+    "similarTo": [],
+    "capital": "Paramaribo",
+    "population": "Umbes 620 000.",
+    "facts": [
+      "See on Lõuna-Ameerika kõige väiksem riik.",
+      "Peaaegu kogu riik (üle 90%) on kaetud paksu vihmametsaga."
+    ]
+  },
+  {
+    "iso2": "se",
+    "name_et": "Rootsi",
+    "difficulty": "easy",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "similarTo": [
+      "no",
+      "dk",
+      "is",
+      "fi"
+    ],
+    "capital": "Stockholm",
+    "population": "Umbes 10,5 miljonit.",
+    "facts": [
+      "Rootsis on väga palju metsi ja üle 100 000 järve.",
+      "Sealt on pärit Pipi Pikksukk, ABBA ja lihapallid!"
+    ]
+  },
+  {
+    "iso2": "ch",
+    "name_et": "Šveits",
+    "difficulty": "easy",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "similarTo": [],
+    "capital": "Bern",
+    "population": "Umbes 9 miljonit.",
+    "facts": [
+      "See on väga mägine riik keset Euroopat (Alpi mäed).",
+      "Šveitsis tehakse maailma parimat šokolaadi ja väga täpseid kelli."
+    ]
+  },
+  {
+    "iso2": "sy",
+    "name_et": "Süüria",
+    "difficulty": "hard",
+    "region": "Asia",
+    "subregion": "Middle East",
+    "similarTo": [
+      "eg",
+      "iq",
+      "ye"
+    ],
+    "capital": "Damaskus",
+    "population": "Umbes 23 miljonit.",
+    "facts": [
+      "Selle pealinn Damaskus on üks maailma vanimaid linnu, kus on kogu aeg elatud.",
+      "Süürias on maailma kõige vanemad vesirattad, mis ikka veel ringi käivad."
+    ]
+  },
+  {
+    "iso2": "tw",
+    "name_et": "Taiwan",
+    "difficulty": "hard",
+    "region": "Asia",
+    "subregion": "East Asia",
+    "similarTo": [],
+    "capital": "Taipei",
+    "population": "Umbes 24 miljonit.",
+    "facts": [
+      "See on saar, mis on kaetud tihedate metsade ja kõrgete mägedega.",
+      "Seal on prügiautod nagu jäätiseautod – nad mängivad muusikat, et inimesed teaksid prügi välja tuua."
+    ]
+  },
+  {
+    "iso2": "tj",
+    "name_et": "Tadžikistan",
+    "difficulty": "expert",
+    "region": "Asia",
+    "subregion": "Central Asia",
+    "similarTo": [],
+    "capital": "Dušanbe",
+    "population": "Umbes 10 miljonit.",
+    "facts": [
+      "Peaaegu 90% riigist on kaetud kõrgete mägedega.",
+      "Seal on maailma kõige kõrgem tamm (pais), mis on tehtud inimeste poolt."
+    ]
+  },
+  {
+    "iso2": "tz",
+    "name_et": "Tansaania",
+    "difficulty": "hard",
+    "region": "Africa",
+    "subregion": "East Africa",
+    "similarTo": [],
+    "capital": "Dodoma",
+    "population": "Umbes 65 miljonit.",
+    "facts": [
+      "Seal asub Kilimanjaro – Aafrika kõige kõrgem mägi.",
+      "Tansaaniale kuulub Zanzibari saar, mis lõhnab vürtside ja nelgi järele."
+    ]
+  },
+  {
+    "iso2": "th",
+    "name_et": "Tai",
+    "difficulty": "easy",
+    "region": "Asia",
+    "subregion": "Southeast Asia",
+    "similarTo": [
+      "cr",
+      "la"
+    ],
+    "capital": "Bangkok",
+    "population": "Umbes 71 miljonit.",
+    "facts": [
+      "Seal on aastaringselt soe ja kasvavad kookospalmid.",
+      "Tais tähistatakse uut aastat suure veesõjaga – kõik pritsivad üksteist märjaks!"
+    ]
+  },
+  {
+    "iso2": "tl",
+    "name_et": "Ida-Timor",
+    "difficulty": "expert",
+    "region": "Asia",
+    "subregion": "Southeast Asia",
+    "similarTo": [],
+    "capital": "Dili",
+    "population": "Umbes 1,3 miljonit.",
+    "facts": [
+      "See on noor riik, mis asub ühel väikesel saarel Aasia lähedal.",
+      "Sealt tuleb väga maitsvat kohvi, mida kasvatatakse džungli varjus."
+    ]
+  },
+  {
+    "iso2": "tg",
+    "name_et": "Togo",
+    "difficulty": "expert",
+    "region": "Africa",
+    "subregion": "West Africa",
+    "similarTo": [
+      "lr"
+    ],
+    "capital": "Lomé",
+    "population": "Umbes 9 miljonit.",
+    "facts": [
+      "See on üks Aafrika kõige väiksemaid riike.",
+      "Togos on turud, kus müüakse ainult maagilisi asju ja ravimtaimi."
+    ]
+  },
+  {
+    "iso2": "to",
+    "name_et": "Tonga",
+    "difficulty": "hard",
+    "region": "Oceania",
+    "subregion": "Polynesia",
+    "similarTo": [
+      "ch"
+    ],
+    "capital": "Nuku'alofa",
+    "population": "Umbes 105 000.",
+    "facts": [
+      "See on saarestik, mida kutsutakse \"Sõbralikeks saarteks\".",
+      "Tonga on ainus kuningriik Vaikses ookeanis, kus on siiani päris kuningas."
+    ]
+  },
+  {
+    "iso2": "tt",
+    "name_et": "Trinidad ja Tobago",
+    "difficulty": "hard",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "similarTo": [],
+    "capital": "Port of Spain",
+    "population": "Umbes 1,5 miljonit.",
+    "facts": [
+      "See on kahe suure saarega riik Lõuna-Ameerika lähedal.",
+      "Seal leiutati \"terasest trummid\" (pannid), mis teevad väga lõbusat häält."
+    ]
+  },
+  {
+    "iso2": "tn",
+    "name_et": "Tuneesia",
+    "difficulty": "medium",
+    "region": "Africa",
+    "subregion": "North Africa",
+    "similarTo": [
+      "tr"
+    ],
+    "capital": "Tunis",
+    "population": "Umbes 12 miljonit.",
+    "facts": [
+      "See asub Aafrika kõige põhjapoolsemas tipus.",
+      "Seal on filmitud paljud \"Tähtede sõja\" filmid, sest maastik näeb välja nagu teine planeet."
+    ]
+  },
+  {
+    "iso2": "tr",
+    "name_et": "Türgi",
+    "difficulty": "easy",
+    "region": "Asia",
+    "subregion": "Middle East",
+    "similarTo": [
+      "tn"
+    ],
+    "capital": "Ankara",
+    "population": "Umbes 85 miljonit.",
+    "facts": [
+      "Türgi asub korraga kahel mandril: Euroopas ja Aasias.",
+      "Türgis on kuulus koht nimega Kapadookia, kus sajad kuumaõhupallid korraga taevasse tõusevad."
+    ]
+  },
+  {
+    "iso2": "tm",
+    "name_et": "Türkmenistan",
+    "difficulty": "expert",
+    "region": "Asia",
+    "subregion": "Central Asia",
+    "similarTo": [],
+    "capital": "Aşgabat",
+    "population": "Umbes 6,5 miljonit.",
+    "facts": [
+      "See on peaaegu üleni kõrb.",
+      "Seal asub \"Põrguvärav\" – suur auk maas, mis on põlenud üle 50 aasta."
+    ]
+  },
+  {
+    "iso2": "tv",
+    "name_et": "Tuvalu",
+    "difficulty": "expert",
+    "region": "Oceania",
+    "subregion": "Polynesia",
+    "similarTo": [],
+    "capital": "Funafuti",
+    "population": "Ainult 11 000 (nagu üks pisike Eesti linn).",
+    "facts": [
+      "See on üks maailma madalamaid riike – meri on igal pool väga lähedal.",
+      "Tuvalu teenib palju raha sellega, et müüb oma interneti lõppu (.tv) telekanalitele."
+    ]
+  },
+  {
+    "iso2": "ug",
+    "name_et": "Uganda",
+    "difficulty": "hard",
+    "region": "Africa",
+    "subregion": "East Africa",
+    "similarTo": [],
+    "capital": "Kampala",
+    "population": "Umbes 48 miljonit.",
+    "facts": [
+      "Seal asub maailma suuruselt teine järv – Victoria järv.",
+      "Uganda on koduks poolele maailma mägigorilladest – nad on väga suured ja tugevad!"
+    ]
+  },
+  {
+    "iso2": "ua",
+    "name_et": "Ukraina",
+    "difficulty": "easy",
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "similarTo": [],
+    "capital": "Kiiev",
+    "population": "Umbes 38 miljonit.",
+    "facts": [
+      "See on pindalalt kõige suurem riik, mis asub üleni Euroopas.",
+      "Ukraina rahvuslill on päevalill ja nad kasvatavad neid tohutult palju."
+    ]
+  },
+  {
+    "iso2": "ae",
+    "name_et": "Araabia Ühendemiraadid",
+    "difficulty": "easy",
+    "region": "Asia",
+    "subregion": "Middle East",
+    "similarTo": [],
+    "capital": "Abu Dhabi",
+    "population": "Umbes 10 miljonit.",
+    "facts": [
+      "Enamus maast on kõrb, aga linnad on täis pilvelõhkujaid.",
+      "Dubais asub maailma kõige kõrgem maja – Burj Khalifa (828 meetrit!)."
+    ]
+  },
+  {
+    "iso2": "gb",
+    "name_et": "Suurbritannia",
+    "difficulty": "easy",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "similarTo": [],
+    "capital": "London",
+    "population": "Umbes 67 miljonit.",
+    "facts": [
+      "Suurbritannia lipp (Union Jack) koosneb kolme riigi – Inglismaa, Šotimaa ja Iirimaa – lippude kombinatsioonist.",
+      "London on üks maailma suurimaid linnu ja seal asub kuningas oma suures palees!"
+    ]
+  },
+  {
+    "iso2": "us",
+    "name_et": "Ameerika Ühendriigid",
+    "difficulty": "easy",
+    "region": "Americas",
+    "subregion": "North America",
+    "similarTo": [
+      "lr",
+      "my"
+    ],
+    "capital": "Washington",
+    "population": "Umbes 335 miljonit.",
+    "facts": [
+      "Seal on kõike: nii kuumi kõrbeid kui ka lumiseid mägesid.",
+      "USA-s leiutati hamburgerid, Miki-Hiir ja esimene lennuk."
+    ]
+  },
+  {
+    "iso2": "uy",
+    "name_et": "Uruguay",
+    "difficulty": "hard",
+    "region": "Americas",
+    "subregion": "South America",
+    "similarTo": [
+      "gr"
+    ],
+    "capital": "Montevideo",
+    "population": "Umbes 3,4 miljonit.",
+    "facts": [
+      "See on väike riik kahe hiiglase (Brasiilia ja Argentina) vahel.",
+      "Uruguay on esimene riik maailmas, mis andis igale koolilapsele tasuta sülearvuti."
+    ]
+  },
+  {
+    "iso2": "uz",
+    "name_et": "Usbekistan",
+    "difficulty": "expert",
+    "region": "Asia",
+    "subregion": "Central Asia",
+    "similarTo": [],
+    "capital": "Taškent",
+    "population": "Umbes 35 miljonit.",
+    "facts": [
+      "See on üks kahest riigist maailmas, mille naabritel pole ka merepiiri.",
+      "Seal on väga ilusad siniste katustega mošeed ja maitsvad melonid."
+    ]
+  },
+  {
+    "iso2": "vu",
+    "name_et": "Vanuatu",
+    "difficulty": "expert",
+    "region": "Oceania",
+    "subregion": "Melanesia",
+    "similarTo": [],
+    "capital": "Port Vila",
+    "population": "Umbes 330 000.",
+    "facts": [
+      "See on saareriik, kus on mitu tegutsevat vulkaani.",
+      "Sealt on pärit \"benjihüpe\" – mehed hüppasid seal tornidest alla, jalad liaanidega seotud."
+    ]
+  },
+  {
+    "iso2": "ve",
+    "name_et": "Venezuela",
+    "difficulty": "medium",
+    "region": "Americas",
+    "subregion": "South America",
+    "similarTo": [
+      "co",
+      "ec"
+    ],
+    "capital": "Caracas",
+    "population": "Umbes 28 miljonit.",
+    "facts": [
+      "Seal asub maailma kõrgeim kosk (Angel Falls), mis on peaaegu kilomeeter pikk.",
+      "Venezuelas sähvib ühes kohas peaaegu igal ööl äike – seda kutsutakse \"igaveseks tormiks\"."
+    ]
+  },
+  {
+    "iso2": "vn",
+    "name_et": "Vietnam",
+    "difficulty": "medium",
+    "region": "Asia",
+    "subregion": "Southeast Asia",
+    "similarTo": [
+      "cn"
+    ],
+    "capital": "Hanoi",
+    "population": "Umbes 100 miljonit.",
+    "facts": [
+      "Vietnam on kaardil nagu pikk \"S\"-täht.",
+      "Vietnamis on koobas (Son Doong), mis on nii suur, et sinna mahuks ära terve pilvelõhkuja!"
+    ]
+  },
+  {
+    "iso2": "ye",
+    "name_et": "Jeemen",
+    "difficulty": "hard",
+    "region": "Asia",
+    "subregion": "Middle East",
+    "similarTo": [
+      "eg",
+      "iq",
+      "sy"
+    ],
+    "capital": "Sana",
+    "population": "Umbes 34 miljonit.",
+    "facts": [
+      "Seal asub saar nimega Socotra, kus kasvavad puud, mis näevad välja nagu kosmoselaevad.",
+      "Jeemenis on väga vanad \"pilvelõhkujad\", mis on tehtud savist ja mudast."
+    ]
+  },
+  {
+    "iso2": "zm",
+    "name_et": "Sambia",
+    "difficulty": "expert",
+    "region": "Africa",
+    "subregion": "Southern Africa",
+    "similarTo": [],
+    "capital": "Lusaka",
+    "population": "Umbes 20 miljonit.",
+    "facts": [
+      "Seal asub Victoria juga – maailma üks võimsamaid koski.",
+      "Sambia on kuulus oma vasekaevanduste poolest – vasest tehakse juhtmeid ja münte."
+    ]
+  },
+  {
+    "iso2": "zw",
+    "name_et": "Zimbabwe",
+    "difficulty": "expert",
+    "region": "Africa",
+    "subregion": "Southern Africa",
+    "similarTo": [],
+    "capital": "Harare",
+    "population": "Umbes 16 miljonit.",
+    "facts": [
+      "Seal asub üks maailma suuremaid koski – Victoria juga.",
+      "Seal on leitud väga vanu kivist ehitatud linnu, mis on nagu mõistatused."
+    ]
+  },
+  {
+    "iso2": "gb-eng",
+    "name_et": "Inglismaa",
+    "difficulty": "hard",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "similarTo": [],
+    "capital": "London",
+    "population": "Umbes 56 miljonit.",
+    "facts": [
+      "See on Ühendkuningriigi suurim ja kõige rahvarohkem osa.",
+      "Inglismaa ei ole eraldi riik, vaid osa Ühendkuningriigist (nagu üks tükk suures pusles). Sealt on pärit jalgpall ja Harry Potter!"
+    ],
+    "custom": true,
+    "flagPath": "/flags/gb-eng.png"
+  },
+  {
+    "iso2": "gb-sct",
+    "name_et": "Šotimaa",
+    "difficulty": "hard",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "similarTo": [],
+    "capital": "Edinburgh",
+    "population": "Umbes 5,5 miljonit.",
+    "facts": [
+      "Seal on palju kõrgeid mägesid ja sügavaid järvi (neid kutsutakse \"loch\").",
+      "Šotimaa ei ole eraldi riik, vaid osa Ühendkuningriigist. Seal usutakse, et Loch Nessi järves elab salapärane koletis Nessie."
+    ],
+    "custom": true,
+    "flagPath": "/flags/gb-sct.png"
+  },
+  {
+    "iso2": "gb-wls",
+    "name_et": "Wales",
+    "difficulty": "hard",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "similarTo": [],
+    "capital": "Cardiff",
+    "population": "Umbes 3,1 miljonit.",
+    "facts": [
+      "Walesis on rohkem losse ühe ruutkilomeetri kohta kui kuskil mujal maailmas!",
+      "Wales ei ole eraldi riik, vaid osa Ühendkuningriigist. Walesi lipu peal on suur punane draakon – see on üks lahedamaid lippe üldse!"
+    ],
+    "custom": true,
+    "flagPath": "/flags/gb-wls.png"
+  },
+  {
+    "iso2": "gb-nir",
+    "name_et": "Põhja-Iirimaa",
+    "difficulty": "hard",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "similarTo": [],
+    "capital": "Belfast",
+    "population": "Umbes 1,9 miljonit.",
+    "facts": [
+      "Seal asub \"Hiiglaste tee\" – rannik, mis on täis tuhandeid ühesuguseid kuusnurkseid kive.",
+      "Põhja-Iirimaa ei ole eraldi riik, vaid osa Ühendkuningriigist. Seal ehitati valmis maailma kuulsaim laev Titanic."
+    ],
+    "custom": true,
+    "flagPath": "/flags/gb-nir.png"
+  },
+  {
+    "iso2": "gi",
+    "name_et": "Gibraltar",
+    "difficulty": "expert",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "similarTo": [],
+    "capital": "Gibraltar",
+    "population": "Umbes 33 000.",
+    "facts": [
+      "See on hiiglaslik kalju Euroopa lõunatipus.",
+      "Gibraltar ei ole riik, vaid kuulub Suurbritanniale (nagu väike tükk teisest riigist kaugel eemal). See on ainus koht Euroopas, kus elavad vabas looduses pärdikud!"
+    ],
+    "custom": true,
+    "flagPath": "/flags/gi.png"
+  },
+  {
+    "iso2": "xk",
+    "name_et": "Kosovo",
+    "difficulty": "hard",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "similarTo": [],
+    "capital": "Pristina",
+    "population": "Umbes 1,8 miljonit.",
+    "facts": [
+      "See on üks maailma nooremaid riike (sai iseseisvaks alles 2008).",
+      "Kosovo lipul on kujutatud riigi enda kaart – see on üsna haruldane!"
+    ]
+  },
+  {
+    "iso2": "va",
+    "name_et": "Vatikan",
+    "difficulty": "expert",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "similarTo": [],
+    "capital": "Vatikan",
+    "population": "Umbes 800 inimest (mahuvead ühte koolimajja ära).",
+    "facts": [
+      "See on maailma kõige väiksem riik ja asub keset Rooma linna.",
+      "Seal ei sünni peaaegu kunagi ühtegi last!"
+    ]
+  }
+]
