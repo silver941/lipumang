@@ -432,7 +432,7 @@ export default function App() {
                   {items.map(a => {
                     const isUnlocked = unlocked.includes(a.id);
                     const prog = getProgress(a, collection, achState);
-                    const showBar = !isUnlocked && (a.type === "set" || a.type === "threshold" || a.type === "custom" || a.type === "alldiff") && prog.total > 1;
+                    const showBar = !isUnlocked && (a.type === "set" || a.type === "threshold" || a.type === "custom" || a.type === "alldiff" || a.type === "tag") && prog.total >= 1;
                     return (
                       <div key={a.id} style={{...S.achTile, background: isUnlocked ? "linear-gradient(135deg, #e8f5e9, #c8e6c9)" : "rgba(255,255,255,0.6)", borderColor: isUnlocked ? "#66bb6a" : "#e0e0e0"}}>
                         <span style={{...S.achIcon, filter: isUnlocked ? "none" : "grayscale(1)", opacity: isUnlocked ? 1 : 0.4}}>{a.icon}</span>
