@@ -25,7 +25,7 @@ const EMOJIS_CORRECT = ["🎉", "⭐", "🥳", "🏆", "💪", "🌟", "👏", "
 const EMOJIS_WRONG = ["🤔", "💭", "🧐"];
 const MSGS_CORRECT = ["Tubli!", "Väga hea!", "Suurepärane!", "Õige!", "Super!", "Hästi tehtud!"];
 const MSGS_WRONG = ["Proovi uuesti!", "Peaaegu!", "Järgmine kord!", "Ära muretse!"];
-const STREAK_MSGS = ["Võimas!", "Unstoppable!", "Tulekahju!", "Megastreik!", "Vapustav!"];
+const STREAK_MSGS = ["Võimas!", "Unstoppable!", "Tulekahju!", "Vägev!", "Vapustav!"];
 
 function rand(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
@@ -623,7 +623,7 @@ export default function App() {
           <div style={S.streakOverlay}>
             <div style={S.streakCard}>
               <span style={{ fontSize: "3.5rem" }}>🔥</span>
-              <p style={S.streakCount}>{streakCelebration.count}x {t("STREIK")}!</p>
+              <p style={S.streakCount}>{streakCelebration.count}x {t("VÄGEV")}!</p>
               <p style={S.streakMsg}>{t(streakCelebration.msg)}</p>
             </div>
           </div>
