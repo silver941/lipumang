@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect, useMemo } from "react";
+import { useState, useCallback, useEffect, useMemo, useRef } from "react";
 import countriesRaw from "./countryData.json";
 
 /* ─────────────────── HELPERS ─────────────────── */
@@ -269,8 +269,42 @@ export default function App() {
 
   const countries = useMemo(() => countriesForDiff(difficulty), [difficulty]);
 
+  /*
+   * ── SESSION QUESTION QUEUE ──
+   * Tracks which flags have been shown and answered in the current game session.
+   *
+   * Rules:
+   *   1. Correctly answered flags never appear again in the same session.
+   *   2. Wrongly answered flags re-enter the pool but not until WRONG_ANSWER_DELAY
+   *      other questions have been asked first (default: 10).
+   *   3. When the available pool is exhausted (all flags answered correctly),
+   *      the queue resets so gameplay can continue indefinitely.
+   *
+   * To adjust the delay before a wrong answer reappears, change WRONG_ANSWER_DELAY.
+   */
+  const WRONG_ANSWER_DELAY = 10;
+  const sessionRef = useRef({ correctSet: new Set(), wrongMap: new Map(), questionCount: 0 });
+
   const generateQuestion = useCallback(() => {
-    const correct = countries[Math.floor(Math.random() * countries.length)];
+    const s = sessionRef.current;
+
+    // Build available pool: exclude correct answers and recently-wrong answers
+    let pool = countries.filter(c => {
+      if (s.correctSet.has(c.iso2)) return false;
+      const wrongAt = s.wrongMap.get(c.iso2);
+      if (wrongAt !== undefined && (s.questionCount - wrongAt) < WRONG_ANSWER_DELAY) return false;
+      return true;
+    });
+
+    // If pool is empty, all flags have been answered correctly — reset session
+    if (pool.length === 0) {
+      s.correctSet.clear();
+      s.wrongMap.clear();
+      s.questionCount = 0;
+      pool = [...countries];
+    }
+
+    const correct = pool[Math.floor(Math.random() * pool.length)];
     let wp = [];
     if (difficulty === "expert" && correct.similarTo?.length > 0) {
       wp.push(...countriesRaw.filter(c => correct.similarTo.includes(c.iso2)));
@@ -280,6 +314,8 @@ export default function App() {
       if (pick.length > 0) wp.push(pick[0]);
     }
     wp = wp.slice(0, 2);
+
+    s.questionCount++;
     return { correct, options: shuffle([correct, ...wp]) };
   }, [countries, difficulty]);
 
@@ -293,6 +329,8 @@ export default function App() {
     setSelected(null);
     setScreen("game");
     setQuestion(null);
+    // Reset session queue
+    sessionRef.current = { correctSet: new Set(), wrongMap: new Map(), questionCount: 0 };
     // Track difficulty played
     if (activeProfile) {
       setAchState(prev => {
@@ -315,6 +353,15 @@ export default function App() {
     const newStreak = isCorrect ? streak + 1 : 0;
     setScore(prev => ({ correct: prev.correct + (isCorrect ? 1 : 0), total: prev.total + 1 }));
     setStreak(newStreak);
+
+    // Update session queue
+    const s = sessionRef.current;
+    if (isCorrect) {
+      s.correctSet.add(question.correct.iso2);
+      s.wrongMap.delete(question.correct.iso2); // clear from wrong list if it was there
+    } else {
+      s.wrongMap.set(question.correct.iso2, s.questionCount); // record when it was answered wrong
+    }
 
     let currentCol = collection;
     let currentAch = achState;
