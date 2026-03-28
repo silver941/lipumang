@@ -116,6 +116,27 @@ function getProgress(a, col, achState) {
   return { current:0, total:1, pct:0 };
 }
 
+/** Returns array of iso2 codes relevant to an achievement, or null if not flag-based */
+function getAchCodes(a, col) {
+  if (a.type === "set") return a.need;
+  if (a.type === "tag") return codesForTag(a.tag);
+  if (a.type === "threshold") return col; // show collected flags so far
+  if (a.type === "custom") {
+    // medium 80% — show all medium difficulty flags
+    const med = countriesRaw.filter(c => c.difficulty === "medium").map(c => c.iso2);
+    return med;
+  }
+  return null; // alldiff has no flags to show
+}
+
+/** Is this a "single flag" achievement that should skip the grid and go straight to facts? */
+function isSingleFlagAch(a) {
+  if (a.type === "tag") return codesForTag(a.tag).length === 1;
+  if (a.type === "threshold" && a.threshold === 1) return true;
+  if (a.type === "set" && a.need.length === 1) return true;
+  return false;
+}
+
 /* ═══════════════════ MAIN APP ═══════════════════ */
 export default function App() {
   const [screen, setScreen] = useState("loading");
@@ -138,6 +159,7 @@ export default function App() {
   const [selectedCountry, setSelectedCountry] = useState(null);
   const [achState, setAchState] = useState({ unlocked: [], diffPlayed: [] });
   const [achToast, setAchToast] = useState(null);
+  const [selectedAch, setSelectedAch] = useState(null);
 
   /* ── boot ── */
   useEffect(() => {
@@ -282,7 +304,7 @@ export default function App() {
   };
 
   const nextQuestion = () => { setFeedback(null); setSelected(null); setQuestion(generateQuestion()); };
-  const goMenu = () => { setScreen("menu"); setQuestion(null); setFeedback(null); setSelected(null); setStreakCelebration(null); setSelectedCountry(null); };
+  const goMenu = () => { setScreen("menu"); setQuestion(null); setFeedback(null); setSelected(null); setStreakCelebration(null); setSelectedCountry(null); setSelectedAch(null); };
 
   /* ═══════════════════ ACHIEVEMENT TOAST (always rendered) ═══════════════════ */
   const toastEl = achToast ? (
@@ -433,8 +455,32 @@ export default function App() {
                     const isUnlocked = unlocked.includes(a.id);
                     const prog = getProgress(a, collection, achState);
                     const showBar = !isUnlocked && (a.type === "set" || a.type === "threshold" || a.type === "custom" || a.type === "alldiff" || a.type === "tag") && prog.total >= 1;
+                    const canTap = a.type !== "alldiff"; // alldiff has no flags
                     return (
-                      <div key={a.id} style={{...S.achTile, background: isUnlocked ? "linear-gradient(135deg, #e8f5e9, #c8e6c9)" : "rgba(255,255,255,0.6)", borderColor: isUnlocked ? "#66bb6a" : "#e0e0e0"}}>
+                      <button
+                        key={a.id}
+                        style={{...S.achTile, background: isUnlocked ? "linear-gradient(135deg, #e8f5e9, #c8e6c9)" : "rgba(255,255,255,0.6)", borderColor: isUnlocked ? "#66bb6a" : "#e0e0e0", cursor: canTap ? "pointer" : "default"}}
+                        onClick={() => {
+                          if (!canTap) return;
+                          // Single-flag achievements: open facts modal directly
+                          if (isSingleFlagAch(a)) {
+                            const codes = getAchCodes(a, collection);
+                            if (codes && codes.length === 1) {
+                              const c = countriesRaw.find(x => x.iso2 === codes[0]);
+                              if (c && collection.includes(c.iso2)) { setSelectedCountry(c); }
+                            }
+                            return;
+                          }
+                          // perf_first: if unlocked, open the first collected flag's facts
+                          if (a.id === "perf_first" && collection.length > 0) {
+                            const c = countriesRaw.find(x => x.iso2 === collection[0]);
+                            if (c) { setSelectedCountry(c); }
+                            return;
+                          }
+                          // Multi-flag: open achievement grid modal
+                          setSelectedAch(a);
+                        }}
+                      >
                         <span style={{...S.achIcon, filter: isUnlocked ? "none" : "grayscale(1)", opacity: isUnlocked ? 1 : 0.4}}>{a.icon}</span>
                         <div style={S.achInfo}>
                           <p style={{...S.achName, color: isUnlocked ? "#2e7d32" : "#78909c"}}>{isUnlocked ? t(a.name) : t(a.hint)}</p>
@@ -447,13 +493,89 @@ export default function App() {
                           )}
                         </div>
                         {isUnlocked && <span style={S.achCheck}>✓</span>}
-                      </div>
+                      </button>
                     );
                   })}
                 </div>
               </div>
             );
           })}
+
+          {/* Achievement flags grid modal */}
+          {selectedAch && !selectedCountry && (() => {
+            const codes = getAchCodes(selectedAch, collection) || [];
+            const achCountries = codes.map(c => countriesRaw.find(x => x.iso2 === c)).filter(Boolean);
+            const prog = getProgress(selectedAch, collection, achState);
+            return (
+              <div style={S.modalBackdrop} onClick={() => setSelectedAch(null)}>
+                <div style={{...S.modalCard, maxWidth: 440, padding: "1.3rem 1rem 1.5rem"}} onClick={e => e.stopPropagation()}>
+                  <button style={S.modalClose} onClick={() => setSelectedAch(null)}>✕</button>
+                  <div style={{textAlign:"center",marginBottom:"0.2rem"}}>
+                    <span style={{fontSize:"2.2rem"}}>{selectedAch.icon}</span>
+                    <h2 style={{...S.modalTitle,fontSize:"1.3rem",marginTop:"0.3rem"}}>{t(selectedAch.name)}</h2>
+                    <p style={{fontSize:"0.8rem",fontWeight:600,color:"#78909c",margin:"0.2rem 0 0"}}>{prog.current}/{prog.total}</p>
+                  </div>
+                  <div style={S.achFlagGrid}>
+                    {achCountries.map(c => {
+                      const owned = collection.includes(c.iso2);
+                      return (
+                        <button
+                          key={c.iso2}
+                          style={{...S.achFlagCell, cursor: owned ? "pointer" : "default"}}
+                          onClick={() => {
+                            if (owned) setSelectedCountry(c);
+                          }}
+                          disabled={!owned}
+                        >
+                          {owned ? (
+                            <img src={getFlagUrl(c)} alt={c.name_et} style={S.achFlagImg} />
+                          ) : (
+                            <div style={S.achFlagLocked}>
+                              <span style={{fontSize:"1.2rem"}}>❓</span>
+                            </div>
+                          )}
+                          <span style={{...S.flagCellName, color: owned ? "#1a237e" : "#b0bec5", fontSize:"0.55rem"}}>
+                            {owned ? t(c.name_et) : t("Veel avastamata")}
+                          </span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
+            );
+          })()}
+
+          {/* Facts modal (reused from collection) */}
+          {selectedCountry && (
+            <div style={S.modalBackdrop} onClick={() => setSelectedCountry(null)}>
+              <div style={S.modalCard} onClick={e => e.stopPropagation()}>
+                <button style={S.modalClose} onClick={() => { setSelectedCountry(null); }}>✕</button>
+                <img src={getFlagUrl(selectedCountry)} alt={selectedCountry.name_et} style={S.modalFlag} />
+                <h2 style={S.modalTitle}>{t(selectedCountry.name_et)}</h2>
+                <div style={S.modalInfoRow}>
+                  <span style={S.modalLabel}>🏛️ {t("Pealinn")}</span>
+                  <span style={S.modalValue}>{t(selectedCountry.capital||"–")}</span>
+                </div>
+                <div style={S.modalInfoRow}>
+                  <span style={S.modalLabel}>👥 {t("Rahvaarv")}</span>
+                  <span style={S.modalValue}>{allCaps?(selectedCountry.population||"–").toUpperCase():(selectedCountry.population||"–")}</span>
+                </div>
+                {selectedCountry.facts?.length > 0 && (
+                  <div style={S.modalFactsBox}>
+                    <p style={S.modalFactsTitle}>💡 {t("Huvitavad faktid")}</p>
+                    {selectedCountry.facts.map((f,i) => (
+                      <div key={i} style={S.modalFact}>
+                        <span style={S.modalFactNum}>{i+1}</span>
+                        <p style={S.modalFactText}>{t(f)}</p>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
+
         </div>
         {toastEl}
       </div>
@@ -729,4 +851,10 @@ const S = {
   achToastInner: {display:"flex",alignItems:"center",gap:"0.6rem",background:"linear-gradient(135deg, #43a047, #2e7d32)",padding:"0.7rem 1.2rem",borderRadius:16,boxShadow:"0 4px 24px rgba(46,125,50,0.4)"},
   achToastTitle: {fontSize:"0.75rem",fontWeight:700,color:"rgba(255,255,255,0.8)",margin:0},
   achToastName: {fontSize:"1rem",fontWeight:900,color:"#fff",margin:0},
+
+  /* Achievement flags modal grid */
+  achFlagGrid: {display:"grid",gridTemplateColumns:"repeat(auto-fill, minmax(72px, 1fr))",gap:"0.4rem",width:"100%",maxHeight:"55vh",overflowY:"auto",padding:"0.2rem"},
+  achFlagCell: {display:"flex",flexDirection:"column",alignItems:"center",gap:"0.15rem",background:"none",border:"none",padding:"0.15rem 0"},
+  achFlagImg: {width:"100%",aspectRatio:"3/2",objectFit:"cover",borderRadius:6,border:"2px solid #e0e0e0"},
+  achFlagLocked: {width:"100%",aspectRatio:"3/2",borderRadius:6,background:"#eceff1",border:"2px solid #cfd8dc",display:"flex",alignItems:"center",justifyContent:"center"},
 };
