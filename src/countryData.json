@@ -11,7 +11,8 @@
     "facts": [
       "See on väga mägine maa, kus talviti on palju lund.",
       "Sealt on pärit maailma kõige esimesed õlimaalid (isegi vanemad kui Euroopas!)."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "al",
@@ -25,6 +26,9 @@
     "facts": [
       "Albaanial on imeilus rannik, mida kutsutakse \"Albaania Rivieraks\".",
       "Seal on tuhandeid väikesi betoonist punkreid, mis on ehitatud maa sisse."
+    ],
+    "tags": [
+      "animal"
     ]
   },
   {
@@ -41,6 +45,10 @@
     "facts": [
       "See on pindalalt kõige suurem riik Aafrikas.",
       "Alžeerias asub Sahara kõrbe all hiiglaslik maa-alune veekogu – see on nagu peidetud ookean!"
+    ],
+    "tags": [
+      "star",
+      "sun"
     ]
   },
   {
@@ -59,7 +67,8 @@
     "facts": [
       "See asub kõrgel Püreneede mäestikus Prantsusmaa ja Hispaania vahel.",
       "Seal pole ühtegi lennujaama, sest mägede vahel pole lennukitele ruumi."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "ao",
@@ -73,7 +82,8 @@
     "facts": [
       "See on riik, kus on nii džungleid, kõrbeid kui ka ilusaid randu.",
       "Angola on üks Aafrika rikkamaid riike, sest seal on palju naftat ja teemante."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "ag",
@@ -87,6 +97,9 @@
     "facts": [
       "Selles riigis on 365 randa – üks iga aasta päeva jaoks!",
       "Barbuda saarel elavad suured linnud, keda kutsutakse fregattlindudeks."
+    ],
+    "tags": [
+      "sun"
     ]
   },
   {
@@ -105,6 +118,9 @@
     "facts": [
       "Seal asuvad Lõuna-Ameerika kõige kõrgemad mäed (Andid).",
       "Sealt on pärit maailmakuulus jalgpallur Lionel Messi ja tuline tants tango."
+    ],
+    "tags": [
+      "sun"
     ]
   },
   {
@@ -119,7 +135,8 @@
     "facts": [
       "See on väga vana riik, kus on palju iidseid kirikuid.",
       "Armeenia sümbol on Ararati mägi, kuhu legendi järgi maandus Noa laev."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "au",
@@ -135,6 +152,9 @@
     "facts": [
       "See on korraga nii riik kui ka terve kontinent!",
       "Seal elab rohkem kängurusid ja koaalasid kui inimesi."
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -152,7 +172,8 @@
     "facts": [
       "See on mägine riik Kesk-Euroopas, mida ümbritsevad Alpid.",
       "Austrias sündis kuulus helilooja Mozart – tema muusikat kuulatakse kogu maailmas tänaseni!"
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "az",
@@ -166,6 +187,10 @@
     "facts": [
       "Seal asuvad \"mudavulkaanid\", mis ei purska tuld, vaid muda.",
       "Seal on koht nimega Yanar Dag, kus maapind põleb päriselt ja on põlenud juba 65 aastat!"
+    ],
+    "tags": [
+      "star",
+      "sun"
     ]
   },
   {
@@ -180,7 +205,8 @@
     "facts": [
       "See koosneb enam kui 700 imelisest saarest.",
       "Ühel Bahama saarel elavad metsikud sead, kes armastavad meres koos inimestega ujuda!"
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "bh",
@@ -196,6 +222,9 @@
     "facts": [
       "See on saareriik keset merd, mis on sillaga ühendatud naaberriigiga.",
       "Seal keset kuuma kõrbe kasvab \"Elupuu\", mis on üle 400 aasta vana ja keegi ei tea, kust ta vett saab."
+    ],
+    "tags": [
+      "sun"
     ]
   },
   {
@@ -212,6 +241,10 @@
     "facts": [
       "See on väga madal maa, kus on palju suuri jõgesid.",
       "Seal elab kuulus kuninglik bengali tiiger, kes on väga osav ujuja."
+    ],
+    "tags": [
+      "sun",
+      "twocolor"
     ]
   },
   {
@@ -226,7 +259,8 @@
     "facts": [
       "See on pisike ja päikeseline saareriik.",
       "Barbadost kutsutakse \"lendavate kalade maaks\", sest seal elavad kalad, kes hüppavad veest välja."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "by",
@@ -240,7 +274,8 @@
     "facts": [
       "Seal on säilinud väga vanad ja suured metsad.",
       "Valgevene metsades elavad euroopa piisonid ehk pürjad, kes on väga suured!"
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "be",
@@ -256,7 +291,8 @@
     "facts": [
       "Belgia on väike riik, kus räägitakse kolme erinevat keelt - prantsuse-, saksa- ja hollandi keelt.",
       "Belgia on maailma šokolaadi ja vahvlite pealinn – sealt tulevad kõige maitsvamad kommid!"
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "bz",
@@ -270,6 +306,9 @@
     "facts": [
       "See on ainus riik Kesk-Ameerikas, kus räägitakse ametlikult inglise keelt.",
       "Seal asub \"Suur Sinine Auk\" – hiiglaslik ümmargune süvik keset merd."
+    ],
+    "tags": [
+      "animal"
     ]
   },
   {
@@ -288,7 +327,8 @@
     "facts": [
       "See on pikk ja kitsas riik Lääne-Aafrikas.",
       "Sealt on pärit uskumatud legendid naissõdalastest, keda kutsuti \"amatsoonideks\"."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "bt",
@@ -302,6 +342,9 @@
     "facts": [
       "See asub kõrgel Himaalaja mägedes.",
       "Selles riigis pole ühtegi valgusfoori! Liiklust reguleerivad viisakad onud."
+    ],
+    "tags": [
+      "dragon"
     ]
   },
   {
@@ -320,6 +363,10 @@
     "facts": [
       "Seal asub maailma suurim \"soolapeegel\" – hiiglaslik kuivanud soolajärv.",
       "Boliivias on hotell, mis on ehitatud üleni soolast – isegi voodid ja toolid on soolast!"
+    ],
+    "tags": [
+      "animal",
+      "weapon"
     ]
   },
   {
@@ -334,6 +381,9 @@
     "facts": [
       "Riik on kaardil peaaegu südamekujuline.",
       "Bosnia metsades elavad veel päris karud ja hundid, ja seal on jõgi, mis on nii selge, et näed igat kala!"
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -348,7 +398,8 @@
     "facts": [
       "Seal on väga palju looduskaitsealasid.",
       "Botswanas elab rohkem elevante kui üheski teises Aafrika riigis!"
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "br",
@@ -362,6 +413,9 @@
     "facts": [
       "Seal asub maailma suurim vihmamets – Amazonas.",
       "Brasiilias on karnevali ajal kogu riik üks suur pidu – isegi koolid ja kontorid lähevad kinni!"
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -376,7 +430,8 @@
     "facts": [
       "See on pisike ja väga rikas riik suure saare rannikul.",
       "Brunei kuningal on maailma suurim loss, kus on rohkem kui 1700 tuba!"
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "bg",
@@ -392,7 +447,8 @@
     "facts": [
       "Seal kasvatatakse maailma parimaid roose lõhnaõlide jaoks.",
       "Bulgaarias tähendab pea noogutamine \"ei\" ja raputamine \"jah\"!"
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "bf",
@@ -409,6 +465,9 @@
     "facts": [
       "See on riik Lääne-Aafrikas, mille nimi tähendab \"Ausa rahva maa\".",
       "Seal asub kuulus muusikute ja filmitegijate linn, kus on palju värvilisi maju."
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -423,6 +482,9 @@
     "facts": [
       "See on väike riik Kesk-Aafrikas, mille südames asub suur järv Tanganjika",
       "Burundi on üks maailma vanimaid kuningriike Aafrikas – seal on olnud kuningad juba väga-väga kaua!"
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -437,6 +499,9 @@
     "facts": [
       "See on 10 saarest koosnev riik keset Atlandi ookeani.",
       "Seal elavad merikilpkonnad, kes tulevad igal aastal randa mune peitma."
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -451,7 +516,8 @@
     "facts": [
       "Seal asub maailma suurim religioosne ehitis – Angkor Wat.",
       "Kambodža lipul on kujutatud see sama kuulus tempel – see on ainus lipp maailmas, kus on peal ehitis!"
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "cm",
@@ -469,6 +535,9 @@
     "facts": [
       "Seal on nii liivarandu, mägesid kui ka vihmametsi.",
       "Kameruni kutsutakse \"Aafrika miniatuuriks\", sest seal on kõik loodusvormid olemas."
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -483,7 +552,8 @@
     "facts": [
       "See on suuruselt teine riik maailmas (pärast Venemaad).",
       "Kanadas on maailma kõige maitsvam vahtrasiirup, mida pannkookidele panna."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "cf",
@@ -497,6 +567,9 @@
     "facts": [
       "See asub täpselt Aafrika mandri keskel.",
       "See on üks parimaid kohti maailmas tähtede vaatamiseks, sest seal on öösiti väga pime."
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -515,7 +588,8 @@
     "facts": [
       "See on suur riik, mis asub pooleldi kõrbes ja pooleldi savannis.",
       "Seal asuvad Tibesti mäed, mis näevad välja nagu hiiglaslikud liivalossid."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "cl",
@@ -533,6 +607,9 @@
     "facts": [
       "Tšiili on maailma kõige pikem ja kitsam riik – nagu pikk spagett!",
       "Seal asub Atacama kõrb, kus ei ole mõnes kohas kunagi vihma sadanud."
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -549,6 +626,9 @@
     "facts": [
       "Hiinas asub maailma pikim müür – Hiina müür.",
       "Peaaegu kõik maailma pandad kuuluvad tegelikult Hiinale."
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -566,7 +646,8 @@
     "facts": [
       "Seal on \"viie värvi jõgi\" – see helendab punaselt, kollaselt ja roheliselt.",
       "Kolumbiast tulevad maailma kõige ilusamad smaragdid (rohelised vääriskivid)."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "km",
@@ -580,6 +661,10 @@
     "facts": [
       "See on saareriik, mida kutsutakse \"Parfüümisaarteks\", sest seal lõhnab lillede järele.",
       "Seal elab väga haruldane kala (tseelakant), keda peeti kaua aega välja surnuks."
+    ],
+    "tags": [
+      "star",
+      "sun"
     ]
   },
   {
@@ -594,6 +679,9 @@
     "facts": [
       "See asub Kongo jõe ääres, otse suure naabri Kongo DV kõrval.",
       "Kongo jõgi on maailma sügavaim jõgi – mõnes kohas on see sügavam kui 220 meetrit!"
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -608,6 +696,9 @@
     "facts": [
       "See on suur ja tiheda džungliga riik keset Aafrikat.",
       "Seal elavad bonobod ja gorillad, kes on inimeste kõige lähedasemad sugulased."
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -624,6 +715,10 @@
     "facts": [
       "Seal on väga palju vihmametsi, mis on täis põnevaid loomi.",
       "Seal ei ole üldse sõjaväge – see on üks maailma rahulikumaid riike."
+    ],
+    "tags": [
+      "star",
+      "sun"
     ]
   },
   {
@@ -640,7 +735,8 @@
     "facts": [
       "Seal on maailma kõige suurem kirik (see on isegi suurem kui Vatikanis!).",
       "See riik kasvatab rohkem kakaod kui ükski teine riik maailmas."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "hr",
@@ -654,7 +750,8 @@
     "facts": [
       "Horvaatial on imeilus rannik, kus on üle 1000 saare.",
       "Sealt on pärit lips – jah, see mis isadel kaelas ripub – selle leiutasid Horvaatia sõdurid!"
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "cu",
@@ -668,6 +765,9 @@
     "facts": [
       "Kuuba on Kariibi mere suurim saareriik.",
       "Seal sõidavad tänavatel ikka veel autod, mis näevad välja nagu 70 aastat vanad mänguautod."
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -682,7 +782,8 @@
     "facts": [
       "See on päikeseline saar keset Vahemerd.",
       "Legendi järgi sündis Küprose rannikul merevahust ilujumalanna Aphrodite."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "cz",
@@ -698,7 +799,8 @@
     "facts": [
       "Praha on üks Euroopa ilusamaid vanalinnaga linnu.",
       "Tšehhis leiutati suhkrukuubikud ja kontaktläätsed!"
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "dk",
@@ -717,6 +819,9 @@
     "facts": [
       "Taani on üsna lame ja seal on väga hea rattaga sõita.",
       "Taanis leiutati maailma kuulsaimad klotsid – LEGO-d!"
+    ],
+    "tags": [
+      "cross"
     ]
   },
   {
@@ -731,6 +836,9 @@
     "facts": [
       "Seal asub Aafrika kõige madalam koht (Assali järv), mis on väga soolane.",
       "Djibouti on koht, kus kolm suurt maakoore plaati kokku saavad – maa praguneb seal vaikselt."
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -745,6 +853,10 @@
     "facts": [
       "Seda kutsutakse \"Kariibi mere looduse saareks\", sest seal on 365 jõge.",
       "Seal asub \"Keev järv\", kus vesi on nii kuum, et see päriselt muliseb ja aurab."
+    ],
+    "tags": [
+      "star",
+      "cross"
     ]
   },
   {
@@ -759,6 +871,9 @@
     "facts": [
       "Seal asub Kariibi mere kõige kõrgem mägi.",
       "See on ainus koht maailmas, kus leidub sinist vääriskivi nimega Larimar."
+    ],
+    "tags": [
+      "cross"
     ]
   },
   {
@@ -776,6 +891,10 @@
     "facts": [
       "Riik asub täpselt maakera keskkohas (ekvaatoril).",
       "Ecuadorile kuuluvad Galápagose saared, kus elavad hiiglaslikud kilpkonnad."
+    ],
+    "tags": [
+      "animal",
+      "sun"
     ]
   },
   {
@@ -794,6 +913,10 @@
     "facts": [
       "Läbi riigi voolab Niilus – üks maailma pikimaid jõgesid.",
       "Vana-Egiptuses armastasid inimesed kasse nii väga, et kassid olid pühad loomad ja neid kummardati nagu jumalaid!"
+    ],
+    "tags": [
+      "star",
+      "animal"
     ]
   },
   {
@@ -812,7 +935,8 @@
     "facts": [
       "See on Kesk-Ameerika kõige väiksem riik.",
       "Seda kutsutakse \"vulkaanide maaks\", sest seal on neid väga palju."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "gq",
@@ -826,6 +950,9 @@
     "facts": [
       "See on ainus riik Aafrikas, kus räägitakse ametlikult hispaania keelt.",
       "Riigi pealinn ei asu mandril, vaid hoopis ühel kaugel saarel."
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -840,6 +967,9 @@
     "facts": [
       "See asub Punase mere ääres ja on väga mägine.",
       "Selle pealinna Asmarat kutsutakse \"Väikeseks Roomaks\", sest majad näevad välja nagu Itaalias."
+    ],
+    "tags": [
+      "animal"
     ]
   },
   {
@@ -854,7 +984,8 @@
     "facts": [
       "Meil on üle 2000 saare!",
       "Eesti on üks maailma digiriike – siin saab peaaegu kõike arvutis teha, isegi valida ja ettevõtet luua!"
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "sz",
@@ -868,6 +999,9 @@
     "facts": [
       "See on pisike ja mägine kuningriik Aafrikas.",
       "Seal on kuningas, kes kannab tähtsate sündmuste ajal sulgedest krooni."
+    ],
+    "tags": [
+      "weapon"
     ]
   },
   {
@@ -886,6 +1020,9 @@
     "facts": [
       "See on väga mägine riik, mida kutsutakse \"Aafrika katuseks\".",
       "Arvatakse, et just Etioopiast leiti maailma esimene kohvitaim."
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -903,6 +1040,9 @@
     "facts": [
       "Fidži koosneb enam kui 300 saarest, kus on helesinine vesi.",
       "Inimesed on seal maailma ühed sõbralikumad ja tervitavad kõiki hüüdega \"Bula!\"."
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -922,6 +1062,9 @@
     "facts": [
       "Seal on rohkem kui 180 000 järve – see on järvede maa!",
       "Soome on ametlikult jõuluvana kodu!"
+    ],
+    "tags": [
+      "cross"
     ]
   },
   {
@@ -939,7 +1082,8 @@
     "facts": [
       "See on pindalalt suurim riik Euroopa Liidus.",
       "Prantsusmaal on keelatud toitu ära visata – pood peab selle vaestele andma."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "ga",
@@ -953,7 +1097,8 @@
     "facts": [
       "Peaaegu kogu riik on kaetud puutumatu vihmametsaga.",
       "Gabonis võid kohata rannas elevante ja jõehobusid, kes armastavad meres ujuda!"
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "gm",
@@ -967,7 +1112,8 @@
     "facts": [
       "See on väga kitsas riik, mis asub ümber Gambia jõe (nagu pikk uss teise riigi sees).",
       "Gambiat kutsutakse \"Aafrika naeratavaks rannikuks\", sest inimesed on seal väga rõõmsad."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "ge",
@@ -981,6 +1127,9 @@
     "facts": [
       "Seal asuvad Kaukasuse mäed, mis on lumised ja väga kõrged.",
       "Gruusiast on pärit maitsev juustupirukas hatšapuri!"
+    ],
+    "tags": [
+      "cross"
     ]
   },
   {
@@ -997,7 +1146,8 @@
     "facts": [
       "Saksamaa on Euroopa keskel ja tal on palju naabreid.",
       "Saksamaal leiutati kummikarud ja esimene trükitud raamat."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "gh",
@@ -1015,6 +1165,9 @@
     "facts": [
       "Ghana asub täpselt maailma keskkoha (ekvaatori) lähedal.",
       "Ghana on üks maailma suurimaid kakaotootjaid – sealt saab alguse sinu šokolaad!"
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -1031,6 +1184,9 @@
     "facts": [
       "Kreekal on üle 2000 saare, millest paljudel ei elagi kedagi.",
       "Kreeka alfabeedist on pärit peaaegu kõik teised tähestikud, mida sa tead!"
+    ],
+    "tags": [
+      "cross"
     ]
   },
   {
@@ -1045,6 +1201,10 @@
     "facts": [
       "Seda kutsutakse \"vürtsisaareks\", sest seal kasvab palju muskaatpähkleid.",
       "Seal on veealune kuju-park, kus saavad sukelduda nii inimesed kui kalad."
+    ],
+    "tags": [
+      "star",
+      "cross"
     ]
   },
   {
@@ -1064,7 +1224,8 @@
     "facts": [
       "Seal on palju džungleid ja vanu maiade linnu.",
       "Sealt on pärit sinu teksapükste sinine värv (indigo taim)."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "gn",
@@ -1082,6 +1243,9 @@
     "facts": [
       "See on Lääne-Aafrika rannikuriik, mis on täis vihmametsi.",
       "Guinea on maailma suurim boksiidi (alumiiniumi tooraine) leiukoht – suur osa maailma alumiiniumist tuleb sealt!"
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -1096,6 +1260,9 @@
     "facts": [
       "Seal on palju saari ja tihedaid mangroovisalusid (puud, mis kasvavad vees).",
       "Seal elavad haruldased jõehobud, kes oskavad ja armastavad soolases merevees ujuda."
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -1110,6 +1277,10 @@
     "facts": [
       "Seal asub Kaieteuri juga, mis on viis korda kõrgem kui Niagara juga!",
       "See on ainus Lõuna-Ameerika riik, kus räägitakse ametlikult inglise keelt."
+    ],
+    "tags": [
+      "star",
+      "animal"
     ]
   },
   {
@@ -1126,7 +1297,8 @@
     "facts": [
       "See jagab saart koos Dominikaani Vabariigiga.",
       "Haiti oli esimene riik maailmas, kus orjad end ise vabaks võitlesid."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "hn",
@@ -1144,6 +1316,9 @@
     "facts": [
       "Seal on maailma suuruselt teine korallrahu.",
       "Ühes Hondurase külas räägitakse, et sealt sajab kord aastas taevast kalu!"
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -1160,7 +1335,8 @@
     "facts": [
       "Ungari on tuntud oma kuumaveeallikate ja suurte järvede poolest.",
       "Ungarlased leiutasid Rubiku kuubi – selle värvilise mõistatuskuubi, mida kogu maailm armastab!"
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "is",
@@ -1179,6 +1355,9 @@
     "facts": [
       "Seal on väga palju vulkaane ja kuumaveeallikaid.",
       "Islandil ei ole mitte ühtegi sääske!"
+    ],
+    "tags": [
+      "cross"
     ]
   },
   {
@@ -1195,6 +1374,9 @@
     "facts": [
       "India on suur poolsaar, mida ümbritseb soe ookean.",
       "Indias on lehmad pühad loomad ja nad võivad julgelt keset teed jalutada."
+    ],
+    "tags": [
+      "sun"
     ]
   },
   {
@@ -1212,6 +1394,9 @@
     "facts": [
       "See riik koosneb enam kui 17 000 saarest!",
       "Seal elavad komodo varaanid – maailma suurimad sisalikud, kes näevad välja nagu lohed."
+    ],
+    "tags": [
+      "twocolor"
     ]
   },
   {
@@ -1226,7 +1411,8 @@
     "facts": [
       "Seal on väga vanad kõrbed ja ka lumised mäed.",
       "Sealt on pärit maailma kõige ilusamad ja kuulsamad pärsia vaibad."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "iq",
@@ -1244,7 +1430,8 @@
     "facts": [
       "Seal voolavad kaks kuulsat jõge: Tigris ja Eufrat.",
       "Iraaki peetakse kohaks, kus inimesed õppisid esimest korda kirjutama."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "ie",
@@ -1261,7 +1448,8 @@
     "facts": [
       "Iirimaad kutsutakse \"Roheliseks saareks\", sest seal sajab palju vihma ja kõik on roheline.",
       "Sealt on pärit kuulsad pajulased ehk leprechaun'id ja legend kullast vikerkaaretipus!"
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "il",
@@ -1275,6 +1463,9 @@
     "facts": [
       "Seal asub Surnumeri, kus vesi on nii soolane, et sa lihtsalt hõljud selle peal.",
       "Iisraelis on maailma kõige rohkem muuseume ühe inimese kohta."
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -1292,7 +1483,8 @@
     "facts": [
       "Itaalia meenutab kaardil vaadates kõrge kontsaga saabast.",
       "Sealt on pärit pitsa, pasta ja maailma parim jäätis (gelato)."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "jm",
@@ -1306,6 +1498,9 @@
     "facts": [
       "See on päikeseline saar keset sinist merd.",
       "Jamaica on kuulus väga kiirete jooksjate ja mõnusa reggae-muusika poolest."
+    ],
+    "tags": [
+      "cross"
     ]
   },
   {
@@ -1322,6 +1517,10 @@
     "facts": [
       "See riik koosneb peaaegu 7000 saarest.",
       "Jaapanis on nii palju kasse, et seal on isegi spetsiaalsed \"kassisaared\"."
+    ],
+    "tags": [
+      "sun",
+      "twocolor"
     ]
   },
   {
@@ -1340,6 +1539,9 @@
     "facts": [
       "Seal asub salapärane roosa linn Petra, mis on raiutud kalju sisse.",
       "Jordaanias asub Petra – salapärane roosa linn, mis on tervenisti kaljusse raiutud nagu hiiglaslik skulptuur!"
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -1354,6 +1556,9 @@
     "facts": [
       "See on maailma suurim riik, millel pole piiri merega.",
       "Seal asub koht, kust saadetakse rakette kosmosesse (Baikonur)."
+    ],
+    "tags": [
+      "sun"
     ]
   },
   {
@@ -1368,7 +1573,8 @@
     "facts": [
       "Seal on suured rahvuspargid, kus loomad elavad vabalt.",
       "Keeniast pärit inimesed on maailma ühed kiireimad pikamaajooksjad."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "ki",
@@ -1382,6 +1588,10 @@
     "facts": [
       "See riik asub korraga kõigil neljal poolkeral (põhi, lõuna, ida, lääs).",
       "Kiribati on esimene koht maailmas, kus tervitatakse uut aastat!"
+    ],
+    "tags": [
+      "animal",
+      "sun"
     ]
   },
   {
@@ -1396,6 +1606,9 @@
     "facts": [
       "See asub poolsaarel ja on ümbritsetud merest ja suurtest naabritest.",
       "Seal asub maailma suurim staadion, kuhu mahuks korraga 150 000 inimest!"
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -1410,7 +1623,8 @@
     "facts": [
       "Riik asub poolsaarel ja on väga mägine.",
       "Seal on robotid nii tavalised, et nad võivad koolis lapsi õpetada või toitu tuua."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "kw",
@@ -1428,7 +1642,8 @@
     "facts": [
       "See on väga rikas riik, kus on palju naftat ja moodsaid maju.",
       "Kuveidis on nii palav, et seal on isegi kliimaseadmetega jahutatud väliturgusid ja randu!"
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "kg",
@@ -1442,6 +1657,9 @@
     "facts": [
       "See on väga-väga mägine maa – peaaegu kogu riik on mägedes!",
       "Seal on riigi sümboliks lumelopardid ja inimesed armastavad elada jurtades."
+    ],
+    "tags": [
+      "sun"
     ]
   },
   {
@@ -1459,6 +1677,9 @@
     "facts": [
       "See on Kagu-Aasias ainus riik, millel pole merepiiri.",
       "Laost kutsutakse \"miljoni elevandi maaks\", sest neid elas seal kunagi väga palju."
+    ],
+    "tags": [
+      "sun"
     ]
   },
   {
@@ -1476,7 +1697,8 @@
     "facts": [
       "Läti on üks maailma rohelisemaid riike, pool maast on metsa all.",
       "Lätis asub Euroopa kõige laiem kosk – Ventas Rumba on laiem kui kuulus Niagara!"
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "lb",
@@ -1493,7 +1715,8 @@
     "facts": [
       "See asub Vahemere ääres ja seal on kaunid seedripuud.",
       "Liibanon on üks maailma vanimaid kohti, kus on tehtud klaasi."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "ls",
@@ -1507,6 +1730,9 @@
     "facts": [
       "See riik asub üleni Lõuna-Aafrika Vabariigi sees ja on väga kõrgel mägedes.",
       "Seda kutsutakse \"Kuningriigiks taevas\", sest seal on isegi talvel vahel lund ja saab suusatada!"
+    ],
+    "tags": [
+      "animal"
     ]
   },
   {
@@ -1525,6 +1751,9 @@
     "facts": [
       "See on Aafrika vanim vabariik.",
       "See on üks väheseid riike maailmas, kus ei kasutata meetermõõdustikku (nad ei mõõda meetritega)."
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -1539,6 +1768,10 @@
     "facts": [
       "Peaaegu kogu riik on kaetud kuuma Sahara kõrbega.",
       "Seal on leitud kaljujooniseid, mis näitavad, et kunagi ammu oli sealne kõrb roheline ja täis loomi."
+    ],
+    "tags": [
+      "star",
+      "sun"
     ]
   },
   {
@@ -1555,7 +1788,8 @@
     "facts": [
       "See asub mägede vahel Šveitsi ja Austria vahel.",
       "See on üks väheseid riike maailmas, kus on rohkem ettevõtteid kui inimesi!"
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "lt",
@@ -1573,7 +1807,8 @@
     "facts": [
       "Leedu asub täpselt Euroopa keskel.",
       "Leedu on ainus riik maailmas, millel on oma ametlik lõhn (\"Leedu lõhn\")."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "lu",
@@ -1590,7 +1825,8 @@
     "facts": [
       "See on väike ja väga rikas riik Belgia, Prantsusmaa ja Saksamaa vahel.",
       "Selles riigis on ühistransport (bussid ja rongid) kõigile täiesti tasuta!"
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "mg",
@@ -1604,7 +1840,8 @@
     "facts": [
       "See on hiiglaslik saar Aafrika ranniku lähedal.",
       "Seal elavad leemurid, keda ei leidu vabas looduses kuskil mujal maailmas!"
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "mw",
@@ -1618,6 +1855,9 @@
     "facts": [
       "Seal asub hiiglaslik järv, kus elab rohkem kalaliike kui kuskil mujal.",
       "Malawit kutsutakse \"Aafrika soojaks südameks\", sest inimesed on seal ülisõbralikud."
+    ],
+    "tags": [
+      "sun"
     ]
   },
   {
@@ -1635,6 +1875,9 @@
     "facts": [
       "Seal on tohutult vanad vihmametsad ja hiiglaslikud koopad.",
       "Malaisia metsadest leiab maailma suurima lille – Rafflesia lõhnab nagu mädanenud liha, aga on imeilus!"
+    ],
+    "tags": [
+      "sun"
     ]
   },
   {
@@ -1649,6 +1892,10 @@
     "facts": [
       "See on maailma kõige madalam riik – kõrgeim koht on vaid põlvepikkune!",
       "Seal on hotelle, kus on veealused toad, et saaksid koos kaladega magada."
+    ],
+    "tags": [
+      "star",
+      "sun"
     ]
   },
   {
@@ -1667,7 +1914,8 @@
     "facts": [
       "Suur osa riigist asub Sahara kõrbes.",
       "Vanasti oli Mali kuningas nii rikas, et ta jagas rännates inimestele puhast kulda."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "mt",
@@ -1681,6 +1929,9 @@
     "facts": [
       "See on saareriik keset Vahemerd.",
       "Maltal on nii palju vanu kirikuid, et seal võiks igal päeval aastas erinevas kirikus käia."
+    ],
+    "tags": [
+      "cross"
     ]
   },
   {
@@ -1695,6 +1946,10 @@
     "facts": [
       "Need on madalad korallisaared, mis näevad välja nagu kitsad triibud meres.",
       "Seal on maailma suurim haide kaitseala – haid on seal väga hoitud."
+    ],
+    "tags": [
+      "star",
+      "sun"
     ]
   },
   {
@@ -1709,6 +1964,10 @@
     "facts": [
       "See on suur ja liivane riik, kus Sahara kõrb kohtub ookeaniga.",
       "Seal sõidab maailma üks pikemaid ronge – see on 2,5 kilomeetrit pikk!"
+    ],
+    "tags": [
+      "star",
+      "sun"
     ]
   },
   {
@@ -1723,7 +1982,8 @@
     "facts": [
       "See on väike paradiisisaar keset ookeani.",
       "Kunagi elas seal suur lind dodo, kes ei osanud lennata ja keda nüüd enam maailmas pole."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "mx",
@@ -1739,6 +1999,9 @@
     "facts": [
       "Mehhikos on nii džungleid kui ka suuri vulkaane.",
       "Sealt on pärit šokolaad ja maailma kõige väiksem koer – chihuahua!"
+    ],
+    "tags": [
+      "animal"
     ]
   },
   {
@@ -1753,7 +2016,8 @@
     "facts": [
       "See koosneb enam kui 600 pisikesest saarest keset suurt ookeani.",
       "Ühel nende saarel (Yap) kasutati vanasti rahaks hiiglaslikke kivist rattaid!"
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "md",
@@ -1771,6 +2035,9 @@
     "facts": [
       "See on väike riik Rumeenia ja Ukraina vahel.",
       "Moldovas asub maailma suurim maa-alune veinikelder, mis on nagu terve linn."
+    ],
+    "tags": [
+      "cross"
     ]
   },
   {
@@ -1788,6 +2055,9 @@
     "facts": [
       "See on suuruselt teine kõige väiksem riik ja asub mere ääres.",
       "Monaco on nii pisike, et sellele saaks tiiru peale jalutada vähem kui tunniga."
+    ],
+    "tags": [
+      "twocolor"
     ]
   },
   {
@@ -1802,6 +2072,10 @@
     "facts": [
       "See on hiiglaslik riik, kus on väga palju tühja ruumi ja steppe.",
       "Paljud inimesed elavad seal ikka veel jurtades (ümmargused telk-majad) ja ratsutavad hobustega."
+    ],
+    "tags": [
+      "animal",
+      "sun"
     ]
   },
   {
@@ -1816,7 +2090,8 @@
     "facts": [
       "Seal asub Euroopa kõige sügavam kanjon (jõeorg).",
       "Riigi nimi tähendab eesti keeles \"Mustamägi\"."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "ma",
@@ -1830,6 +2105,10 @@
     "facts": [
       "See asub Aafrika nurgas, kohe Euroopa külje all.",
       "Seal on \"sinine linn\" Chefchaouen, kus peaaegu kõik majad on värvitud siniseks."
+    ],
+    "tags": [
+      "star",
+      "sun"
     ]
   },
   {
@@ -1844,6 +2123,11 @@
     "facts": [
       "Sellel riigil on väga pikk ja ilus liivarand India ookeani ääres.",
       "See on ainus riik maailmas, mille lipu peal on kujutatud relva – see sümboliseerib nende võitlust vabaduse eest."
+    ],
+    "tags": [
+      "star",
+      "animal",
+      "weapon"
     ]
   },
   {
@@ -1858,6 +2142,10 @@
     "facts": [
       "Seal on tuhandeid kuldseid templeid, mis säravad päikese käes.",
       "Myanmaris kannavad mehed tihti seelikulaadseid riideid, mida kutsutakse \"longyi\"."
+    ],
+    "tags": [
+      "star",
+      "animal"
     ]
   },
   {
@@ -1872,6 +2160,10 @@
     "facts": [
       "Seal asuvad maailma kõige kõrgemad liivaluited (nagu hiiglaslikud liivakastid).",
       "Namibia rannikut kutsutakse \"Luukerede rannikuks\", sest seal on palju laevavrakke."
+    ],
+    "tags": [
+      "star",
+      "sun"
     ]
   },
   {
@@ -1886,6 +2178,10 @@
     "facts": [
       "See on maailma kõige väiksem saareriik ja sellele saab jalgsi tiiru peale teha.",
       "Nauru on ainus riik maailmas, millel polegi ühte kindlat pealinna-linna."
+    ],
+    "tags": [
+      "star",
+      "sun"
     ]
   },
   {
@@ -1900,6 +2196,10 @@
     "facts": [
       "Seal asub maailma kõrgeim mägi – Mount Everest.",
       "Nepal on ainus riik, mille lipp ei ole ristkülik! See koosneb kahest kolmnurgast üksteise peal."
+    ],
+    "tags": [
+      "sun",
+      "nonrectangular"
     ]
   },
   {
@@ -1917,7 +2217,8 @@
     "facts": [
       "Suur osa Hollandist asub merepinnast madalamal.",
       "Holland on kuulus oma tuulikute, puukingade ja miljonite tulpide poolest."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "nz",
@@ -1933,6 +2234,9 @@
     "facts": [
       "See koosneb kahest suurest ja paljudest väikestest saartest.",
       "Seal elab haruldane lind nimega kiivi, kes ei oska lennata."
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -1951,6 +2255,9 @@
     "facts": [
       "Seal asuvad Kesk-Ameerika kaks kõige suuremat järve.",
       "Nicaragua järv on ainus mageveejärv maailmas, kus elavad haid!"
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -1967,6 +2274,9 @@
     "facts": [
       "See on \"kõrbevärav\", kus elavad kaelkirjakud ja antiloobid.",
       "Nigerit kutsutakse \"maailma kõige nooremaks riigiks\", sest seal on pool rahvastest lapsed."
+    ],
+    "tags": [
+      "sun"
     ]
   },
   {
@@ -1983,7 +2293,8 @@
     "facts": [
       "Seal on palju troopilisi metsi ja suuri linnu.",
       "Nigeerias tehakse rohkem filme kui peaaegu kuskil mujal maailmas (seda kutsutakse Nollywoodiks)."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "mk",
@@ -1997,7 +2308,8 @@
     "facts": [
       "See on riik, kus on palju ilusaid järvi ja mägesid.",
       "Pealinnas Skopjes on uskumatult palju hiiglaslikke kujusid ja monumente."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "no",
@@ -2016,6 +2328,9 @@
     "facts": [
       "Norra on kuulus oma fjordide (kitsad merelahed mägede vahel) poolest.",
       "Talviti saab seal näha taevas tantsivaid virmalisi."
+    ],
+    "tags": [
+      "cross"
     ]
   },
   {
@@ -2030,7 +2345,8 @@
     "facts": [
       "Seal on kaunid kõrbed ja väga pikad rannad.",
       "Omaan on kuulus oma viiruki ehk puuvaigu poolest, mis lõhnab imeliselt."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "pk",
@@ -2046,6 +2362,10 @@
     "facts": [
       "Seal asub maailma teine kõige kõrgem mägi – K2.",
       "Pakistanis on maailma suurim kiirabi-võrgustik, mis aitab inimesi tasuta."
+    ],
+    "tags": [
+      "star",
+      "sun"
     ]
   },
   {
@@ -2063,6 +2383,9 @@
     "facts": [
       "See on saareriik, kus on uskumatult selge vesi ja palju koralle.",
       "Seal on järv, mis on täis miljoneid pehmeid millimallikaid, kes ei nõela üldse!"
+    ],
+    "tags": [
+      "sun"
     ]
   },
   {
@@ -2081,6 +2404,9 @@
     "facts": [
       "Palestiina aladel asub Jeruusalemm, mis on püha linn kolmele suurele usundile.",
       "Surnumeri Palestiina piiril on maailma madalaim koht maal – seal ei saa ka uppuda, sest vesi on nii soolane!"
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -2095,6 +2421,9 @@
     "facts": [
       "Seal asub kuulus kanal, mis lubab laevadel sõita otse läbi Ameerika mandri.",
       "Panama on ainus koht maailmas, kus saad näha päikest tõusmas Vaiksest ookeanist ja loojumas Atlandi ookeani!"
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -2109,6 +2438,10 @@
     "facts": [
       "Seal on väga tihedad džunglid ja kõrged mäed.",
       "Selles riigis räägitakse üle 800 erineva keele – see on maailmarekord!"
+    ],
+    "tags": [
+      "star",
+      "animal"
     ]
   },
   {
@@ -2126,6 +2459,9 @@
     "facts": [
       "See riik asub Lõuna-Ameerika südames ja tal pole merepiiri.",
       "Seal on kaks ametlikku keelt ja peaaegu kõik inimesed räägivad mõlemat."
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -2142,6 +2478,9 @@
     "facts": [
       "Peruu mägedes asub salapärane vana linn Machu Picchu.",
       "Peruust on pärit kartul! Nad kasvatavad seal rohkem kui 3000 sorti kartuleid."
+    ],
+    "tags": [
+      "animal"
     ]
   },
   {
@@ -2158,6 +2497,10 @@
     "facts": [
       "See riik koosneb enam kui 7600 saarest.",
       "Seal on \"Šokolaadimäed\" – üle 1200 künka, mis muutuvad suvel pruuniks nagu kommid."
+    ],
+    "tags": [
+      "star",
+      "sun"
     ]
   },
   {
@@ -2175,6 +2518,9 @@
     "facts": [
       "Poola on suur riik, millel on pikk piir merega.",
       "Poola on maailma suurim õunte eksportija – sealt tulevad väga magusad ubinad."
+    ],
+    "tags": [
+      "twocolor"
     ]
   },
   {
@@ -2189,6 +2535,9 @@
     "facts": [
       "Portugal asub Euroopa kõige läänepoolsemas nurgas, mere ääres.",
       "Portugallased avastasid esimestena mereteed Aafrika ümber ja Indiasse – nad olid väga julged meremehed!"
+    ],
+    "tags": [
+      "cross"
     ]
   },
   {
@@ -2205,7 +2554,8 @@
     "facts": [
       "See on väike riik poolsaarel keset Pärsia lahte.",
       "Kataris on nii kuum, et seal jahutatakse isegi tänavaid ja välisturge õhukonditsioneriga!"
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "ro",
@@ -2223,7 +2573,8 @@
     "facts": [
       "Seal asuvad Karpaadi mäed, kus elab palju pruunkarusid.",
       "Rumeenias asub loss, kus räägitakse elavat kuulus krahv Dracula."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "ru",
@@ -2240,7 +2591,8 @@
     "facts": [
       "See on suuruselt maailma kõige suurem riik!",
       "Venemaal on 11 erinevat ajavööndit – kui ühes otsas lapsed ärkavad, siis teises otsas lähevad magama."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "rw",
@@ -2254,6 +2606,10 @@
     "facts": [
       "Seda kutsutakse \"tuhande künka maaks\", sest seal on nii palju mägesid.",
       "Rwanda on üks maailma puhtamaid riike, sest kilekotid on seal rangelt keelatud."
+    ],
+    "tags": [
+      "star",
+      "sun"
     ]
   },
   {
@@ -2268,6 +2624,9 @@
     "facts": [
       "See on kõige väiksem riik kogu Ameerika mandri lähedal.",
       "Seal sõidab vana suhkruroorongike ümber kogu saare – sellest on saanud turistide lemmik!"
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -2282,7 +2641,8 @@
     "facts": [
       "Seal on kaks kuulsat mäge, mida kutsutakse Pitoniteks.",
       "Saint Lucia on ainus riik maailmas, mis on saanud nime naise järgi."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "vc",
@@ -2296,7 +2656,8 @@
     "facts": [
       "See on saarestik, kus filmiti kuulsat \"Kariibi mere piraatide\" filmi.",
       "Seal on tegutsev vulkaan nimega La Soufrière, mis vahel tuhka välja pahvib."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "ws",
@@ -2310,6 +2671,9 @@
     "facts": [
       "See on väike ja ilus saareriik Polüneesias.",
       "Samoalased on kuulsad oma kaunite kehamaalingute ehk tätoveeringute poolest."
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -2324,7 +2688,8 @@
     "facts": [
       "See asub üleni Itaalia sees, kõrge mäe otsas.",
       "See on maailma vanim vabariik – see on püsinud peaaegu muutumatuna väga kaua."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "st",
@@ -2338,6 +2703,9 @@
     "facts": [
       "Need on kaks vulkaanilist saart täpselt ekvaatori peal.",
       "Seal kasvab maailma parim kakao, millest tehakse ülimaitsvat šokolaadi."
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -2352,6 +2720,9 @@
     "facts": [
       "Suurem osa riigist on kaetud liivakõrbega.",
       "Seal on kaamelid väga au sees ja nendega korraldatakse isegi iludusvõistlusi."
+    ],
+    "tags": [
+      "weapon"
     ]
   },
   {
@@ -2370,6 +2741,9 @@
     "facts": [
       "See on Aafrika mandri kõige läänepoolsem riik.",
       "Seal on roosa järv (Retba järv), mille vesi on päriselt maasikapiima värvi!"
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -2384,6 +2758,9 @@
     "facts": [
       "Läbi riigi voolab suur ja võimas Doonau jõgi.",
       "Serbia teadlane Nikola Tesla leiutas vahelduvvoolu – ilma temata ei põleks sinu toas tuled!"
+    ],
+    "tags": [
+      "cross"
     ]
   },
   {
@@ -2398,7 +2775,8 @@
     "facts": [
       "See on pindalalt kõige väiksem riik Aafrikas.",
       "Seal kasvavad maailma kõige suuremad kookospähklid, mis kaaluvad nagu suur koer!"
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "sl",
@@ -2412,6 +2790,9 @@
     "facts": [
       "See on troopiline maa, kus on imelised valged liivarannad.",
       "Sealt leitakse maailma kõige ilusamaid ja suuremaid teemante."
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -2430,6 +2811,10 @@
     "facts": [
       "See on tilluke saareriik, mis on tegelikult üks suur ja väga puhas linn.",
       "Singapuris on maailma suurim sise-kosega lennujaam ja seal on nätsu närimine keelatud!"
+    ],
+    "tags": [
+      "star",
+      "sun"
     ]
   },
   {
@@ -2447,6 +2832,9 @@
     "facts": [
       "See on väga mägine maa, kus on üle 6000 koopa!",
       "Slovakkia on maailmas esikohal autode valmistamises ühe inimese kohta."
+    ],
+    "tags": [
+      "cross"
     ]
   },
   {
@@ -2464,7 +2852,8 @@
     "facts": [
       "Pool riigist on kaetud metsadega.",
       "Sloveenia nimes on peidus ingliskeelne sõna \"love\" (armastus)."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "sb",
@@ -2478,6 +2867,9 @@
     "facts": [
       "Need on sadu saari Vaikses ookeanis.",
       "Seal on leitud hiiglaslikke rotte, kes on peaaegu kassi suurused!"
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -2492,6 +2884,9 @@
     "facts": [
       "Somaalial on Aafrika mandri kõige pikem rannajoon.",
       "Seal kasvatatakse puid, millest saab lõhnaõli ja viirukit."
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -2506,7 +2901,8 @@
     "facts": [
       "See asub Aafrika kõige lõunapoolsemas tipus.",
       "Seal elavad looduses korraga nii lõvid kui ka pingviinid!"
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "ss",
@@ -2520,6 +2916,9 @@
     "facts": [
       "See on maailma kõige noorem riik (sai iseseisvaks alles 2011. aastal).",
       "Lõuna-Sudaan on maailma kõige noorem riik – ta on noorem kui sinu vanemad!"
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -2534,7 +2933,8 @@
     "facts": [
       "Seal asub ainus kõrb kogu Euroopas (Tabernas).",
       "Hispaanias toimub igal aastal suur tomatisõda, kus inimesed loobivad üksteist tomatitega."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "lk",
@@ -2548,6 +2948,9 @@
     "facts": [
       "See on saar, mis näeb kaardil välja nagu pisar India põse peal.",
       "Sri Lankas asub tempel, kus hoitakse Buddha hammast ja sellele tehakse igal päeval pidusööki!"
+    ],
+    "tags": [
+      "animal"
     ]
   },
   {
@@ -2566,7 +2969,8 @@
     "facts": [
       "Seal ühinevad kaks suurt jõge: Sinine Niilus ja Valge Niilus.",
       "Sudaanis on tegelikult rohkem püramiide kui Egiptuses, aga need on väiksemad."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "sr",
@@ -2580,6 +2984,9 @@
     "facts": [
       "See on Lõuna-Ameerika kõige väiksem riik.",
       "Peaaegu kogu riik (üle 90%) on kaetud paksu vihmametsaga."
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -2599,6 +3006,9 @@
     "facts": [
       "Rootsis on väga palju metsi ja üle 100 000 järve.",
       "Sealt on pärit Pipi Pikksukk, ABBA ja lihapallid!"
+    ],
+    "tags": [
+      "cross"
     ]
   },
   {
@@ -2613,6 +3023,9 @@
     "facts": [
       "See on väga mägine riik keset Euroopat (Alpi mäed).",
       "Šveitsis tehakse maailma parimat šokolaadi ja väga täpseid kelli."
+    ],
+    "tags": [
+      "cross"
     ]
   },
   {
@@ -2631,6 +3044,9 @@
     "facts": [
       "Selle pealinn Damaskus on üks maailma vanimaid linnu, kus on kogu aeg elatud.",
       "Süürias on maailma kõige vanemad vesirattad, mis ikka veel ringi käivad."
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -2645,6 +3061,9 @@
     "facts": [
       "See on saar, mis on kaetud tihedate metsade ja kõrgete mägedega.",
       "Seal on prügiautod nagu jäätiseautod – nad mängivad muusikat, et inimesed teaksid prügi välja tuua."
+    ],
+    "tags": [
+      "sun"
     ]
   },
   {
@@ -2659,6 +3078,9 @@
     "facts": [
       "Peaaegu 90% riigist on kaetud kõrgete mägedega.",
       "Seal on maailma kõige kõrgem tamm (pais), mis on tehtud inimeste poolt."
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -2673,6 +3095,9 @@
     "facts": [
       "Seal asub Kilimanjaro – Aafrika kõige kõrgem mägi.",
       "Tansaaniale kuulub Zanzibari saar, mis lõhnab vürtside ja nelgi järele."
+    ],
+    "tags": [
+      "animal"
     ]
   },
   {
@@ -2690,7 +3115,8 @@
     "facts": [
       "Seal on aastaringselt soe ja kasvavad kookospalmid.",
       "Tais tähistatakse uut aastat suure veesõjaga – kõik pritsivad üksteist märjaks!"
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "tl",
@@ -2704,6 +3130,9 @@
     "facts": [
       "See on noor riik, mis asub ühel väikesel saarel Aasia lähedal.",
       "Sealt tuleb väga maitsvat kohvi, mida kasvatatakse džungli varjus."
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -2720,6 +3149,9 @@
     "facts": [
       "See on üks Aafrika kõige väiksemaid riike.",
       "Togos on turud, kus müüakse ainult maagilisi asju ja ravimtaimi."
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -2736,6 +3168,10 @@
     "facts": [
       "See on saarestik, mida kutsutakse \"Sõbralikeks saarteks\".",
       "Tonga on ainus kuningriik Vaikses ookeanis, kus on siiani päris kuningas."
+    ],
+    "tags": [
+      "star",
+      "cross"
     ]
   },
   {
@@ -2750,7 +3186,8 @@
     "facts": [
       "See on kahe suure saarega riik Lõuna-Ameerika lähedal.",
       "Seal leiutati \"terasest trummid\" (pannid), mis teevad väga lõbusat häält."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "tn",
@@ -2766,6 +3203,10 @@
     "facts": [
       "See asub Aafrika kõige põhjapoolsemas tipus.",
       "Seal on filmitud paljud \"Tähtede sõja\" filmid, sest maastik näeb välja nagu teine planeet."
+    ],
+    "tags": [
+      "star",
+      "sun"
     ]
   },
   {
@@ -2782,6 +3223,10 @@
     "facts": [
       "Türgi asub korraga kahel mandril: Euroopas ja Aasias.",
       "Türgis on kuulus koht nimega Kapadookia, kus sajad kuumaõhupallid korraga taevasse tõusevad."
+    ],
+    "tags": [
+      "star",
+      "sun"
     ]
   },
   {
@@ -2796,6 +3241,10 @@
     "facts": [
       "See on peaaegu üleni kõrb.",
       "Seal asub \"Põrguvärav\" – suur auk maas, mis on põlenud üle 50 aasta."
+    ],
+    "tags": [
+      "star",
+      "sun"
     ]
   },
   {
@@ -2810,6 +3259,9 @@
     "facts": [
       "See on üks maailma madalamaid riike – meri on igal pool väga lähedal.",
       "Tuvalu teenib palju raha sellega, et müüb oma interneti lõppu (.tv) telekanalitele."
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -2824,6 +3276,9 @@
     "facts": [
       "Seal asub maailma suuruselt teine järv – Victoria järv.",
       "Uganda on koduks poolele maailma mägigorilladest – nad on väga suured ja tugevad!"
+    ],
+    "tags": [
+      "animal"
     ]
   },
   {
@@ -2838,6 +3293,9 @@
     "facts": [
       "See on pindalalt kõige suurem riik, mis asub üleni Euroopas.",
       "Ukraina rahvuslill on päevalill ja nad kasvatavad neid tohutult palju."
+    ],
+    "tags": [
+      "twocolor"
     ]
   },
   {
@@ -2852,7 +3310,8 @@
     "facts": [
       "Enamus maast on kõrb, aga linnad on täis pilvelõhkujaid.",
       "Dubais asub maailma kõige kõrgem maja – Burj Khalifa (828 meetrit!)."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "gb",
@@ -2866,6 +3325,9 @@
     "facts": [
       "Suurbritannia lipp (Union Jack) koosneb kolme riigi – Inglismaa, Šotimaa ja Iirimaa – lippude kombinatsioonist.",
       "London on üks maailma suurimaid linnu ja seal asub kuningas oma suures palees!"
+    ],
+    "tags": [
+      "cross"
     ]
   },
   {
@@ -2883,6 +3345,9 @@
     "facts": [
       "Seal on kõike: nii kuumi kõrbeid kui ka lumiseid mägesid.",
       "USA-s leiutati hamburgerid, Miki-Hiir ja esimene lennuk."
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -2899,6 +3364,9 @@
     "facts": [
       "See on väike riik kahe hiiglase (Brasiilia ja Argentina) vahel.",
       "Uruguay on esimene riik maailmas, mis andis igale koolilapsele tasuta sülearvuti."
+    ],
+    "tags": [
+      "sun"
     ]
   },
   {
@@ -2913,6 +3381,10 @@
     "facts": [
       "See on üks kahest riigist maailmas, mille naabritel pole ka merepiiri.",
       "Seal on väga ilusad siniste katustega mošeed ja maitsvad melonid."
+    ],
+    "tags": [
+      "star",
+      "sun"
     ]
   },
   {
@@ -2927,7 +3399,8 @@
     "facts": [
       "See on saareriik, kus on mitu tegutsevat vulkaani.",
       "Sealt on pärit \"benjihüpe\" – mehed hüppasid seal tornidest alla, jalad liaanidega seotud."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "ve",
@@ -2944,6 +3417,9 @@
     "facts": [
       "Seal asub maailma kõrgeim kosk (Angel Falls), mis on peaaegu kilomeeter pikk.",
       "Venezuelas sähvib ühes kohas peaaegu igal ööl äike – seda kutsutakse \"igaveseks tormiks\"."
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -2960,6 +3436,9 @@
     "facts": [
       "Vietnam on kaardil nagu pikk \"S\"-täht.",
       "Vietnamis on koobas (Son Doong), mis on nii suur, et sinna mahuks ära terve pilvelõhkuja!"
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -2978,7 +3457,8 @@
     "facts": [
       "Seal asub saar nimega Socotra, kus kasvavad puud, mis näevad välja nagu kosmoselaevad.",
       "Jeemenis on väga vanad \"pilvelõhkujad\", mis on tehtud savist ja mudast."
-    ]
+    ],
+    "tags": []
   },
   {
     "iso2": "zm",
@@ -2992,6 +3472,9 @@
     "facts": [
       "Seal asub Victoria juga – maailma üks võimsamaid koski.",
       "Sambia on kuulus oma vasekaevanduste poolest – vasest tehakse juhtmeid ja münte."
+    ],
+    "tags": [
+      "animal"
     ]
   },
   {
@@ -3006,6 +3489,10 @@
     "facts": [
       "Seal asub üks maailma suuremaid koski – Victoria juga.",
       "Seal on leitud väga vanu kivist ehitatud linnu, mis on nagu mõistatused."
+    ],
+    "tags": [
+      "star",
+      "animal"
     ]
   },
   {
@@ -3022,7 +3509,10 @@
       "Inglismaa ei ole eraldi riik, vaid osa Ühendkuningriigist (nagu üks tükk suures pusles). Sealt on pärit jalgpall ja Harry Potter!"
     ],
     "custom": true,
-    "flagPath": "/flags/gb-eng.png"
+    "flagPath": "/flags/gb-eng.png",
+    "tags": [
+      "cross"
+    ]
   },
   {
     "iso2": "gb-sct",
@@ -3038,7 +3528,10 @@
       "Šotimaa ei ole eraldi riik, vaid osa Ühendkuningriigist. Seal usutakse, et Loch Nessi järves elab salapärane koletis Nessie."
     ],
     "custom": true,
-    "flagPath": "/flags/gb-sct.png"
+    "flagPath": "/flags/gb-sct.png",
+    "tags": [
+      "cross"
+    ]
   },
   {
     "iso2": "gb-wls",
@@ -3054,7 +3547,11 @@
       "Wales ei ole eraldi riik, vaid osa Ühendkuningriigist. Walesi lipu peal on suur punane draakon – see on üks lahedamaid lippe üldse!"
     ],
     "custom": true,
-    "flagPath": "/flags/gb-wls.png"
+    "flagPath": "/flags/gb-wls.png",
+    "tags": [
+      "animal",
+      "dragon"
+    ]
   },
   {
     "iso2": "gb-nir",
@@ -3070,7 +3567,10 @@
       "Põhja-Iirimaa ei ole eraldi riik, vaid osa Ühendkuningriigist. Seal ehitati valmis maailma kuulsaim laev Titanic."
     ],
     "custom": true,
-    "flagPath": "/flags/gb-nir.png"
+    "flagPath": "/flags/gb-nir.png",
+    "tags": [
+      "cross"
+    ]
   },
   {
     "iso2": "gi",
@@ -3086,7 +3586,8 @@
       "Gibraltar ei ole riik, vaid kuulub Suurbritanniale (nagu väike tükk teisest riigist kaugel eemal). See on ainus koht Euroopas, kus elavad vabas looduses pärdikud!"
     ],
     "custom": true,
-    "flagPath": "/flags/gi.png"
+    "flagPath": "/flags/gi.png",
+    "tags": []
   },
   {
     "iso2": "xk",
@@ -3100,6 +3601,9 @@
     "facts": [
       "See on üks maailma nooremaid riike (sai iseseisvaks alles 2008).",
       "Kosovo lipul on kujutatud riigi enda kaart – see on üsna haruldane!"
+    ],
+    "tags": [
+      "star"
     ]
   },
   {
@@ -3114,6 +3618,7 @@
     "facts": [
       "See on maailma kõige väiksem riik ja asub keset Rooma linna.",
       "Seal ei sünni peaaegu kunagi ühtegi last!"
-    ]
+    ],
+    "tags": []
   }
 ]
