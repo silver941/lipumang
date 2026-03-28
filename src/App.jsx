@@ -132,6 +132,7 @@ function getAchCodes(a, col) {
 
 /** Is this a "single flag" achievement that should skip the grid and go straight to facts? */
 function isSingleFlagAch(a) {
+  if (a.id === "perf_first") return false; // shows description-only modal
   if (a.type === "tag") return codesForTag(a.tag).length === 1;
   if (a.type === "threshold" && a.threshold === 1) return true;
   if (a.type === "set" && a.need.length === 1) return true;
@@ -227,7 +228,7 @@ export default function App() {
       const a = ACHIEVEMENTS.find(x => x.id === newIds[0]);
       if (a) {
         setAchToast(a);
-        setTimeout(() => setAchToast(null), 3000);
+        setTimeout(() => setAchToast(null), 3500);
       }
       return updated;
     }
@@ -341,21 +342,35 @@ export default function App() {
       emoji: isCorrect ? rand(EC) : rand(EW),
       message: isCorrect ? rand(MC) : rand(MW),
       correctAnswer: question.correct,
+      selectedChoice: choice,
     });
   };
 
   const nextQuestion = () => { setFeedback(null); setSelected(null); setSelectedCountry(null); setQuestion(generateQuestion()); };
   const goMenu = () => { setScreen("menu"); setQuestion(null); setFeedback(null); setSelected(null); setStreakCelebration(null); setSelectedCountry(null); setSelectedAch(null); setShowResetConfirm(false); };
 
-  /* ═══════════════════ ACHIEVEMENT TOAST (always rendered) ═══════════════════ */
+  /* ═══════════════════ ACHIEVEMENT CELEBRATION (always rendered) ═══════════════════ */
   const toastEl = achToast ? (
-    <div style={S.achToast}>
-      <div style={S.achToastInner}>
-        <span style={{ fontSize: "2rem" }}>{achToast.icon}</span>
-        <div>
-          <p style={S.achToastTitle}>{t("Saavutus avatud!")}</p>
-          <p style={S.achToastName}>{t(achToast.name)}</p>
-        </div>
+    <div style={S.achCelebration} onClick={() => setAchToast(null)}>
+      <div style={S.achConfettiContainer}>
+        {[...Array(24)].map((_,i) => (
+          <span key={i} style={{
+            ...S.achConfetti,
+            left: `${8 + Math.random() * 84}%`,
+            animationDelay: `${Math.random() * 0.5}s`,
+            animationDuration: `${1.5 + Math.random() * 1.5}s`,
+            background: ["#ff6b6b","#ffd93d","#6bcb77","#4d96ff","#ff922b","#cc5de8","#20c997","#f06595"][i % 8],
+            width: `${6 + Math.random() * 6}px`,
+            height: `${6 + Math.random() * 6}px`,
+            borderRadius: Math.random() > 0.5 ? "50%" : "2px",
+          }} />
+        ))}
+      </div>
+      <div style={S.achCelebrationCard}>
+        <p style={S.achCelebrationLabel}>🎉 {t("Saavutus avatud!")} 🎉</p>
+        <span style={{fontSize:"3rem"}}>{achToast.icon}</span>
+        <h2 style={S.achCelebrationName}>{t(achToast.name)}</h2>
+        <p style={S.achCelebrationDesc}>{t(achToast.desc)}</p>
       </div>
     </div>
   ) : null;
@@ -541,7 +556,7 @@ export default function App() {
             const codes = getAchCodes(selectedAch, collection) || [];
             const achCountries = codes.map(c => countriesRaw.find(x => x.iso2 === c)).filter(Boolean);
             const prog = getProgress(selectedAch, collection, achState);
-            const hasFlags = selectedAch.type !== "alldiff" && achCountries.length > 0;
+            const hasFlags = selectedAch.type !== "alldiff" && selectedAch.id !== "perf_first" && achCountries.length > 0;
             return (
               <div style={S.modalBackdrop} onClick={() => setSelectedAch(null)}>
                 <div style={{...S.modalCard, maxWidth: 440, padding: "1.3rem 1rem 1.5rem"}} onClick={e => e.stopPropagation()}>
@@ -573,6 +588,14 @@ export default function App() {
                           </div>
                         );
                       })}
+                    </div>
+                  )}
+                  {/* perf_first: celebratory message only */}
+                  {selectedAch.id === "perf_first" && (
+                    <div style={{textAlign:"center",padding:"0.5rem 0"}}>
+                      <p style={{fontSize:"1rem",fontWeight:700,color:"#2e7d32",margin:0,lineHeight:1.4}}>
+                        {achState.unlocked.includes(selectedAch.id) ? t("Sa said oma esimese õige vastuse!") : t("Vasta oma esimene lipp õigesti!")}
+                      </p>
                     </div>
                   )}
                   {/* Flag grid for flag-based achievements */}
@@ -804,13 +827,14 @@ export default function App() {
             <span style={S.feedbackEmoji}>{feedback.emoji}</span>
             <p style={S.feedbackMsg}>{t(feedback.message)}</p>
             {!feedback.isCorrect && isFTN && <p style={S.feedbackCorrectText}>{t("Õige vastus")}: {t(feedback.correctAnswer.name_et)}</p>}
-            <div style={{display:"flex",gap:"0.5rem",alignItems:"center",marginTop:"0.3rem"}}>
+            {!feedback.isCorrect && !isFTN && <p style={S.feedbackCorrectText}>{t("Sa valisid")}: {t(feedback.selectedChoice.name_et)}</p>}
+            <div style={{display:"flex",gap:"0.5rem",marginTop:"0.4rem",width:"100%",maxWidth:340}}>
               {feedback.isCorrect && (
-                <button style={S.factsBtn} onClick={() => setSelectedCountry(feedback.correctAnswer)}>
+                <button style={{...S.feedbackBtn,flex:1}} onClick={() => setSelectedCountry(feedback.correctAnswer)}>
                   🔍 {t("Vaata lähemalt")}
                 </button>
               )}
-              <button style={S.nextBtn} onClick={nextQuestion}>{t("Järgmine")} →</button>
+              <button style={{...S.feedbackBtn,flex:1}} onClick={nextQuestion}>{t("Järgmine")} →</button>
             </div>
           </div>
         )}
@@ -965,11 +989,14 @@ const S = {
   achBarInner: {height:"100%",background:"linear-gradient(90deg, #66bb6a, #43a047)",borderRadius:5,transition:"width 0.4s"},
   achBarText: {position:"absolute",right:4,top:-1,fontSize:"0.55rem",fontWeight:800,color:"#546e7a"},
 
-  /* Achievement toast */
-  achToast: {position:"fixed",top:16,left:"50%",transform:"translateX(-50%)",zIndex:400,animation:"popIn 0.3s ease-out"},
-  achToastInner: {display:"flex",alignItems:"center",gap:"0.6rem",background:"linear-gradient(135deg, #43a047, #2e7d32)",padding:"0.7rem 1.2rem",borderRadius:16,boxShadow:"0 4px 24px rgba(46,125,50,0.4)"},
-  achToastTitle: {fontSize:"0.75rem",fontWeight:700,color:"rgba(255,255,255,0.8)",margin:0},
-  achToastName: {fontSize:"1rem",fontWeight:900,color:"#fff",margin:0},
+  /* Achievement celebration */
+  achCelebration: {position:"fixed",top:0,left:0,right:0,bottom:0,display:"flex",alignItems:"center",justifyContent:"center",background:"rgba(0,0,0,0.45)",zIndex:400,animation:"fadeInOut 3.5s ease-in-out forwards",cursor:"pointer"},
+  achConfettiContainer: {position:"absolute",top:0,left:0,right:0,height:"100%",overflow:"hidden",pointerEvents:"none"},
+  achConfetti: {position:"absolute",top:"-10px",animation:"confettiFall 2s ease-in forwards",opacity:0.9},
+  achCelebrationCard: {background:"#fff",borderRadius:24,padding:"1.8rem 2rem",textAlign:"center",display:"flex",flexDirection:"column",alignItems:"center",gap:"0.4rem",boxShadow:"0 12px 48px rgba(0,0,0,0.25)",animation:"popIn 0.35s ease-out",maxWidth:320,width:"85%",zIndex:1},
+  achCelebrationLabel: {fontSize:"1rem",fontWeight:800,color:"#43a047",margin:0},
+  achCelebrationName: {fontSize:"1.5rem",fontWeight:900,color:"#1a237e",margin:"0.1rem 0",lineHeight:1.2},
+  achCelebrationDesc: {fontSize:"0.9rem",fontWeight:600,color:"#546e7a",margin:0,lineHeight:1.3},
 
   /* Achievement flags modal grid */
   achFlagGrid: {display:"grid",gridTemplateColumns:"repeat(auto-fill, minmax(72px, 1fr))",gap:"0.4rem",width:"100%",maxHeight:"55vh",overflowY:"auto",padding:"0.2rem"},
@@ -982,6 +1009,6 @@ const S = {
   cancelBtn: {flex:1,padding:"0.8rem",fontSize:"1.05rem",fontWeight:800,color:"#546e7a",background:"#eceff1",border:"none",borderRadius:12,cursor:"pointer"},
   confirmResetBtn: {flex:1,padding:"0.8rem",fontSize:"1.05rem",fontWeight:800,color:"#fff",background:"#e53935",border:"none",borderRadius:12,cursor:"pointer"},
 
-  /* Facts button in feedback */
-  factsBtn: {padding:"0.8rem 2.2rem",fontSize:"1.15rem",fontWeight:800,color:"#333",background:"rgba(255,255,255,0.95)",border:"none",borderRadius:14,cursor:"pointer",boxShadow:"0 2px 12px rgba(0,0,0,0.15)"},
+  /* Feedback buttons */
+  feedbackBtn: {padding:"0.8rem 1rem",fontSize:"1.1rem",fontWeight:800,color:"#333",background:"rgba(255,255,255,0.95)",border:"none",borderRadius:14,cursor:"pointer",boxShadow:"0 2px 12px rgba(0,0,0,0.15)",textAlign:"center"},
 };
