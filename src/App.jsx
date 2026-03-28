@@ -47,45 +47,46 @@ function overlap(col,needed){return needed.filter(c=>col.includes(c)).length;}
 
 const ACHIEVEMENTS = [
   // ── COLLECTION ──
-  {id:"col_baltic",cat:"collection",icon:"🇪🇪",name:"Balti kolmik",desc:"Tunne kõiki Balti lippe",hint:"Kolm väikest riiki mere ääres...",need:BALTIC,type:"set"},
-  {id:"col_nordic",cat:"collection",icon:"❄️",name:"Põhjamaade meister",desc:"Tunne kõiki Põhjamaade lippe",hint:"Külmad maad, kus öö kestab kaua...",need:NORDIC,type:"set"},
-  {id:"col_europe",cat:"collection",icon:"🏰",name:"Euroopa ekspert",desc:"Tunne kõiki Euroopa lippe",hint:"Vana manner ootab avastamist...",need:codesForRegion("Europe"),type:"set"},
-  {id:"col_africa",cat:"collection",icon:"🌍",name:"Aafrika avastaja",desc:"Tunne kõiki Aafrika lippe",hint:"Suur manner lõunas...",need:codesForRegion("Africa"),type:"set"},
-  {id:"col_asia",cat:"collection",icon:"🏯",name:"Aasia asjatundja",desc:"Tunne kõiki Aasia lippe",hint:"Maailma suurim manner...",need:codesForRegion("Asia"),type:"set"},
-  {id:"col_mideast",cat:"collection",icon:"🕌",name:"Lähis-Ida tundja",desc:"Tunne kõiki Lähis-Ida lippe",hint:"Kuum kõrb ja iidsed linnad...",need:codesForSubregion("Middle East"),type:"set"},
-  {id:"col_seasian",cat:"collection",icon:"🌴",name:"Kagu-Aasia guru",desc:"Tunne kõiki Kagu-Aasia lippe",hint:"Troopilised saared ja templid...",need:codesForSubregion("Southeast Asia"),type:"set"},
-  {id:"col_easian",cat:"collection",icon:"🐉",name:"Ida-Aasia tark",desc:"Tunne kõiki Ida-Aasia lippe",hint:"Draakoni maad...",need:codesForSubregion("East Asia"),type:"set"},
-  {id:"col_oceania",cat:"collection",icon:"🏝️",name:"Okeaania kapten",desc:"Tunne kõiki Okeaania lippe",hint:"Kauged saared suures ookeanis...",need:codesForRegion("Oceania"),type:"set"},
-  {id:"col_americas",cat:"collection",icon:"🗽",name:"Ameerika teadja",desc:"Tunne kõiki Ameerika lippe",hint:"Kaks suurt mandrit...",need:codesForRegion("Americas"),type:"set"},
-  {id:"col_caribbean",cat:"collection",icon:"🏖️",name:"Kariibi kapten",desc:"Tunne kõiki Kariibi lippe",hint:"Päikeselised saared...",need:codesForSubregion("Caribbean"),type:"set"},
-  {id:"col_uk",cat:"collection",icon:"👑",name:"Ühendkuningriik",desc:"Tunne kõiki UK rahvuste lippe",hint:"Neli lippu ühe krooni all...",need:UK_NATIONS,type:"set"},
-  {id:"col_all",cat:"collection",icon:"🌐",name:"Maailmameister",desc:"Tunne kõiki 202 lippu!",hint:"Iga lipp maailmas...",need:ALL_CODES,type:"set"},
+  {id:"col_baltic",cat:"collection",icon:"🇪🇪",name:"Balti kolmik",desc:"Tunne kõiki Balti lippe",hint:"Kolm väikest riiki mere ääres...",modalDesc:"Leia kõik Balti riikide lipud",need:BALTIC,type:"set"},
+  {id:"col_nordic",cat:"collection",icon:"❄️",name:"Põhjamaade meister",desc:"Tunne kõiki Põhjamaade lippe",hint:"Külmad maad, kus öö kestab kaua...",modalDesc:"Leia kõik Põhjamaade lipud",need:NORDIC,type:"set"},
+  {id:"col_europe",cat:"collection",icon:"🏰",name:"Euroopa ekspert",desc:"Tunne kõiki Euroopa lippe",hint:"Vana manner ootab avastamist...",modalDesc:"Leia kõik Euroopa riikide lipud",need:codesForRegion("Europe"),type:"set"},
+  {id:"col_africa",cat:"collection",icon:"🌍",name:"Aafrika avastaja",desc:"Tunne kõiki Aafrika lippe",hint:"Suur manner lõunas...",modalDesc:"Leia kõik Aafrika riikide lipud",need:codesForRegion("Africa"),type:"set"},
+  {id:"col_asia",cat:"collection",icon:"🏯",name:"Aasia asjatundja",desc:"Tunne kõiki Aasia lippe",hint:"Maailma suurim manner...",modalDesc:"Leia kõik Aasia riikide lipud",need:codesForRegion("Asia"),type:"set"},
+  {id:"col_mideast",cat:"collection",icon:"🕌",name:"Lähis-Ida tundja",desc:"Tunne kõiki Lähis-Ida lippe",hint:"Kuum kõrb ja iidsed linnad...",modalDesc:"Leia kõik Lähis-Ida riikide lipud",need:codesForSubregion("Middle East"),type:"set"},
+  {id:"col_seasian",cat:"collection",icon:"🌴",name:"Kagu-Aasia guru",desc:"Tunne kõiki Kagu-Aasia lippe",hint:"Troopilised saared ja templid...",modalDesc:"Leia kõik Kagu-Aasia riikide lipud",need:codesForSubregion("Southeast Asia"),type:"set"},
+  {id:"col_easian",cat:"collection",icon:"🐉",name:"Ida-Aasia tark",desc:"Tunne kõiki Ida-Aasia lippe",hint:"Draakoni maad...",modalDesc:"Leia kõik Ida-Aasia riikide lipud",need:codesForSubregion("East Asia"),type:"set"},
+  {id:"col_oceania",cat:"collection",icon:"🏝️",name:"Okeaania kapten",desc:"Tunne kõiki Okeaania lippe",hint:"Kauged saared suures ookeanis...",modalDesc:"Leia kõik Okeaania riikide lipud",need:codesForRegion("Oceania"),type:"set"},
+  {id:"col_americas",cat:"collection",icon:"🗽",name:"Ameerika teadja",desc:"Tunne kõiki Ameerika lippe",hint:"Kaks suurt mandrit...",modalDesc:"Leia kõik Ameerika riikide lipud",need:codesForRegion("Americas"),type:"set"},
+  {id:"col_caribbean",cat:"collection",icon:"🏖️",name:"Kariibi kapten",desc:"Tunne kõiki Kariibi lippe",hint:"Päikeselised saared...",modalDesc:"Leia kõik Kariibi saarte lipud",need:codesForSubregion("Caribbean"),type:"set"},
+  {id:"col_uk",cat:"collection",icon:"👑",name:"Ühendkuningriik",desc:"Tunne kõiki UK rahvuste lippe",hint:"Neli lippu ühe krooni all...",modalDesc:"Leia kõik Ühendkuningriigi rahvuste lipud",need:UK_NATIONS,type:"set"},
+  {id:"col_all",cat:"collection",icon:"🌐",name:"Maailmameister",desc:"Tunne kõiki 202 lippu!",hint:"Iga lipp maailmas...",modalDesc:"Leia iga lipp maailmas",need:ALL_CODES,type:"set"},
 
   // ── PERFORMANCE ──
-  {id:"perf_first",cat:"performance",icon:"🎯",name:"Esimene samm",desc:"Esimene õige vastus!",hint:"Kõik algab ühest...",type:"threshold",threshold:1},
-  {id:"perf_50",cat:"performance",icon:"🔥",name:"Poolsada lippu",desc:"50 erinevat lippu õigesti",hint:"Poolel teel viiekümneni...",type:"threshold",threshold:50},
-  {id:"perf_100",cat:"performance",icon:"💎",name:"Sada lippu",desc:"100 erinevat lippu õigesti",hint:"Kolmekohaline number ootab...",type:"threshold",threshold:100},
-  {id:"perf_all",cat:"performance",icon:"👑",name:"Kõik 202!",desc:"Kõik lipud õigesti!",hint:"Absoluutne täielikkus...",type:"threshold",threshold:202},
-  {id:"perf_easy",cat:"performance",icon:"🌱",name:"Kerge läbi!",desc:"Kõik Kerge taseme lipud õigesti",hint:"Algus on tehtud...",need:codesForDiff("easy"),type:"set"},
-  {id:"perf_medium80",cat:"performance",icon:"🌿",name:"Keskmine tubli!",desc:"80% Keskmine taseme lippudest",hint:"Enamik keskmistest...",type:"custom",check:(col)=>{
+  {id:"perf_first",cat:"performance",icon:"🎯",name:"Esimene samm",desc:"Esimene õige vastus!",hint:"Kõik algab ühest...",modalDesc:"Vasta esimene lipp õigesti",type:"threshold",threshold:1},
+  {id:"perf_50",cat:"performance",icon:"🔥",name:"Poolsada lippu",desc:"50 erinevat lippu õigesti",hint:"Poolel teel viiekümneni...",modalDesc:"Vasta 50 erinevat lippu õigesti",type:"threshold",threshold:50},
+  {id:"perf_100",cat:"performance",icon:"💎",name:"Sada lippu",desc:"100 erinevat lippu õigesti",hint:"Kolmekohaline number ootab...",modalDesc:"Vasta 100 erinevat lippu õigesti",type:"threshold",threshold:100},
+  {id:"perf_all",cat:"performance",icon:"👑",name:"Kõik 202!",desc:"Kõik lipud õigesti!",hint:"Absoluutne täielikkus...",modalDesc:"Vasta kõik 202 lippu õigesti",type:"threshold",threshold:202},
+  {id:"perf_easy",cat:"performance",icon:"🌱",name:"Kerge läbi!",desc:"Kõik Kerge taseme lipud õigesti",hint:"Algus on tehtud...",modalDesc:"Vasta kõik Kerge taseme lipud õigesti",need:codesForDiff("easy"),type:"set"},
+  {id:"perf_medium80",cat:"performance",icon:"🌿",name:"Keskmine tubli!",desc:"80% Keskmine taseme lippudest",hint:"Enamik keskmistest...",modalDesc:"Vasta 80% Keskmine taseme lippudest õigesti",type:"custom",check:(col)=>{
     const med=countriesRaw.filter(c=>c.difficulty==="medium").map(c=>c.iso2);
     return overlap(col,med)>=Math.ceil(med.length*0.8);
   },progress:(col)=>{
     const med=countriesRaw.filter(c=>c.difficulty==="medium").map(c=>c.iso2);
     return {current:overlap(col,med),total:Math.ceil(med.length*0.8)};
   }},
-  {id:"perf_expert",cat:"performance",icon:"💀",name:"Eksperdi tase!",desc:"Kõik 202 lippu õigesti",hint:"Iga viimane lipp...",need:ALL_CODES,type:"set"},
-  {id:"perf_alldiff",cat:"performance",icon:"🎮",name:"Kõik tasemed",desc:"Mänginud igal raskusastmel",hint:"Proovi kõiki nelja...",type:"alldiff"},
+  {id:"perf_expert",cat:"performance",icon:"💀",name:"Eksperdi tase!",desc:"Kõik 202 lippu õigesti",hint:"Iga viimane lipp...",modalDesc:"Vasta kõik 202 lippu õigesti",need:ALL_CODES,type:"set"},
+  {id:"perf_alldiff",cat:"performance",icon:"🎮",name:"Kõik tasemed",desc:"Mänginud igal raskusastmel",hint:"Proovi kõiki nelja...",modalDesc:"Mängi vähemalt üks voor igal raskustasemel",type:"alldiff"},
 
   // ── QUIRKY ──
-  {id:"q_star",cat:"quirky",icon:"⭐",name:"Tähekütt",desc:"Tunne kõiki lippe tähega",hint:"Taevas särab...",tag:"star",type:"tag"},
-  {id:"q_cross",cat:"quirky",icon:"✝️",name:"Ristide klubi",desc:"Tunne kõiki lippe ristiga",hint:"Pluss või rist...",tag:"cross",type:"tag"},
-  {id:"q_animal",cat:"quirky",icon:"🦅",name:"Loomaaed",desc:"Tunne kõiki lippe loomaga",hint:"Tiivad, sabad ja küünised...",tag:"animal",type:"tag"},
-  {id:"q_weapon",cat:"quirky",icon:"⚔️",name:"Relvakamber",desc:"Tunne kõiki lippe relvaga",hint:"Mõõgad ja muu (ajalooline sümbol!)...",tag:"weapon",type:"tag"},
-  {id:"q_sun",cat:"quirky",icon:"☀️",name:"Päikesejahi",desc:"Tunne kõiki lippe päikese või kuuga",hint:"Taevavalgusti...",tag:"sun",type:"tag"},
-  {id:"q_twocolor",cat:"quirky",icon:"🎨",name:"Minimalist",desc:"Tunne kõiki kahevärvilisi lippe",hint:"Ainult kaks tooni...",tag:"twocolor",type:"tag"},
-  {id:"q_nonrect",cat:"quirky",icon:"📐",name:"Erinev kuju",desc:"Tunne ainsat mittenelinurkset lippu",hint:"See pole nelinurk...",tag:"nonrectangular",type:"tag"},
-  {id:"q_dragon",cat:"quirky",icon:"🐲",name:"Draakonikütistaja",desc:"Tunne draakoniga lippu",hint:"Tuld purskav eluk...",tag:"dragon",type:"tag"},
+  {id:"q_star",cat:"quirky",icon:"⭐",name:"Tähekütt",desc:"Tunne kõiki lippe tähega",hint:"Taevas särab...",modalDesc:"Leia kõik lipud, millel on täht",tag:"star",type:"tag"},
+  {id:"q_cross",cat:"quirky",icon:"✝️",name:"Ristide klubi",desc:"Tunne kõiki lippe ristiga",hint:"Pluss või rist...",modalDesc:"Leia kõik lipud, millel on rist",tag:"cross",type:"tag"},
+  {id:"q_animal",cat:"quirky",icon:"🦅",name:"Loomaaed",desc:"Tunne kõiki lippe loomaga",hint:"Tiivad, sabad ja küünised...",modalDesc:"Leia kõik lipud, millel on loom",tag:"animal",type:"tag"},
+  {id:"q_weapon",cat:"quirky",icon:"⚔️",name:"Relvakamber",desc:"Tunne kõiki lippe relvaga",hint:"Mõõgad ja muu (ajalooline sümbol!)...",modalDesc:"Leia lipud, millel on ajalooline sümbol",tag:"weapon",type:"tag"},
+  {id:"q_sun",cat:"quirky",icon:"☀️",name:"Päikesejahi",desc:"Tunne kõiki lippe päikese või kuuga",hint:"Taevavalgusti...",modalDesc:"Leia kõik lipud, millel on päike või kuu",tag:"sun",type:"tag"},
+  {id:"q_twocolor",cat:"quirky",icon:"🎨",name:"Minimalist",desc:"Tunne kõiki kahevärvilisi lippe",hint:"Ainult kaks tooni...",modalDesc:"Leia kõik kahevärvised lipud",tag:"twocolor",type:"tag"},
+  {id:"q_nonrect",cat:"quirky",icon:"📐",name:"Erinev kuju",desc:"Tunne ainsat mittenelinurkset lippu",hint:"See pole nelinurk...",modalDesc:"Leia ainus lipp, mis pole ristkülik",tag:"nonrectangular",type:"tag"},
+  {id:"q_dragon",cat:"quirky",icon:"🐲",name:"Draakonikütistaja",desc:"Tunne draakoniga lippu",hint:"Tuld purskav eluk...",modalDesc:"Leia lipud, millel on draakon",tag:"dragon",type:"tag"},
+  {id:"q_square",cat:"quirky",icon:"⬜",name:"Täiuslik ruut",desc:"Tunne mõlemat ruudukujulist lippu",hint:"Neli võrdset nurka...",modalDesc:"Leia mõlemad ruudukujulised lipud",tag:"square",type:"tag"},
 ];
 
 function checkAchievements(col, achState) {
@@ -455,29 +456,20 @@ export default function App() {
                     const isUnlocked = unlocked.includes(a.id);
                     const prog = getProgress(a, collection, achState);
                     const showBar = !isUnlocked && (a.type === "set" || a.type === "threshold" || a.type === "custom" || a.type === "alldiff" || a.type === "tag") && prog.total >= 1;
-                    const canTap = a.type !== "alldiff"; // alldiff has no flags
                     return (
                       <button
                         key={a.id}
-                        style={{...S.achTile, background: isUnlocked ? "linear-gradient(135deg, #e8f5e9, #c8e6c9)" : "rgba(255,255,255,0.6)", borderColor: isUnlocked ? "#66bb6a" : "#e0e0e0", cursor: canTap ? "pointer" : "default"}}
+                        style={{...S.achTile, background: isUnlocked ? "linear-gradient(135deg, #e8f5e9, #c8e6c9)" : "rgba(255,255,255,0.6)", borderColor: isUnlocked ? "#66bb6a" : "#e0e0e0", cursor: "pointer"}}
                         onClick={() => {
-                          if (!canTap) return;
-                          // Single-flag achievements: open facts modal directly
+                          // Single-flag achievements with exactly 1 code: open facts directly
                           if (isSingleFlagAch(a)) {
                             const codes = getAchCodes(a, collection);
                             if (codes && codes.length === 1) {
                               const c = countriesRaw.find(x => x.iso2 === codes[0]);
-                              if (c && collection.includes(c.iso2)) { setSelectedCountry(c); }
+                              if (c && collection.includes(c.iso2)) { setSelectedCountry(c); return; }
                             }
-                            return;
                           }
-                          // perf_first: if unlocked, open the first collected flag's facts
-                          if (a.id === "perf_first" && collection.length > 0) {
-                            const c = countriesRaw.find(x => x.iso2 === collection[0]);
-                            if (c) { setSelectedCountry(c); }
-                            return;
-                          }
-                          // Multi-flag: open achievement grid modal
+                          // Everything else (including alldiff): open the achievement modal
                           setSelectedAch(a);
                         }}
                       >
@@ -506,41 +498,60 @@ export default function App() {
             const codes = getAchCodes(selectedAch, collection) || [];
             const achCountries = codes.map(c => countriesRaw.find(x => x.iso2 === c)).filter(Boolean);
             const prog = getProgress(selectedAch, collection, achState);
+            const hasFlags = selectedAch.type !== "alldiff" && achCountries.length > 0;
             return (
               <div style={S.modalBackdrop} onClick={() => setSelectedAch(null)}>
                 <div style={{...S.modalCard, maxWidth: 440, padding: "1.3rem 1rem 1.5rem"}} onClick={e => e.stopPropagation()}>
                   <button style={S.modalClose} onClick={() => setSelectedAch(null)}>✕</button>
-                  <div style={{textAlign:"center",marginBottom:"0.2rem"}}>
+                  <div style={{textAlign:"center",marginBottom:"0.3rem"}}>
                     <span style={{fontSize:"2.2rem"}}>{selectedAch.icon}</span>
                     <h2 style={{...S.modalTitle,fontSize:"1.3rem",marginTop:"0.3rem"}}>{t(selectedAch.name)}</h2>
-                    <p style={{fontSize:"0.8rem",fontWeight:600,color:"#78909c",margin:"0.2rem 0 0"}}>{prog.current}/{prog.total}</p>
+                    {selectedAch.modalDesc && <p style={{fontSize:"0.85rem",fontWeight:600,color:"#546e7a",margin:"0.3rem 0 0",lineHeight:1.3}}>{t(selectedAch.modalDesc)}</p>}
+                    <p style={{fontSize:"0.8rem",fontWeight:700,color:"#78909c",margin:"0.3rem 0 0"}}>{prog.current}/{prog.total}</p>
+                    {/* Progress bar in modal */}
+                    {prog.total > 0 && (
+                      <div style={{...S.progressBarOuter,marginTop:"0.4rem",height:8}}>
+                        <div style={{...S.progressBarInner,width:`${prog.pct}%`}} />
+                      </div>
+                    )}
                   </div>
-                  <div style={S.achFlagGrid}>
-                    {achCountries.map(c => {
-                      const owned = collection.includes(c.iso2);
-                      return (
-                        <button
-                          key={c.iso2}
-                          style={{...S.achFlagCell, cursor: owned ? "pointer" : "default"}}
-                          onClick={() => {
-                            if (owned) setSelectedCountry(c);
-                          }}
-                          disabled={!owned}
-                        >
-                          {owned ? (
-                            <img src={getFlagUrl(c)} alt={c.name_et} style={S.achFlagImg} />
-                          ) : (
-                            <div style={S.achFlagLocked}>
-                              <span style={{fontSize:"1.2rem"}}>❓</span>
-                            </div>
-                          )}
-                          <span style={{...S.flagCellName, color: owned ? "#1a237e" : "#b0bec5", fontSize:"0.55rem"}}>
-                            {owned ? t(c.name_et) : t("Veel avastamata")}
-                          </span>
-                        </button>
-                      );
-                    })}
-                  </div>
+                  {/* alldiff: show difficulty list */}
+                  {selectedAch.type === "alldiff" && (
+                    <div style={{width:"100%",display:"flex",flexDirection:"column",gap:"0.4rem",marginTop:"0.3rem"}}>
+                      {DL.map(d => {
+                        const played = achState.diffPlayed.includes(d);
+                        const labels = {easy:"Kerge",medium:"Keskmine",hard:"Raske",expert:"Ekspert"};
+                        const emojis = {easy:"🌱",medium:"🌿",hard:"🌶️",expert:"💀"};
+                        return (
+                          <div key={d} style={{display:"flex",alignItems:"center",gap:"0.6rem",padding:"0.5rem 0.7rem",background:played?"#e8f5e9":"#f5f5f5",borderRadius:10}}>
+                            <span style={{fontSize:"1.2rem"}}>{emojis[d]}</span>
+                            <span style={{fontWeight:700,flex:1,color:played?"#2e7d32":"#90a4ae"}}>{t(labels[d])}</span>
+                            <span style={{fontWeight:800,color:played?"#43a047":"#cfd8dc"}}>{played?"✓":"—"}</span>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
+                  {/* Flag grid for flag-based achievements */}
+                  {hasFlags && (
+                    <div style={S.achFlagGrid}>
+                      {achCountries.map(c => {
+                        const owned = collection.includes(c.iso2);
+                        return (
+                          <button key={c.iso2} style={{...S.achFlagCell,cursor:owned?"pointer":"default"}} onClick={()=>{if(owned)setSelectedCountry(c);}} disabled={!owned}>
+                            {owned ? (
+                              <img src={getFlagUrl(c)} alt={c.name_et} style={S.achFlagImg} />
+                            ) : (
+                              <div style={S.achFlagLocked}><span style={{fontSize:"1.2rem"}}>❓</span></div>
+                            )}
+                            <span style={{...S.flagCellName,color:owned?"#1a237e":"#b0bec5",fontSize:"0.55rem"}}>
+                              {owned ? t(c.name_et) : t("Veel avastamata")}
+                            </span>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  )}
                 </div>
               </div>
             );

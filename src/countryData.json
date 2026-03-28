@@ -3025,7 +3025,8 @@
       "Šveitsis tehakse maailma parimat šokolaadi ja väga täpseid kelli."
     ],
     "tags": [
-      "cross"
+      "cross",
+      "square"
     ]
   },
   {
@@ -3619,6 +3620,8 @@
       "See on maailma kõige väiksem riik ja asub keset Rooma linna.",
       "Seal ei sünni peaaegu kunagi ühtegi last!"
     ],
-    "tags": []
+    "tags": [
+      "square"
+    ]
   }
 ]
