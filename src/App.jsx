@@ -15,8 +15,15 @@ function pickRandom(arr, n, exclude = []) {
   return shuffle(arr.filter((c) => !exclude.includes(c.iso2))).slice(0, n);
 }
 
-function flagUrl(iso2) {
+function flagUrl(iso2, country) {
+  if (country && country.custom && country.flagPath) {
+    return country.flagPath;
+  }
   return `https://flagcdn.com/w320/${iso2}.png`;
+}
+
+function getFlagUrl(c) {
+  return flagUrl(c.iso2, c);
 }
 
 const AVATARS = ["🦊", "🐸", "🦁", "🐼", "🦄", "🐙"];
@@ -25,7 +32,7 @@ const EMOJIS_CORRECT = ["🎉", "⭐", "🥳", "🏆", "💪", "🌟", "👏", "
 const EMOJIS_WRONG = ["🤔", "💭", "🧐"];
 const MSGS_CORRECT = ["Tubli!", "Väga hea!", "Suurepärane!", "Õige!", "Super!", "Hästi tehtud!"];
 const MSGS_WRONG = ["Proovi uuesti!", "Peaaegu!", "Järgmine kord!", "Ära muretse!"];
-const STREAK_MSGS = ["Võimas!", "Unstoppable!", "Tulekahju!", "Vägev!", "Vapustav!"];
+const STREAK_MSGS = ["Võimas!", "Unstoppable!", "Tulekahju!", "Megastreik!", "Vapustav!"];
 
 function rand(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
@@ -99,6 +106,7 @@ export default function App() {
   const [newName, setNewName] = useState("");
   const [newAvatar, setNewAvatar] = useState(AVATARS[0]);
   const [showProfileSwitcher, setShowProfileSwitcher] = useState(false);
+  const [selectedCountry, setSelectedCountry] = useState(null);
 
   /* ── boot ── */
   useEffect(() => {
@@ -241,6 +249,7 @@ export default function App() {
     setFeedback(null);
     setSelected(null);
     setStreakCelebration(null);
+    setSelectedCountry(null);
   };
 
   /* ═══════════════════ LOADING ═══════════════════ */
@@ -347,9 +356,20 @@ export default function App() {
             {countriesRaw.map((c) => {
               const owned = collection.includes(c.iso2);
               return (
-                <div key={c.iso2} style={S.flagCell}>
+                <button
+                  key={c.iso2}
+                  style={{
+                    ...S.flagCell,
+                    cursor: owned ? "pointer" : "default",
+                    background: "none",
+                    border: "none",
+                    padding: 0,
+                  }}
+                  onClick={() => owned && setSelectedCountry(c)}
+                  disabled={!owned}
+                >
                   <img
-                    src={flagUrl(c.iso2)}
+                    src={getFlagUrl(c)}
                     alt={c.name_et}
                     style={{
                       ...S.flagThumb,
@@ -365,10 +385,46 @@ export default function App() {
                   >
                     {t(c.name_et)}
                   </span>
-                </div>
+                </button>
               );
             })}
           </div>
+
+          {/* Country detail modal */}
+          {selectedCountry && (
+            <div style={S.modalBackdrop} onClick={() => setSelectedCountry(null)}>
+              <div style={S.modalCard} onClick={(e) => e.stopPropagation()}>
+                <button style={S.modalClose} onClick={() => setSelectedCountry(null)}>✕</button>
+                <img
+                  src={getFlagUrl(selectedCountry)}
+                  alt={selectedCountry.name_et}
+                  style={S.modalFlag}
+                />
+                <h2 style={S.modalTitle}>{t(selectedCountry.name_et)}</h2>
+
+                <div style={S.modalInfoRow}>
+                  <span style={S.modalLabel}>🏛️ {t("Pealinn")}</span>
+                  <span style={S.modalValue}>{t(selectedCountry.capital || "–")}</span>
+                </div>
+                <div style={S.modalInfoRow}>
+                  <span style={S.modalLabel}>👥 {t("Rahvaarv")}</span>
+                  <span style={S.modalValue}>{selectedCountry.population || "–"}</span>
+                </div>
+
+                {selectedCountry.facts && selectedCountry.facts.length > 0 && (
+                  <div style={S.modalFactsBox}>
+                    <p style={S.modalFactsTitle}>💡 {t("Huvitavad faktid")}</p>
+                    {selectedCountry.facts.map((fact, i) => (
+                      <div key={i} style={S.modalFact}>
+                        <span style={S.modalFactNum}>{i + 1}</span>
+                        <p style={S.modalFactText}>{fact}</p>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     );
@@ -559,7 +615,7 @@ export default function App() {
         <div style={S.promptArea}>
           {isFTN ? (
             <div style={S.flagShowcase}>
-              <img src={flagUrl(question.correct.iso2)} alt="flag" style={S.flagBig} />
+              <img src={getFlagUrl(question.correct)} alt="flag" style={S.flagBig} />
               <p style={S.promptLabel}>{t("Mis riigi lipp see on?")}</p>
             </div>
           ) : (
@@ -591,7 +647,7 @@ export default function App() {
             }
             return (
               <button key={opt.iso2} style={{ ...S.optionFlagBtn, ...os }} onClick={() => handleAnswer(opt)}>
-                <img src={flagUrl(opt.iso2)} alt="flag" style={S.flagOption} />
+                <img src={getFlagUrl(opt)} alt="flag" style={S.flagOption} />
               </button>
             );
           })}
@@ -623,7 +679,7 @@ export default function App() {
           <div style={S.streakOverlay}>
             <div style={S.streakCard}>
               <span style={{ fontSize: "3.5rem" }}>🔥</span>
-              <p style={S.streakCount}>{streakCelebration.count}x {t("VÄGEV")}!</p>
+              <p style={S.streakCount}>{streakCelebration.count}x {t("STREIK")}!</p>
               <p style={S.streakMsg}>{t(streakCelebration.msg)}</p>
             </div>
           </div>
@@ -1109,5 +1165,133 @@ const S = {
     borderRadius: 14,
     cursor: "pointer",
     boxShadow: "0 2px 12px rgba(0,0,0,0.15)",
+  },
+
+  /* Country detail modal */
+  modalBackdrop: {
+    position: "fixed",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    background: "rgba(0,0,0,0.5)",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    zIndex: 300,
+    padding: "1rem",
+    overflowY: "auto",
+  },
+  modalCard: {
+    background: "#fff",
+    borderRadius: 24,
+    padding: "1.5rem 1.3rem 1.8rem",
+    maxWidth: 400,
+    width: "100%",
+    maxHeight: "90vh",
+    overflowY: "auto",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    gap: "0.8rem",
+    position: "relative",
+    boxShadow: "0 12px 48px rgba(0,0,0,0.25)",
+    animation: "popIn 0.25s ease-out",
+  },
+  modalClose: {
+    position: "absolute",
+    top: 12,
+    right: 12,
+    width: 36,
+    height: 36,
+    borderRadius: 18,
+    border: "none",
+    background: "rgba(0,0,0,0.06)",
+    fontSize: "1.1rem",
+    fontWeight: 700,
+    color: "#546e7a",
+    cursor: "pointer",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    padding: 0,
+  },
+  modalFlag: {
+    width: "min(70vw, 240px)",
+    height: "auto",
+    borderRadius: 12,
+    boxShadow: "0 4px 20px rgba(0,0,0,0.12)",
+    border: "3px solid #e0e0e0",
+    objectFit: "contain",
+  },
+  modalTitle: {
+    fontSize: "1.6rem",
+    fontWeight: 900,
+    color: "#1a237e",
+    margin: 0,
+    textAlign: "center",
+    lineHeight: 1.2,
+  },
+  modalInfoRow: {
+    width: "100%",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    padding: "0.55rem 0.8rem",
+    background: "#f5f5f5",
+    borderRadius: 12,
+    gap: "0.5rem",
+  },
+  modalLabel: {
+    fontSize: "0.95rem",
+    fontWeight: 800,
+    color: "#546e7a",
+    whiteSpace: "nowrap",
+  },
+  modalValue: {
+    fontSize: "1rem",
+    fontWeight: 700,
+    color: "#263238",
+    textAlign: "right",
+  },
+  modalFactsBox: {
+    width: "100%",
+    background: "linear-gradient(135deg, #e8f5e9, #f1f8e9)",
+    borderRadius: 16,
+    padding: "0.9rem",
+    display: "flex",
+    flexDirection: "column",
+    gap: "0.6rem",
+  },
+  modalFactsTitle: {
+    fontSize: "1rem",
+    fontWeight: 800,
+    color: "#2e7d32",
+    margin: 0,
+  },
+  modalFact: {
+    display: "flex",
+    gap: "0.6rem",
+    alignItems: "flex-start",
+  },
+  modalFactNum: {
+    flexShrink: 0,
+    width: 26,
+    height: 26,
+    borderRadius: 13,
+    background: "#43a047",
+    color: "#fff",
+    fontWeight: 800,
+    fontSize: "0.85rem",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  modalFactText: {
+    fontSize: "0.95rem",
+    fontWeight: 600,
+    color: "#33691e",
+    margin: 0,
+    lineHeight: 1.4,
   },
 };
