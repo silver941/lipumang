@@ -63,18 +63,11 @@ const ACHIEVEMENTS = [
 
   // ── PERFORMANCE ──
   {id:"perf_first",cat:"performance",icon:"🎯",name:"Esimene samm",desc:"Esimene õige vastus!",hint:"Kõik algab ühest...",modalDesc:"Vasta esimene lipp õigesti",type:"threshold",threshold:1},
-  {id:"perf_50",cat:"performance",icon:"🔥",name:"Poolsada lippu",desc:"50 erinevat lippu õigesti",hint:"Poolel teel viiekümneni...",modalDesc:"Vasta 50 erinevat lippu õigesti",type:"threshold",threshold:50},
-  {id:"perf_100",cat:"performance",icon:"💎",name:"Sada lippu",desc:"100 erinevat lippu õigesti",hint:"Kolmekohaline number ootab...",modalDesc:"Vasta 100 erinevat lippu õigesti",type:"threshold",threshold:100},
-  {id:"perf_all",cat:"performance",icon:"👑",name:"Kõik 202!",desc:"Kõik lipud õigesti!",hint:"Absoluutne täielikkus...",modalDesc:"Vasta kõik 202 lippu õigesti",type:"threshold",threshold:202},
+  {id:"perf_20",cat:"performance",icon:"✨",name:"Kakskümmend kirja",desc:"20 erinevat lippu õigesti",hint:"Esimesed kakskümmend ootavad...",modalDesc:"Vasta 20 erinevat lippu õigesti",type:"threshold",threshold:20},
+  {id:"perf_50",cat:"performance",icon:"🔥",name:"Poolsada lippu",desc:"50 erinevat lippu õigesti",hint:"Viiskümmend on vägev arv...",modalDesc:"Vasta 50 erinevat lippu õigesti",type:"threshold",threshold:50},
+  {id:"perf_100",cat:"performance",icon:"💎",name:"Sajane seltskond",desc:"100 erinevat lippu õigesti",hint:"Sada lippu taskus...",modalDesc:"Vasta 100 erinevat lippu õigesti",type:"threshold",threshold:100},
   {id:"perf_easy",cat:"performance",icon:"🌱",name:"Kerge läbi!",desc:"Kõik Kerge taseme lipud õigesti",hint:"Algus on tehtud...",modalDesc:"Vasta kõik Kerge taseme lipud õigesti",need:codesForDiff("easy"),type:"set"},
-  {id:"perf_medium80",cat:"performance",icon:"🌿",name:"Keskmine tubli!",desc:"80% Keskmine taseme lippudest",hint:"Enamik keskmistest...",modalDesc:"Vasta 80% Keskmine taseme lippudest õigesti",type:"custom",check:(col)=>{
-    const med=countriesRaw.filter(c=>c.difficulty==="medium").map(c=>c.iso2);
-    return overlap(col,med)>=Math.ceil(med.length*0.8);
-  },progress:(col)=>{
-    const med=countriesRaw.filter(c=>c.difficulty==="medium").map(c=>c.iso2);
-    return {current:overlap(col,med),total:Math.ceil(med.length*0.8)};
-  }},
-  {id:"perf_expert",cat:"performance",icon:"💀",name:"Eksperdi tase!",desc:"Kõik 202 lippu õigesti",hint:"Iga viimane lipp...",modalDesc:"Vasta kõik 202 lippu õigesti",need:ALL_CODES,type:"set"},
+  {id:"perf_medium",cat:"performance",icon:"🌿",name:"Keskmine läbi!",desc:"Kõik Keskmine taseme lipud õigesti",hint:"Kõik keskmised ootavad...",modalDesc:"Vasta kõik Keskmine taseme lipud õigesti",need:countriesRaw.filter(c=>c.difficulty==="medium").map(c=>c.iso2),type:"set"},
   {id:"perf_alldiff",cat:"performance",icon:"🎮",name:"Kõik tasemed",desc:"Mänginud igal raskusastmel",hint:"Proovi kõiki nelja...",modalDesc:"Mängi vähemalt üks voor igal raskustasemel",type:"alldiff"},
 
   // ── QUIRKY ──
