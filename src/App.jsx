@@ -803,7 +803,7 @@ export default function App() {
           <div style={{...S.feedbackOverlay,background:feedback.isCorrect?"rgba(67,160,71,0.95)":"rgba(229,57,53,0.88)"}}>
             <span style={S.feedbackEmoji}>{feedback.emoji}</span>
             <p style={S.feedbackMsg}>{t(feedback.message)}</p>
-            {!feedback.isCorrect && <p style={S.feedbackCorrectText}>{t("Õige vastus")}: {t(feedback.correctAnswer.name_et)}</p>}
+            {!feedback.isCorrect && isFTN && <p style={S.feedbackCorrectText}>{t("Õige vastus")}: {t(feedback.correctAnswer.name_et)}</p>}
             <div style={{display:"flex",gap:"0.5rem",alignItems:"center",marginTop:"0.3rem"}}>
               {feedback.isCorrect && (
                 <button style={S.factsBtn} onClick={() => setSelectedCountry(feedback.correctAnswer)}>
