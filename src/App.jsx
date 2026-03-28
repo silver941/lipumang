@@ -78,12 +78,12 @@ const ACHIEVEMENTS = [
   {id:"perf_alldiff",cat:"performance",icon:"🎮",name:"Kõik tasemed",desc:"Mänginud igal raskusastmel",hint:"Proovi kõiki nelja...",type:"alldiff"},
 
   // ── QUIRKY ──
-  {id:"q_star",cat:"quirky",icon:"⭐",name:"Tähekütt",desc:"Tunne lippu tähega",hint:"Taevas särab...",tag:"star",type:"tag"},
-  {id:"q_cross",cat:"quirky",icon:"✝️",name:"Ristisõda",desc:"Tunne lippu ristiga",hint:"Pluss või rist...",tag:"cross",type:"tag"},
-  {id:"q_animal",cat:"quirky",icon:"🦅",name:"Loomaaed",desc:"Tunne lippu loomaga",hint:"Tiivad, sabad ja küünised...",tag:"animal",type:"tag"},
-  {id:"q_weapon",cat:"quirky",icon:"⚔️",name:"Relvakamber",desc:"Tunne lippu relvaga",hint:"Mõõgad ja muu (ajalooline sümbol!)...",tag:"weapon",type:"tag"},
-  {id:"q_sun",cat:"quirky",icon:"☀️",name:"Päikesejahi",desc:"Tunne lippu päikese või kuuga",hint:"Taevavalgusti...",tag:"sun",type:"tag"},
-  {id:"q_twocolor",cat:"quirky",icon:"🎨",name:"Minimalist",desc:"Tunne kahevärvilist lippu",hint:"Ainult kaks tooni...",tag:"twocolor",type:"tag"},
+  {id:"q_star",cat:"quirky",icon:"⭐",name:"Tähekütt",desc:"Tunne kõiki lippe tähega",hint:"Taevas särab...",tag:"star",type:"tag"},
+  {id:"q_cross",cat:"quirky",icon:"✝️",name:"Ristide klubi",desc:"Tunne kõiki lippe ristiga",hint:"Pluss või rist...",tag:"cross",type:"tag"},
+  {id:"q_animal",cat:"quirky",icon:"🦅",name:"Loomaaed",desc:"Tunne kõiki lippe loomaga",hint:"Tiivad, sabad ja küünised...",tag:"animal",type:"tag"},
+  {id:"q_weapon",cat:"quirky",icon:"⚔️",name:"Relvakamber",desc:"Tunne kõiki lippe relvaga",hint:"Mõõgad ja muu (ajalooline sümbol!)...",tag:"weapon",type:"tag"},
+  {id:"q_sun",cat:"quirky",icon:"☀️",name:"Päikesejahi",desc:"Tunne kõiki lippe päikese või kuuga",hint:"Taevavalgusti...",tag:"sun",type:"tag"},
+  {id:"q_twocolor",cat:"quirky",icon:"🎨",name:"Minimalist",desc:"Tunne kõiki kahevärvilisi lippe",hint:"Ainult kaks tooni...",tag:"twocolor",type:"tag"},
   {id:"q_nonrect",cat:"quirky",icon:"📐",name:"Erinev kuju",desc:"Tunne ainsat mittenelinurkset lippu",hint:"See pole nelinurk...",tag:"nonrectangular",type:"tag"},
   {id:"q_dragon",cat:"quirky",icon:"🐲",name:"Draakonikütistaja",desc:"Tunne draakoniga lippu",hint:"Tuld purskav eluk...",tag:"dragon",type:"tag"},
 ];
@@ -97,7 +97,7 @@ function checkAchievements(col, achState) {
     else if (a.type === "threshold") earned = col.length >= a.threshold;
     else if (a.type === "tag") {
       const tagged = codesForTag(a.tag);
-      earned = tagged.some(c => col.includes(c));
+      earned = tagged.every(c => col.includes(c));
     }
     else if (a.type === "custom" && a.check) earned = a.check(col);
     else if (a.type === "alldiff") earned = DL.every(d => achState.diffPlayed.includes(d));
@@ -110,7 +110,7 @@ function getProgress(a, col, achState) {
   if (achState.unlocked.includes(a.id)) return { current: 1, total: 1, pct: 100 };
   if (a.type === "set") { const c = overlap(col, a.need); return { current: c, total: a.need.length, pct: Math.round(c/a.need.length*100) }; }
   if (a.type === "threshold") return { current: Math.min(col.length,a.threshold), total: a.threshold, pct: Math.round(Math.min(col.length,a.threshold)/a.threshold*100) };
-  if (a.type === "tag") { const t=codesForTag(a.tag); const c=overlap(col,t); return {current:Math.min(c,1),total:1,pct:c>0?100:0}; }
+  if (a.type === "tag") { const t=codesForTag(a.tag); const c=overlap(col,t); return {current:c,total:t.length,pct:Math.round(c/t.length*100)}; }
   if (a.type === "custom" && a.progress) return { ...a.progress(col), pct: a.check(col) ? 100 : Math.round(a.progress(col).current/a.progress(col).total*100) };
   if (a.type === "alldiff") { const c=achState.diffPlayed.length; return {current:c,total:4,pct:Math.round(c/4*100)}; }
   return { current:0, total:1, pct:0 };
