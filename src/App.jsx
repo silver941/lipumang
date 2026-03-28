@@ -707,13 +707,13 @@ export default function App() {
           {/* Game mode */}
           <div style={S.card}>
             <h2 style={S.cardTitle}>{t("Mängurežiim")}</h2>
-            <button style={{...S.menuBtn,borderColor:"#42a5f5",...(gameMode==="flag-to-name"?S.menuBtnActive:{})}} onClick={()=>setGameMode("flag-to-name")}>
+            <button style={{...S.menuBtn,borderColor:"#42a5f5",...(gameMode==="flag-to-name"?{...S.menuBtnActive,background:"#42a5f5",color:"#fff"}:{})}} onClick={()=>setGameMode("flag-to-name")}>
               <span style={S.menuBtnEmoji}>🏴</span>
-              <span style={S.menuBtnText}><strong>{t("Lipp → Nimi")}</strong><br/><span style={S.menuBtnSub}>{t("Näen lippu, valin nime")}</span></span>
+              <span style={{...S.menuBtnText,...(gameMode==="flag-to-name"?{color:"#fff"}:{})}}><strong>{t("Lipp → Nimi")}</strong><br/><span style={{...S.menuBtnSub,...(gameMode==="flag-to-name"?{color:"rgba(255,255,255,0.8)"}:{})}}>{t("Näen lippu, valin nime")}</span></span>
             </button>
-            <button style={{...S.menuBtn,borderColor:"#66bb6a",...(gameMode==="name-to-flag"?S.menuBtnActive:{})}} onClick={()=>setGameMode("name-to-flag")}>
+            <button style={{...S.menuBtn,borderColor:"#66bb6a",...(gameMode==="name-to-flag"?{...S.menuBtnActive,background:"#66bb6a",color:"#fff"}:{})}} onClick={()=>setGameMode("name-to-flag")}>
               <span style={S.menuBtnEmoji}>🔤</span>
-              <span style={S.menuBtnText}><strong>{t("Nimi → Lipp")}</strong><br/><span style={S.menuBtnSub}>{t("Näen nime, valin lipu")}</span></span>
+              <span style={{...S.menuBtnText,...(gameMode==="name-to-flag"?{color:"#fff"}:{})}}><strong>{t("Nimi → Lipp")}</strong><br/><span style={{...S.menuBtnSub,...(gameMode==="name-to-flag"?{color:"rgba(255,255,255,0.8)"}:{})}}>{t("Näen nime, valin lipu")}</span></span>
             </button>
           </div>
 
@@ -983,5 +983,5 @@ const S = {
   confirmResetBtn: {flex:1,padding:"0.8rem",fontSize:"1.05rem",fontWeight:800,color:"#fff",background:"#e53935",border:"none",borderRadius:12,cursor:"pointer"},
 
   /* Facts button in feedback */
-  factsBtn: {padding:"0.6rem 1rem",fontSize:"0.9rem",fontWeight:700,color:"rgba(255,255,255,0.95)",background:"rgba(255,255,255,0.2)",border:"2px solid rgba(255,255,255,0.5)",borderRadius:12,cursor:"pointer"},
+  factsBtn: {padding:"0.8rem 2.2rem",fontSize:"1.15rem",fontWeight:800,color:"#333",background:"rgba(255,255,255,0.75)",border:"2px solid rgba(255,255,255,0.9)",borderRadius:14,cursor:"pointer",boxShadow:"0 2px 12px rgba(0,0,0,0.1)"},
 };
