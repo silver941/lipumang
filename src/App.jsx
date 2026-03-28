@@ -331,12 +331,24 @@ export default function App() {
     setQuestion(null);
     // Reset session queue
     sessionRef.current = { correctSet: new Set(), wrongMap: new Map(), questionCount: 0 };
-    // Track difficulty played
+    // Track difficulty played and check alldiff achievement
     if (activeProfile) {
       setAchState(prev => {
         const dp = prev.diffPlayed.includes(diff) ? prev.diffPlayed : [...prev.diffPlayed, diff];
         const updated = { ...prev, diffPlayed: dp };
         saveAchievements(activeProfile.id, updated);
+        // Check if alldiff achievement should unlock now
+        const newIds = checkAchievements(collection, updated);
+        if (newIds.length > 0) {
+          const withUnlocks = { ...updated, unlocked: [...updated.unlocked, ...newIds] };
+          saveAchievements(activeProfile.id, withUnlocks);
+          const a = ACHIEVEMENTS.find(x => x.id === newIds[0]);
+          if (a) {
+            setAchToast(a);
+            setTimeout(() => setAchToast(null), 3500);
+          }
+          return withUnlocks;
+        }
         return updated;
       });
     }
