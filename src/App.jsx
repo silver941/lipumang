@@ -439,7 +439,7 @@ export default function App() {
   ) : null;
 
   /* ═══════════════════ LOADING ═══════════════════ */
-  if (screen === "loading") return <div style={S.page}><div style={{textAlign:"center",paddingTop:"30vh"}}><img src="/icon-192.png" alt="Lipumäng" style={{width:64,height:64}} /></div></div>;
+  if (screen === "loading") return <div style={S.page}><div style={{textAlign:"center",paddingTop:"30vh"}}><img src="/icon-192.png" alt="Lipumäng" style={{maxHeight:72,width:"auto"}} /></div></div>;
 
   /* ═══════════════════ PROFILES ═══════════════════ */
   if (screen === "profiles") {
@@ -889,7 +889,7 @@ export default function App() {
             const isCorr = opt.iso2 === question.correct.iso2;
             let os = {};
             if (feedback) { if (isCorr) os=S.optCorrect; else if (isSel&&!feedback.isCorrect) os=S.optWrong; else os=S.optDimmed; }
-            if (isFTN) return <button key={opt.iso2} style={{...S.optionTextBtn,...os,display:"flex",alignItems:"center",justifyContent:"center",gap:"0.5rem"}} onClick={()=>handleAnswer(opt)}><span style={{flex:1}}>{t(opt.name_et)}</span>{ttsEnabled && <span style={S.ttsBtnSmall} onClick={(e)=>{e.stopPropagation();speakName(opt.name_et);}}>🔊</span>}</button>;
+            if (isFTN) return <div key={opt.iso2} style={S.optionRow}><button style={{...S.optionTextBtn,...os,flex:1,margin:0}} onClick={()=>handleAnswer(opt)}>{t(opt.name_et)}</button>{ttsEnabled && <button style={S.ttsBtnOption} onClick={()=>speakName(opt.name_et)} aria-label="Pronounce">🔊</button>}</div>;
             return <button key={opt.iso2} style={{...S.optionFlagBtn,...os}} onClick={()=>handleAnswer(opt)}><img src={getFlagUrl(opt)} alt="flag" style={S.flagOption}/></button>;
           })}
         </div>
@@ -965,7 +965,7 @@ const S = {
   container: {maxWidth:480,width:"100%",display:"flex",flexDirection:"column",gap:"1rem",paddingTop:"1rem",paddingBottom:"2rem"},
   titleBlock: {textAlign:"center",marginBottom:"0.25rem",position:"relative"},
   titleEmoji: {fontSize:"3rem",display:"block",marginBottom:"0.25rem"},
-  headerLogo: {width:40,height:40,objectFit:"contain",display:"block",margin:"0 auto 0.25rem"},
+  headerLogo: {maxHeight:56,width:"auto",objectFit:"contain",display:"block",margin:"0 auto 0.25rem"},
   title: {fontSize:"2.5rem",fontWeight:900,color:"#1a237e",margin:0,letterSpacing:"-0.02em",lineHeight:1.1},
   subtitle: {fontSize:"1.1rem",color:"#5c6bc0",margin:"0.5rem 0 0",fontWeight:600},
   gearBtn: {position:"absolute",top:0,right:0,background:"rgba(255,255,255,0.7)",border:"2px solid #b0bec5",borderRadius:12,width:44,height:44,fontSize:"1.4rem",cursor:"pointer",display:"flex",alignItems:"center",justifyContent:"center",padding:0},
@@ -1042,6 +1042,8 @@ const S = {
   ttsBtn: {flexShrink:0,width:36,height:36,borderRadius:18,border:"2px solid #b0bec5",background:"rgba(255,255,255,0.9)",fontSize:"1.1rem",cursor:"pointer",display:"flex",alignItems:"center",justifyContent:"center",padding:0,transition:"all 0.15s"},
   ttsBtnActive: {background:"#e3f2fd",borderColor:"#42a5f5",transform:"scale(1.1)"},
   ttsBtnSmall: {flexShrink:0,width:30,height:30,borderRadius:15,background:"rgba(0,0,0,0.05)",fontSize:"0.9rem",display:"flex",alignItems:"center",justifyContent:"center",cursor:"pointer"},
+  optionRow: {display:"flex",gap:"0.4rem",alignItems:"stretch"},
+  ttsBtnOption: {flexShrink:0,width:48,borderRadius:14,border:"2px solid #b0bec5",background:"rgba(255,255,255,0.92)",fontSize:"1.1rem",cursor:"pointer",display:"flex",alignItems:"center",justifyContent:"center",padding:0},
   modalInfoRow: {width:"100%",display:"flex",alignItems:"center",justifyContent:"space-between",padding:"0.55rem 0.8rem",background:"#f5f5f5",borderRadius:12,gap:"0.5rem"},
   modalLabel: {fontSize:"0.95rem",fontWeight:800,color:"#546e7a",whiteSpace:"nowrap"},
   modalValue: {fontSize:"1rem",fontWeight:700,color:"#263238",textAlign:"right"},
