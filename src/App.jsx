@@ -157,6 +157,17 @@ export default function App() {
   const [selectedAch, setSelectedAch] = useState(null);
   const [showResetConfirm, setShowResetConfirm] = useState(false);
   const [speaking, setSpeaking] = useState(false);
+  const [ttsEnabled, setTtsEnabled] = useState(() => {
+    try { const v = localStorage.getItem("lipumang_tts"); return v === "true"; } catch { return false; }
+  });
+  const toggleTts = () => {
+    setTtsEnabled(prev => {
+      const next = !prev;
+      try { localStorage.setItem("lipumang_tts", String(next)); } catch {}
+      if (!next && window.speechSynthesis) { window.speechSynthesis.cancel(); setSpeaking(false); }
+      return next;
+    });
+  };
 
   const speakName = useCallback((name) => {
     if (!window.speechSynthesis) return;
@@ -428,7 +439,7 @@ export default function App() {
   ) : null;
 
   /* ═══════════════════ LOADING ═══════════════════ */
-  if (screen === "loading") return <div style={S.page}><div style={{textAlign:"center",paddingTop:"30vh"}}><span style={{fontSize:"4rem"}}>🏳️</span></div></div>;
+  if (screen === "loading") return <div style={S.page}><div style={{textAlign:"center",paddingTop:"30vh"}}><img src="/icon-192.png" alt="Lipumäng" style={{width:64,height:64}} /></div></div>;
 
   /* ═══════════════════ PROFILES ═══════════════════ */
   if (screen === "profiles") {
@@ -436,7 +447,7 @@ export default function App() {
       <div style={S.page}>
         <div style={S.container}>
           <div style={S.titleBlock}>
-            <span style={S.titleEmoji}>🏳️</span>
+            <img src="/icon-192.png" alt="Lipumäng" style={S.headerLogo} />
             <h1 style={S.title}>{t("Lipumäng")}</h1>
             <p style={S.subtitle}>{t("Kes mängib?")}</p>
           </div>
@@ -503,7 +514,7 @@ export default function App() {
                 <img src={getFlagUrl(selectedCountry)} alt={selectedCountry.name_et} style={S.modalFlag} />
                 <div style={S.modalTitleRow}>
                   <h2 style={S.modalTitle}>{t(selectedCountry.name_et)}</h2>
-                  <button style={{...S.ttsBtn,...(speaking?S.ttsBtnActive:{})}} onClick={()=>speakName(selectedCountry.name_et)} aria-label="Pronounce">🔊</button>
+                  {ttsEnabled && <button style={{...S.ttsBtn,...(speaking?S.ttsBtnActive:{})}} onClick={()=>speakName(selectedCountry.name_et)} aria-label="Pronounce">🔊</button>}
                 </div>
                 <div style={S.modalInfoRow}>
                   <span style={S.modalLabel}>🏛️ {t("Pealinn")}</span>
@@ -683,7 +694,7 @@ export default function App() {
                 <img src={getFlagUrl(selectedCountry)} alt={selectedCountry.name_et} style={S.modalFlag} />
                 <div style={S.modalTitleRow}>
                   <h2 style={S.modalTitle}>{t(selectedCountry.name_et)}</h2>
-                  <button style={{...S.ttsBtn,...(speaking?S.ttsBtnActive:{})}} onClick={()=>speakName(selectedCountry.name_et)} aria-label="Pronounce">🔊</button>
+                  {ttsEnabled && <button style={{...S.ttsBtn,...(speaking?S.ttsBtnActive:{})}} onClick={()=>speakName(selectedCountry.name_et)} aria-label="Pronounce">🔊</button>}
                 </div>
                 <div style={S.modalInfoRow}>
                   <span style={S.modalLabel}>🏛️ {t("Pealinn")}</span>
@@ -722,7 +733,7 @@ export default function App() {
         <div style={S.container}>
           <div style={S.titleBlock}>
             <button style={S.gearBtn} onClick={() => setSettingsOpen(p => !p)} aria-label="Settings">⚙️</button>
-            <span style={S.titleEmoji}>🏳️</span>
+            <img src="/icon-192.png" alt="Lipumäng" style={S.headerLogo} />
             <h1 style={S.title}>{t("Lipumäng")}</h1>
             {activeProfile && (
               <button style={S.profileChip} onClick={() => setShowProfileSwitcher(p => !p)}>
@@ -755,6 +766,12 @@ export default function App() {
                 <span style={S.toggleLabel}><span style={{fontSize:"1.3rem"}}>🔠</span><span>{allCaps ? "SUURED TÄHED" : "Tavalised tähed"}</span></span>
                 <button style={{...S.toggleTrack, background: allCaps ? "#5c6bc0" : "#b0bec5"}} onClick={toggleCaps}>
                   <span style={{...S.toggleThumb, transform: allCaps ? "translateX(28px)" : "translateX(2px)"}} />
+                </button>
+              </div>
+              <div style={S.toggleRow}>
+                <span style={S.toggleLabel}><span style={{fontSize:"1.3rem"}}>🔊</span><span>{ttsEnabled ? t("Loen ette") : t("Loen ette")}</span></span>
+                <button style={{...S.toggleTrack, background: ttsEnabled ? "#5c6bc0" : "#b0bec5"}} onClick={toggleTts}>
+                  <span style={{...S.toggleThumb, transform: ttsEnabled ? "translateX(28px)" : "translateX(2px)"}} />
                 </button>
               </div>
               <button style={S.resetBtn} onClick={() => setShowResetConfirm(true)}>
@@ -857,7 +874,10 @@ export default function App() {
             </div>
           ) : (
             <div style={S.nameShowcase}>
-              <p style={S.namePrompt}>{t(question.correct.name_et)}</p>
+              <div style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"0.5rem"}}>
+                <p style={S.namePrompt}>{t(question.correct.name_et)}</p>
+                {ttsEnabled && <button style={{...S.ttsBtn,...(speaking?S.ttsBtnActive:{})}} onClick={(e)=>{e.stopPropagation();speakName(question.correct.name_et);}} aria-label="Pronounce">🔊</button>}
+              </div>
               <p style={S.promptLabel}>{t("Vali õige lipp!")}</p>
             </div>
           )}
@@ -869,7 +889,7 @@ export default function App() {
             const isCorr = opt.iso2 === question.correct.iso2;
             let os = {};
             if (feedback) { if (isCorr) os=S.optCorrect; else if (isSel&&!feedback.isCorrect) os=S.optWrong; else os=S.optDimmed; }
-            if (isFTN) return <button key={opt.iso2} style={{...S.optionTextBtn,...os}} onClick={()=>handleAnswer(opt)}>{t(opt.name_et)}</button>;
+            if (isFTN) return <button key={opt.iso2} style={{...S.optionTextBtn,...os,display:"flex",alignItems:"center",justifyContent:"center",gap:"0.5rem"}} onClick={()=>handleAnswer(opt)}><span style={{flex:1}}>{t(opt.name_et)}</span>{ttsEnabled && <span style={S.ttsBtnSmall} onClick={(e)=>{e.stopPropagation();speakName(opt.name_et);}}>🔊</span>}</button>;
             return <button key={opt.iso2} style={{...S.optionFlagBtn,...os}} onClick={()=>handleAnswer(opt)}><img src={getFlagUrl(opt)} alt="flag" style={S.flagOption}/></button>;
           })}
         </div>
@@ -899,7 +919,7 @@ export default function App() {
               <img src={getFlagUrl(selectedCountry)} alt={selectedCountry.name_et} style={S.modalFlag} />
               <div style={S.modalTitleRow}>
                 <h2 style={S.modalTitle}>{t(selectedCountry.name_et)}</h2>
-                <button style={{...S.ttsBtn,...(speaking?S.ttsBtnActive:{})}} onClick={()=>speakName(selectedCountry.name_et)} aria-label="Pronounce">🔊</button>
+                {ttsEnabled && <button style={{...S.ttsBtn,...(speaking?S.ttsBtnActive:{})}} onClick={()=>speakName(selectedCountry.name_et)} aria-label="Pronounce">🔊</button>}
               </div>
               <div style={S.modalInfoRow}>
                 <span style={S.modalLabel}>🏛️ {t("Pealinn")}</span>
@@ -945,6 +965,7 @@ const S = {
   container: {maxWidth:480,width:"100%",display:"flex",flexDirection:"column",gap:"1rem",paddingTop:"1rem",paddingBottom:"2rem"},
   titleBlock: {textAlign:"center",marginBottom:"0.25rem",position:"relative"},
   titleEmoji: {fontSize:"3rem",display:"block",marginBottom:"0.25rem"},
+  headerLogo: {width:40,height:40,objectFit:"contain",display:"block",margin:"0 auto 0.25rem"},
   title: {fontSize:"2.5rem",fontWeight:900,color:"#1a237e",margin:0,letterSpacing:"-0.02em",lineHeight:1.1},
   subtitle: {fontSize:"1.1rem",color:"#5c6bc0",margin:"0.5rem 0 0",fontWeight:600},
   gearBtn: {position:"absolute",top:0,right:0,background:"rgba(255,255,255,0.7)",border:"2px solid #b0bec5",borderRadius:12,width:44,height:44,fontSize:"1.4rem",cursor:"pointer",display:"flex",alignItems:"center",justifyContent:"center",padding:0},
@@ -1020,6 +1041,7 @@ const S = {
   modalTitleRow: {display:"flex",alignItems:"center",justifyContent:"center",gap:"0.5rem",width:"100%"},
   ttsBtn: {flexShrink:0,width:36,height:36,borderRadius:18,border:"2px solid #b0bec5",background:"rgba(255,255,255,0.9)",fontSize:"1.1rem",cursor:"pointer",display:"flex",alignItems:"center",justifyContent:"center",padding:0,transition:"all 0.15s"},
   ttsBtnActive: {background:"#e3f2fd",borderColor:"#42a5f5",transform:"scale(1.1)"},
+  ttsBtnSmall: {flexShrink:0,width:30,height:30,borderRadius:15,background:"rgba(0,0,0,0.05)",fontSize:"0.9rem",display:"flex",alignItems:"center",justifyContent:"center",cursor:"pointer"},
   modalInfoRow: {width:"100%",display:"flex",alignItems:"center",justifyContent:"space-between",padding:"0.55rem 0.8rem",background:"#f5f5f5",borderRadius:12,gap:"0.5rem"},
   modalLabel: {fontSize:"0.95rem",fontWeight:800,color:"#546e7a",whiteSpace:"nowrap"},
   modalValue: {fontSize:"1rem",fontWeight:700,color:"#263238",textAlign:"right"},
