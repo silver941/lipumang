@@ -14,7 +14,7 @@ const EC=["🎉","⭐","🥳","🏆","💪","🌟","👏","🎊"];
 const EW=["🤔","💭","🧐"];
 const MC=["Tubli!","Väga hea!","Suurepärane!","Õige!","Super!","Hästi tehtud!"];
 const MW=["Proovi uuesti!","Peaaegu!","Järgmine kord!","Ära muretse!"];
-const SM=["Võimas!","Unstoppable!","Tulekahju!","Fenomenaalne!","Vapustav!"];
+const SM=["Võimas!","Vägev!","WOW!","Fenomenaalne!","Vapustav!"];
 
 /* ─────────────────── STORAGE ─────────────────── */
 function loadJ(k,f){try{const v=localStorage.getItem(k);return v?JSON.parse(v):f;}catch{return f;}}
