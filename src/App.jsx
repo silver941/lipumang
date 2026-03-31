@@ -1,4 +1,5 @@
 import { useState, useCallback, useEffect, useMemo, useRef } from "react";
+import { Analytics } from '@vercel/analytics/react';
 import countriesRaw from "./countryData.json";
 
 /* ─────────────────── HELPERS ─────────────────── */
@@ -988,6 +989,7 @@ export default function App() {
         )}
       </div>
       {toastEl}
+      <Analytics />
     </div>
   );
 }
