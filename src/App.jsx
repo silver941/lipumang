@@ -29,7 +29,10 @@ function saveAchievements(pid,a){saveJ(`lipumang_ach_${pid}`,a);}
 function loadCaps(){try{const v=localStorage.getItem("lipumang_allcaps");return v===null?true:v==="true";}catch{return true;}}
 
 const DL=["easy","medium","hard","expert"];
-function countriesForDiff(d){ const i=DL.indexOf(d); return countriesRaw.filter(c=>DL.indexOf(c.difficulty)<=i); }
+function countriesForDiff(d){
+  if (d === "baby") return countriesRaw.filter(c => c.baby);
+  const i=DL.indexOf(d); return countriesRaw.filter(c=>DL.indexOf(c.difficulty)<=i);
+}
 
 /* ─────────────────── ACHIEVEMENTS DEFS ─────────────────── */
 const BALTIC=["ee","lv","lt"];
@@ -295,6 +298,7 @@ export default function App() {
    */
   const WRONG_ANSWER_DELAY = 10;
   const sessionRef = useRef({ correctSet: new Set(), wrongMap: new Map(), questionCount: 0 });
+  const savedTtsRef = useRef(null); // stores TTS setting before baby mode forces it on
 
   const generateQuestion = useCallback(() => {
     const s = sessionRef.current;
@@ -316,15 +320,16 @@ export default function App() {
     }
 
     const correct = pool[Math.floor(Math.random() * pool.length)];
+    const wrongCount = difficulty === "baby" ? 1 : 2;
     let wp = [];
     if (difficulty === "expert" && correct.similarTo?.length > 0) {
       wp.push(...countriesRaw.filter(c => correct.similarTo.includes(c.iso2)));
     }
-    while (wp.length < 2) {
+    while (wp.length < wrongCount) {
       const pick = pickRandom(countries, 1, [correct.iso2, ...wp.map(w => w.iso2)]);
       if (pick.length > 0) wp.push(pick[0]);
     }
-    wp = wp.slice(0, 2);
+    wp = wp.slice(0, wrongCount);
 
     s.questionCount++;
     return { correct, options: shuffle([correct, ...wp]) };
@@ -342,6 +347,13 @@ export default function App() {
     setQuestion(null);
     // Reset session queue
     sessionRef.current = { correctSet: new Set(), wrongMap: new Map(), questionCount: 0 };
+    // Baby mode: save TTS state and force ON
+    if (diff === "baby") {
+      savedTtsRef.current = ttsEnabled;
+      setTtsEnabled(true);
+    } else {
+      savedTtsRef.current = null;
+    }
     // Track difficulty played and check alldiff achievement
     if (activeProfile) {
       setAchState(prev => {
@@ -410,7 +422,14 @@ export default function App() {
   };
 
   const nextQuestion = () => { setFeedback(null); setSelected(null); setSelectedCountry(null); setQuestion(generateQuestion()); };
-  const goMenu = () => { setScreen("menu"); setQuestion(null); setFeedback(null); setSelected(null); setStreakCelebration(null); setSelectedCountry(null); setSelectedAch(null); setShowResetConfirm(false); };
+  const goMenu = () => {
+    // Restore TTS if leaving baby mode
+    if (savedTtsRef.current !== null) {
+      setTtsEnabled(savedTtsRef.current);
+      savedTtsRef.current = null;
+    }
+    setScreen("menu"); setQuestion(null); setFeedback(null); setSelected(null); setStreakCelebration(null); setSelectedCountry(null); setSelectedAch(null); setShowResetConfirm(false);
+  };
 
   /* ═══════════════════ ACHIEVEMENT CELEBRATION (always rendered) ═══════════════════ */
   const toastEl = achToast ? (
@@ -812,6 +831,20 @@ export default function App() {
           {/* Difficulty */}
           <div style={S.card}>
             <h2 style={S.cardTitle}>{t("Raskusaste")}</h2>
+            <button
+              style={{
+                ...S.babyDiffBtn,
+                background: difficulty==="baby" ? "#f8bbd0" : "rgba(255,255,255,0.9)",
+                color: difficulty==="baby" ? "#fff" : "#e91e63",
+                borderColor: difficulty==="baby" ? "#e91e63" : "#f48fb1",
+                transform: difficulty==="baby" ? "scale(1.03)" : "scale(1)",
+              }}
+              onClick={()=>setDifficulty("baby")}
+            >
+              <span style={{fontSize:"1.5rem"}}>🌟</span>
+              <span style={{fontWeight:800,fontSize:"1rem"}}>{t("Väike avastaja")}</span>
+              <span style={{fontSize:"0.75rem",opacity:0.7}}>20 🏳️</span>
+            </button>
             <div style={S.diffGrid}>
               {[
                 {key:"easy",label:t("Kerge"),emoji:"🌱",sub:"50",color:"#43a047"},
@@ -987,6 +1020,7 @@ const S = {
   menuBtnSub: {fontSize:"0.82rem",color:"#78909c"},
   diffGrid: {display:"grid",gridTemplateColumns:"1fr 1fr",gap:"0.5rem"},
   diffBtn: {display:"flex",flexDirection:"column",alignItems:"center",gap:"0.2rem",padding:"0.65rem 0.4rem",borderRadius:14,border:"3px solid",cursor:"pointer",transition:"all 0.15s"},
+  babyDiffBtn: {display:"flex",alignItems:"center",justifyContent:"center",gap:"0.6rem",padding:"0.75rem 1rem",borderRadius:16,border:"3px solid",cursor:"pointer",transition:"all 0.15s",width:"100%"},
   toggleRow: {display:"flex",alignItems:"center",justifyContent:"space-between",padding:"0.4rem 0.2rem"},
   toggleLabel: {display:"flex",alignItems:"center",gap:"0.5rem",fontSize:"1rem",fontWeight:700,color:"#37474f"},
   toggleTrack: {position:"relative",width:56,height:30,borderRadius:15,border:"none",cursor:"pointer",padding:0,transition:"background 0.2s",flexShrink:0},
