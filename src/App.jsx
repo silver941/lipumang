@@ -321,14 +321,46 @@ export default function App() {
     }
 
     const correct = pool[Math.floor(Math.random() * pool.length)];
-    const wrongCount = difficulty === "baby" ? 1 : 2;
+
+    /*
+     * Wrong answer count per difficulty:
+     *   baby: 1 (2 total options)
+     *   easy/medium/hard: 2 (3 total options)
+     *   expert: 3 (4 total options)
+     *
+     * Wrong answer selection priority:
+     *   1. Countries from correct answer's similarTo array (visually confusing flags)
+     *   2. Countries from the same subregion (geographically close)
+     *   3. Countries from the same region (same continent)
+     *   4. Random from the difficulty pool
+     */
+    const wrongCount = difficulty === "baby" ? 1 : difficulty === "expert" ? 3 : 2;
     let wp = [];
-    if (difficulty === "expert" && correct.similarTo?.length > 0) {
-      wp.push(...countriesRaw.filter(c => correct.similarTo.includes(c.iso2)));
+    const exclude = () => [correct.iso2, ...wp.map(w => w.iso2)];
+
+    // Step 1: similarTo flags (strongest confusers)
+    if (correct.similarTo?.length > 0) {
+      const similars = shuffle(countriesRaw.filter(c => correct.similarTo.includes(c.iso2) && !exclude().includes(c.iso2)));
+      wp.push(...similars.slice(0, wrongCount));
     }
+
+    // Step 2: same subregion
+    if (wp.length < wrongCount && correct.subregion) {
+      const sameSubregion = shuffle(countries.filter(c => c.subregion === correct.subregion && !exclude().includes(c.iso2)));
+      wp.push(...sameSubregion.slice(0, wrongCount - wp.length));
+    }
+
+    // Step 3: same region
+    if (wp.length < wrongCount && correct.region) {
+      const sameRegion = shuffle(countries.filter(c => c.region === correct.region && !exclude().includes(c.iso2)));
+      wp.push(...sameRegion.slice(0, wrongCount - wp.length));
+    }
+
+    // Step 4: random fallback from full pool
     while (wp.length < wrongCount) {
-      const pick = pickRandom(countries, 1, [correct.iso2, ...wp.map(w => w.iso2)]);
+      const pick = pickRandom(countries, 1, exclude());
       if (pick.length > 0) wp.push(pick[0]);
+      else break;
     }
     wp = wp.slice(0, wrongCount);
 
