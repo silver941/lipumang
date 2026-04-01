@@ -164,6 +164,7 @@ export default function App() {
   const [riddleAnswer, setRiddleAnswer] = useState("");
   const [riddleError, setRiddleError] = useState(false);
   const [speaking, setSpeaking] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const [ttsEnabled, setTtsEnabled] = useState(() => {
     try { const v = localStorage.getItem("lipumang_tts"); return v === "true"; } catch { return false; }
   });
@@ -201,6 +202,15 @@ export default function App() {
       setSpeaking(false);
     }
   }, [selectedCountry]);
+
+  // Track scroll for sticky back button background
+  useEffect(() => {
+    if (screen !== "collection" && screen !== "achievements") { setScrolled(false); return; }
+    const onScroll = () => setScrolled(window.scrollY > 10);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [screen]);
 
   /* ── boot ── */
   useEffect(() => {
@@ -544,11 +554,12 @@ export default function App() {
     const pct = Math.round((collection.length / total) * 100);
     return (
       <div style={S.page}>
-        <div style={S.stickyTopBar}>
-          <button style={S.backBtn} onClick={goMenu}>← {t("Menüü")}</button>
-          <span style={S.collCount}>{collection.length}/{total}</span>
-        </div>
-        <div style={{...S.container,paddingTop:"3.5rem"}}>
+        <button style={{...S.stickyBackBtn,...(scrolled ? S.stickyBackBtnScrolled : {})}} onClick={goMenu}>← {t("Menüü")}</button>
+        <div style={S.container}>
+          <div style={S.topBar}>
+            <div style={{width:90}} />
+            <span style={S.collCount}>{collection.length}/{total}</span>
+          </div>
           <div style={{textAlign:"center",margin:"0.5rem 0 1rem"}}>
             <h2 style={{...S.title,fontSize:"1.8rem"}}>{t("Minu kollektsioon")}</h2>
             <div style={S.progressBarOuter}><div style={{...S.progressBarInner,width:`${pct}%`}}/></div>
@@ -615,11 +626,12 @@ export default function App() {
 
     return (
       <div style={S.page}>
-        <div style={S.stickyTopBar}>
-          <button style={S.backBtn} onClick={goMenu}>← {t("Menüü")}</button>
-          <span style={S.collCount}>{unlockedCount}/{totalAch}</span>
-        </div>
-        <div style={{...S.container,paddingTop:"3.5rem"}}>
+        <button style={{...S.stickyBackBtn,...(scrolled ? S.stickyBackBtnScrolled : {})}} onClick={goMenu}>← {t("Menüü")}</button>
+        <div style={S.container}>
+          <div style={S.topBar}>
+            <div style={{width:90}} />
+            <span style={S.collCount}>{unlockedCount}/{totalAch}</span>
+          </div>
           <div style={{textAlign:"center",margin:"0.5rem 0 0.75rem"}}>
             <h2 style={{...S.title,fontSize:"1.8rem"}}>{t("Saavutused")}</h2>
             <div style={S.progressBarOuter}><div style={{...S.progressBarInner,width:`${Math.round(unlockedCount/totalAch*100)}%`,background:"linear-gradient(90deg, #ffa726, #ff7043)"}}/></div>
@@ -1112,7 +1124,8 @@ const S = {
   flagCellName: {fontSize:"0.6rem",fontWeight:700,textAlign:"center",lineHeight:1.2,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap",width:"100%"},
   gameContainer: {maxWidth:520,width:"100%",display:"flex",flexDirection:"column",gap:"1rem",paddingTop:"0.75rem",paddingBottom:"2rem",position:"relative"},
   topBar: {display:"flex",justifyContent:"space-between",alignItems:"center"},
-  stickyTopBar: {position:"fixed",top:0,left:"50%",transform:"translateX(-50%)",display:"flex",justifyContent:"space-between",alignItems:"center",padding:"0.6rem 1rem",background:"rgba(255,255,255,0.6)",backdropFilter:"blur(10px)",WebkitBackdropFilter:"blur(10px)",zIndex:50,width:"100%",maxWidth:480,boxSizing:"border-box"},
+  stickyBackBtn: {position:"fixed",top:12,left:12,zIndex:50,background:"transparent",border:"2px solid transparent",borderRadius:12,padding:"0.5rem 0.9rem",fontSize:"0.95rem",fontWeight:700,color:"#546e7a",cursor:"pointer",transition:"all 0.25s ease"},
+  stickyBackBtnScrolled: {background:"rgba(255,255,255,0.7)",backdropFilter:"blur(8px)",WebkitBackdropFilter:"blur(8px)",borderColor:"#b0bec5"},
   backBtn: {background:"rgba(255,255,255,0.85)",border:"2px solid #b0bec5",borderRadius:12,padding:"0.5rem 0.9rem",fontSize:"0.95rem",fontWeight:700,color:"#546e7a",cursor:"pointer"},
   scoreBox: {background:"rgba(255,255,255,0.9)",borderRadius:14,padding:"0.4rem 1rem",boxShadow:"0 2px 8px rgba(0,0,0,0.06)",display:"flex",alignItems:"baseline",gap:"0.15rem"},
   scoreNum: {fontSize:"1.5rem",fontWeight:900,color:"#43a047"},
