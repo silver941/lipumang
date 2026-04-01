@@ -920,7 +920,7 @@ export default function App() {
               <span style={{fontWeight:800,fontSize:"1rem"}}>{t("Väike avastaja")}</span>
               <span style={{fontSize:"0.75rem",opacity:0.7}}>20 🏳️</span>
             </button>
-            <div style={S.diffGrid} className="diff-grid">
+            <div style={S.diffGrid}>
               {[
                 {key:"easy",label:t("Kerge"),emoji:"🌱",sub:"50",color:"#43a047"},
                 {key:"medium",label:t("Keskmine"),emoji:"🌿",sub:"80",color:"#f9a825"},
@@ -991,14 +991,14 @@ export default function App() {
           )}
         </div>
 
-        <div style={isFTN ? S.optionsTextRow : S.optionsFlagRow}>
+        <div style={isFTN ? S.optionsTextRow : (!isFTN && difficulty === "expert" ? {gap:"0.6rem"} : S.optionsFlagRow)} className={!isFTN && difficulty === "expert" ? "expert-flag-grid" : undefined}>
           {question.options.map(opt => {
             const isSel = selected === opt.iso2;
             const isCorr = opt.iso2 === question.correct.iso2;
             let os = {};
             if (feedback) { if (isCorr) os=S.optCorrect; else if (isSel&&!feedback.isCorrect) os=S.optWrong; else os=S.optDimmed; }
             if (isFTN) return <div key={opt.iso2} style={S.optionRow}><button style={{...S.optionTextBtn,...os,flex:1,margin:0}} onClick={()=>handleAnswer(opt)}>{t(opt.name_et)}</button>{ttsEnabled && <button style={S.ttsBtnOption} onClick={()=>speakName(opt.name_et)} aria-label="Pronounce">🔊</button>}</div>;
-            return <button key={opt.iso2} style={{...S.optionFlagBtn,...os}} onClick={()=>handleAnswer(opt)}><img src={getFlagUrl(opt)} alt="flag" style={S.flagOption}/></button>;
+            return <button key={opt.iso2} style={{...S.optionFlagBtn,...os,...(difficulty==="expert"?{maxWidth:"none",width:"100%"}:{})}} onClick={()=>handleAnswer(opt)}><img src={getFlagUrl(opt)} alt="flag" style={S.flagOption}/></button>;
           })}
         </div>
 
@@ -1094,7 +1094,7 @@ const S = {
   menuBtnEmoji: {fontSize:"1.6rem"},
   menuBtnText: {lineHeight:1.35},
   menuBtnSub: {fontSize:"0.82rem",color:"#78909c"},
-  diffGrid: {display:"grid",gridTemplateColumns:"repeat(2, 1fr)",gap:"0.5rem"},
+  diffGrid: {display:"grid",gridTemplateColumns:"1fr 1fr",gap:"0.5rem"},
   diffBtn: {display:"flex",flexDirection:"column",alignItems:"center",gap:"0.2rem",padding:"0.65rem 0.4rem",borderRadius:14,border:"3px solid",cursor:"pointer",transition:"all 0.15s"},
   babyDiffBtn: {display:"flex",alignItems:"center",justifyContent:"center",gap:"0.6rem",padding:"0.75rem 1rem",borderRadius:16,border:"3px solid",cursor:"pointer",transition:"all 0.15s",width:"100%"},
   toggleRow: {display:"flex",alignItems:"center",justifyContent:"space-between",padding:"0.4rem 0.2rem"},
