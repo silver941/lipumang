@@ -4,8 +4,8 @@
   "description": "Eestikeelne lippude õppimise mäng lastele",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#e3f2fd",
-  "theme_color": "#1a237e",
+  "background_color": "linear-gradient(150deg, #e3f2fd 0%, #fff9c4 50%, #f3e5f5 100%)",
+  "theme_color": "#fff9c4",
   "lang": "et",
   "icons": [
     {
