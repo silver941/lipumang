@@ -1070,7 +1070,7 @@ export default function App() {
 
 /* ═══════════════════ STYLES ═══════════════════ */
 const S = {
-  page: {minHeight:"100vh",background:"e3f2fd",display:"flex",justifyContent:"center",alignItems:"flex-start",padding:"1rem",fontFamily:"'Nunito', -apple-system, BlinkMacSystemFont, sans-serif",boxSizing:"border-box"},
+  page: {minHeight:"100vh",background:"linear-gradient(150deg, #e3f2fd 0%, #fff9c4 50%, #f3e5f5 100%)",display:"flex",justifyContent:"center",alignItems:"flex-start",padding:"1rem",fontFamily:"'Nunito', -apple-system, BlinkMacSystemFont, sans-serif",boxSizing:"border-box"},
   container: {maxWidth:480,width:"100%",display:"flex",flexDirection:"column",gap:"1rem",paddingTop:"1rem",paddingBottom:"2rem"},
   titleBlock: {textAlign:"center",marginBottom:"0.25rem",position:"relative"},
   titleEmoji: {fontSize:"3rem",display:"block",marginBottom:"0.25rem"},
