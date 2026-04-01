@@ -165,6 +165,8 @@ export default function App() {
   const [riddleError, setRiddleError] = useState(false);
   const [speaking, setSpeaking] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [btnLeft, setBtnLeft] = useState(12);
+  const containerRef = useRef(null);
   const [ttsEnabled, setTtsEnabled] = useState(() => {
     try { const v = localStorage.getItem("lipumang_tts"); return v === "true"; } catch { return false; }
   });
@@ -203,14 +205,20 @@ export default function App() {
     }
   }, [selectedCountry]);
 
-  // Track scroll for sticky back button + scroll to top on screen enter
+  // Track scroll + container position for sticky back button
   useEffect(() => {
     if (screen !== "collection" && screen !== "achievements") { setScrolled(false); return; }
     window.scrollTo(0, 0);
     setScrolled(false);
     const onScroll = () => setScrolled(window.scrollY > 10);
+    const updateLeft = () => {
+      const el = containerRef.current;
+      if (el) setBtnLeft(el.getBoundingClientRect().left + 4);
+    };
+    updateLeft();
     window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    window.addEventListener("resize", updateLeft);
+    return () => { window.removeEventListener("scroll", onScroll); window.removeEventListener("resize", updateLeft); };
   }, [screen]);
 
   /* ── boot ── */
@@ -555,9 +563,10 @@ export default function App() {
     const pct = Math.round((collection.length / total) * 100);
     return (
       <div style={S.page}>
-        <div style={S.container}>
+        <button style={{...S.stickyBackBtn,left:btnLeft,...(scrolled ? S.stickyBackBtnScrolled : {})}} onClick={goMenu}>← {t("Menüü")}</button>
+        <div style={S.container} ref={containerRef}>
           <div style={S.topBar}>
-            <button style={{...S.stickyBackBtn,...(scrolled ? S.stickyBackBtnScrolled : {})}} onClick={goMenu}>← {t("Menüü")}</button>
+            <div style={{width:90}} />
             <span style={S.collCount}>{collection.length}/{total}</span>
           </div>
           <div style={{textAlign:"center",margin:"0.5rem 0 1rem"}}>
@@ -626,9 +635,10 @@ export default function App() {
 
     return (
       <div style={S.page}>
-        <div style={S.container}>
+        <button style={{...S.stickyBackBtn,left:btnLeft,...(scrolled ? S.stickyBackBtnScrolled : {})}} onClick={goMenu}>← {t("Menüü")}</button>
+        <div style={S.container} ref={containerRef}>
           <div style={S.topBar}>
-            <button style={{...S.stickyBackBtn,...(scrolled ? S.stickyBackBtnScrolled : {})}} onClick={goMenu}>← {t("Menüü")}</button>
+            <div style={{width:90}} />
             <span style={S.collCount}>{unlockedCount}/{totalAch}</span>
           </div>
           <div style={{textAlign:"center",margin:"0.5rem 0 0.75rem"}}>
@@ -1123,7 +1133,7 @@ const S = {
   flagCellName: {fontSize:"0.6rem",fontWeight:700,textAlign:"center",lineHeight:1.2,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap",width:"100%"},
   gameContainer: {maxWidth:520,width:"100%",display:"flex",flexDirection:"column",gap:"1rem",paddingTop:"0.75rem",paddingBottom:"2rem",position:"relative"},
   topBar: {display:"flex",justifyContent:"space-between",alignItems:"center"},
-  stickyBackBtn: {position:"sticky",top:8,zIndex:50,background:"transparent",border:"2px solid transparent",borderRadius:12,padding:"0.5rem 0.9rem",fontSize:"0.95rem",fontWeight:700,color:"#546e7a",cursor:"pointer",transition:"all 0.25s ease",alignSelf:"flex-start"},
+  stickyBackBtn: {position:"fixed",top:12,zIndex:50,background:"transparent",border:"2px solid transparent",borderRadius:12,padding:"0.5rem 0.9rem",fontSize:"0.95rem",fontWeight:700,color:"#546e7a",cursor:"pointer",transition:"all 0.25s ease"},
   stickyBackBtnScrolled: {background:"rgba(255,255,255,0.7)",backdropFilter:"blur(8px)",WebkitBackdropFilter:"blur(8px)",borderColor:"#b0bec5"},
   backBtn: {background:"rgba(255,255,255,0.85)",border:"2px solid #b0bec5",borderRadius:12,padding:"0.5rem 0.9rem",fontSize:"0.95rem",fontWeight:700,color:"#546e7a",cursor:"pointer"},
   scoreBox: {background:"rgba(255,255,255,0.9)",borderRadius:14,padding:"0.4rem 1rem",boxShadow:"0 2px 8px rgba(0,0,0,0.06)",display:"flex",alignItems:"baseline",gap:"0.15rem"},
