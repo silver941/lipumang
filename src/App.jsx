@@ -160,6 +160,9 @@ export default function App() {
   const [achToast, setAchToast] = useState(null);
   const [selectedAch, setSelectedAch] = useState(null);
   const [showResetConfirm, setShowResetConfirm] = useState(false);
+  const [showResetRiddle, setShowResetRiddle] = useState(false);
+  const [riddleAnswer, setRiddleAnswer] = useState("");
+  const [riddleError, setRiddleError] = useState(false);
   const [speaking, setSpeaking] = useState(false);
   const [ttsEnabled, setTtsEnabled] = useState(() => {
     try { const v = localStorage.getItem("lipumang_tts"); return v === "true"; } catch { return false; }
@@ -280,6 +283,9 @@ export default function App() {
     setScore({ correct: 0, total: 0 });
     setStreak(0);
     setShowResetConfirm(false);
+    setShowResetRiddle(false);
+    setRiddleAnswer("");
+    setRiddleError(false);
   };
 
   const countries = useMemo(() => countriesForDiff(difficulty), [difficulty]);
@@ -832,7 +838,7 @@ export default function App() {
             </div>
           )}
 
-          {showResetConfirm && (
+          {showResetConfirm && !showResetRiddle && (
             <div style={S.modalBackdrop} onClick={() => setShowResetConfirm(false)}>
               <div style={{...S.modalCard, maxWidth: 360, padding: "1.5rem"}} onClick={e => e.stopPropagation()}>
                 <span style={{fontSize:"2.5rem"}}>⚠️</span>
@@ -842,7 +848,43 @@ export default function App() {
                 </p>
                 <div style={{display:"flex",gap:"0.6rem",width:"100%",marginTop:"0.5rem"}}>
                   <button style={S.cancelBtn} onClick={() => setShowResetConfirm(false)}>{t("Tühista")}</button>
-                  <button style={S.confirmResetBtn} onClick={resetProfile}>{t("Lähtesta")}</button>
+                  <button style={S.confirmResetBtn} onClick={() => { setShowResetRiddle(true); setRiddleAnswer(""); setRiddleError(false); }}>{t("Jätka")}</button>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {showResetRiddle && (
+            <div style={S.modalBackdrop} onClick={() => { setShowResetRiddle(false); setShowResetConfirm(false); }}>
+              <div style={{...S.modalCard, maxWidth: 360, padding: "1.5rem"}} onClick={e => e.stopPropagation()}>
+                <img src="/icon-192.png" alt="Lipumäng" style={{maxHeight:64,width:"auto",marginBottom:"0.3rem"}} />
+                <p style={{fontSize:"0.95rem",fontWeight:700,color:"#546e7a",textAlign:"center",margin:0,lineHeight:1.4}}>
+                  {t("Lahenda see mõistatus, et kinnitada oma valikut")}
+                </p>
+                <p style={{fontSize:"1.1rem",fontWeight:800,color:"#1a237e",textAlign:"center",margin:"0.5rem 0 0.3rem"}}>
+                  {t("Mitu lippu on logol?")}
+                </p>
+                <input
+                  style={{...S.nameInput,maxWidth:120,fontSize:"1.5rem"}}
+                  type="number"
+                  inputMode="numeric"
+                  value={riddleAnswer}
+                  onChange={e => { setRiddleAnswer(e.target.value); setRiddleError(false); }}
+                  onKeyDown={e => {
+                    if (e.key === "Enter") {
+                      if (riddleAnswer.trim() === "5") { resetProfile(); setShowResetRiddle(false); }
+                      else setRiddleError(true);
+                    }
+                  }}
+                  autoFocus
+                />
+                {riddleError && <p style={{fontSize:"0.9rem",fontWeight:700,color:"#e53935",margin:"0.2rem 0 0"}}>{t("Vale vastus! Proovi uuesti.")}</p>}
+                <div style={{display:"flex",gap:"0.6rem",width:"100%",marginTop:"0.5rem"}}>
+                  <button style={S.cancelBtn} onClick={() => { setShowResetRiddle(false); setShowResetConfirm(false); }}>{t("Tühista")}</button>
+                  <button style={S.confirmResetBtn} onClick={() => {
+                    if (riddleAnswer.trim() === "5") { resetProfile(); setShowResetRiddle(false); }
+                    else setRiddleError(true);
+                  }}>{t("Kinnita")}</button>
                 </div>
               </div>
             </div>
@@ -878,7 +920,7 @@ export default function App() {
               <span style={{fontWeight:800,fontSize:"1rem"}}>{t("Väike avastaja")}</span>
               <span style={{fontSize:"0.75rem",opacity:0.7}}>20 🏳️</span>
             </button>
-            <div style={S.diffGrid}>
+            <div style={S.diffGrid} className="diff-grid">
               {[
                 {key:"easy",label:t("Kerge"),emoji:"🌱",sub:"50",color:"#43a047"},
                 {key:"medium",label:t("Keskmine"),emoji:"🌿",sub:"80",color:"#f9a825"},
@@ -1052,7 +1094,7 @@ const S = {
   menuBtnEmoji: {fontSize:"1.6rem"},
   menuBtnText: {lineHeight:1.35},
   menuBtnSub: {fontSize:"0.82rem",color:"#78909c"},
-  diffGrid: {display:"grid",gridTemplateColumns:"1fr 1fr",gap:"0.5rem"},
+  diffGrid: {display:"grid",gridTemplateColumns:"repeat(2, 1fr)",gap:"0.5rem"},
   diffBtn: {display:"flex",flexDirection:"column",alignItems:"center",gap:"0.2rem",padding:"0.65rem 0.4rem",borderRadius:14,border:"3px solid",cursor:"pointer",transition:"all 0.15s"},
   babyDiffBtn: {display:"flex",alignItems:"center",justifyContent:"center",gap:"0.6rem",padding:"0.75rem 1rem",borderRadius:16,border:"3px solid",cursor:"pointer",transition:"all 0.15s",width:"100%"},
   toggleRow: {display:"flex",alignItems:"center",justifyContent:"space-between",padding:"0.4rem 0.2rem"},
