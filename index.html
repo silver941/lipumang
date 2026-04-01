@@ -23,9 +23,9 @@
       button { font-family: inherit; -webkit-tap-highlight-color: transparent; }
       button:active { transform: scale(0.96); }
       img { user-select: none; -webkit-user-drag: none; }
-      .diff-grid { grid-template-columns: repeat(2, 1fr) !important; }
-      @media (min-width: 420px) {
-        .diff-grid { grid-template-columns: repeat(4, 1fr) !important; }
+      .expert-flag-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.6rem; justify-items: center; }
+      @media (min-width: 520px) {
+        .expert-flag-grid { grid-template-columns: repeat(4, 1fr); }
       }
       @keyframes popIn {
         0% { transform: scale(0.3); opacity: 0; }
